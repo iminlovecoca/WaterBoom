@@ -6,7 +6,7 @@
     "region": "vn"
   },
   "client": {
-    "default_host": "olds-jump.tun.ply.gg",
-    "default_port": 7135
+    "default_host": "olds-reporter.tun.ply.gg",
+    "default_port": 25565
   }
 }

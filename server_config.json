@@ -6,7 +6,8 @@
     "region": "vn"
   },
   "client": {
-    "default_host": "olds-reporter.tun.ply.gg",
-    "default_port": 25565
+    "default_host": "bloom-static-emerging-beautifully.trycloudflare.com",
+    "default_port": 443,
+    "use_tls": true
   }
 }

@@ -10,6 +10,7 @@ const MAX_CLIENTS: int = 8
 var DEFAULT_HOST: String = "127.0.0.1"
 var DEFAULT_PORT: int = 7777
 var SERVER_REGION: String = "vn"
+var USE_TLS: bool = false
 
 var peer: WebSocketMultiplayerPeer
 var is_server_active: bool = false
@@ -44,6 +45,7 @@ func _load_config() -> void:
 		var client_cfg: Dictionary = data["client"]
 		DEFAULT_HOST = str(client_cfg.get("default_host", FALLBACK_HOST))
 		DEFAULT_PORT = int(client_cfg.get("default_port", FALLBACK_PORT))
+		USE_TLS = bool(client_cfg.get("use_tls", false))
 	if data.has("server"):
 		var server_cfg: Dictionary = data["server"]
 		SERVER_REGION = str(server_cfg.get("region", "vn"))
@@ -98,8 +100,12 @@ func join_server(ip: String = DEFAULT_HOST, port: int = DEFAULT_PORT) -> bool:
 		active_server_port = -1
 
 	peer = WebSocketMultiplayerPeer.new()
-	var url := "ws://%s:%d" % [ip, port]
-	var error = peer.create_client(url)
+	var protocol := "wss" if USE_TLS else "ws"
+	var url := "%s://%s:%d" % [protocol, ip, port]
+	var tls_options: TLSOptions = null
+	if USE_TLS:
+		tls_options = TLSOptions.new()
+	var error = peer.create_client(url, tls_options)
 	if error != OK:
 		push_error("[NetworkManager] Failed to connect to %s: %s" % [url, str(error)])
 		peer = null

@@ -6,7 +6,7 @@
     "region": "vn"
   },
   "client": {
-    "default_host": "bloom-static-emerging-beautifully.trycloudflare.com",
+    "default_host": "jan-assumes-difficulty-gibson.trycloudflare.com",
     "default_port": 443,
     "use_tls": true
   }

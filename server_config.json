@@ -6,8 +6,8 @@
     "region": "vn"
   },
   "client": {
-    "default_host": "aquaboom.duckdns.org",
-    "default_port": 7777,
+    "default_host": "olds-jump.tun.ply.gg",
+    "default_port": 7135,
     "use_tls": false
   }
 }

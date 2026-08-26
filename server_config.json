@@ -6,8 +6,8 @@
     "region": "vn"
   },
   "client": {
-    "default_host": "boomserver-coca-v2.loca.lt",
-    "default_port": 443,
-    "use_tls": true
+    "default_host": "100.87.153.80",
+    "default_port": 7777,
+    "use_tls": false
   }
 }

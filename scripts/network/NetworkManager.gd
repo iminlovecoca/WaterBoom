@@ -104,7 +104,7 @@ func join_server(ip: String = DEFAULT_HOST, port: int = DEFAULT_PORT) -> bool:
 	var url := "%s://%s:%d" % [protocol, ip, port]
 	var tls_options: TLSOptions = null
 	if USE_TLS:
-		tls_options = TLSOptions.new()
+		tls_options = TLSOptions.client()
 	var error = peer.create_client(url, tls_options)
 	if error != OK:
 		push_error("[NetworkManager] Failed to connect to %s: %s" % [url, str(error)])

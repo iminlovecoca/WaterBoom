@@ -1,7 +1,9 @@
 .godot/
 trash/
+build/
 *.exe
 *.zip
+*.rar
 *.tar.gz
 *.pck
 *.tmp

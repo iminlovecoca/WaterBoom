@@ -10,16 +10,16 @@ const FIXED_DELTA: float = 1.0 / 60.0
 
 # Gameplay Default Stats
 const DEFAULT_MOVE_SPEED: float = 160.0
-const DEFAULT_WATER_BALLOON_CAPACITY: int = 1
+const DEFAULT_WATER_BALLOON_CAPACITY: int = 2
 const DEFAULT_WATER_POWER: int = 1
 const DEFAULT_WATER_BALLOON_TIMER: float = 2.5
 const DEFAULT_WATER_BURST_DURATION: float = 0.5
 const DEFAULT_BUBBLE_DURATION: float = 4.5
 
 # Item Maximum Stacks
-const MAX_WATER_BALLOON_CAPACITY: int = 8
-const MAX_WATER_POWER: int = 8
-const MAX_MOVE_SPEED: float = 280.0
+const MAX_WATER_BALLOON_CAPACITY: int = 6
+const MAX_WATER_POWER: int = 6
+const MAX_MOVE_SPEED: float = 240.0
 const SPEED_BOOST_PER_ITEM: float = 20.0
 
 # Enums

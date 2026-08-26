@@ -1,0 +1,203 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/LoginScreen.gd" id="1_login"]
+[ext_resource type="Texture2D" path="res://assets/ui/login/login_world_v1.png" id="2_bg"]
+[ext_resource type="Script" path="res://scripts/ui/LiftButton.gd" id="3_button"]
+[ext_resource type="Theme" path="res://resources/ui/game_theme.tres" id="4_theme"]
+
+[node name="Login" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("4_theme")
+script = ExtResource("1_login")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_bg")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Shade" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.01, 0.08, 0.18, 0.12)
+
+[node name="SafeArea" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 22
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 18
+
+[node name="Flow" type="VBoxContainer" parent="SafeArea"]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="Title" type="Label" parent="SafeArea/Flow"]
+custom_minimum_size = Vector2(0, 67)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.72, 0.13, 1)
+theme_override_colors/font_outline_color = Color(0.12, 0.06, 0.02, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 58
+text = "BOOM WATER ARCADE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Subtitle" type="Label" parent="SafeArea/Flow"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.82, 0.96, 1, 1)
+theme_override_colors/font_outline_color = Color(0.02, 0.15, 0.3, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 20
+text = "ONLINE WATER BATTLE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="FlexibleSpace" type="Control" parent="SafeArea/Flow"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="PanelCenter" type="CenterContainer" parent="SafeArea/Flow"]
+layout_mode = 2
+
+[node name="LoginPanel" type="Panel" parent="SafeArea/Flow/PanelCenter"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(450, 350)
+layout_mode = 2
+
+[node name="VBox" type="VBoxContainer" parent="SafeArea/Flow/PanelCenter/LoginPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 28.0
+offset_top = 18.0
+offset_right = -28.0
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 7
+
+[node name="Heading" type="Label" parent="SafeArea/Flow/PanelCenter/LoginPanel/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 0.85, 1)
+theme_override_colors/font_outline_color = Color(0.52, 0.2, 0.02, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 30
+text = "ĐĂNG NHẬP"
+horizontal_alignment = 1
+
+[node name="AccountLabel" type="Label" parent="SafeArea/Flow/PanelCenter/LoginPanel/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.14, 0.18, 0.25, 1)
+theme_override_font_sizes/font_size = 17
+text = "Tài khoản"
+
+[node name="AccountInput" type="LineEdit" parent="SafeArea/Flow/PanelCenter/LoginPanel/VBox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 44)
+layout_mode = 2
+theme_override_font_sizes/font_size = 19
+placeholder_text = "Nhập tài khoản"
+clear_button_enabled = true
+
+[node name="PasswordLabel" type="Label" parent="SafeArea/Flow/PanelCenter/LoginPanel/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.14, 0.18, 0.25, 1)
+theme_override_font_sizes/font_size = 17
+text = "Mật khẩu"
+
+[node name="PasswordInput" type="LineEdit" parent="SafeArea/Flow/PanelCenter/LoginPanel/VBox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 44)
+layout_mode = 2
+theme_override_font_sizes/font_size = 19
+placeholder_text = "Nhập mật khẩu"
+secret = true
+
+[node name="StatusRow" type="HBoxContainer" parent="SafeArea/Flow/PanelCenter/LoginPanel/VBox"]
+custom_minimum_size = Vector2(0, 26)
+layout_mode = 2
+alignment = 1
+theme_override_constants/separation = 7
+
+[node name="StatusDot" type="Label" parent="SafeArea/Flow/PanelCenter/LoginPanel/VBox/StatusRow"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.36, 0.86, 1, 1)
+theme_override_font_sizes/font_size = 16
+text = "●"
+
+[node name="StatusLabel" type="Label" parent="SafeArea/Flow/PanelCenter/LoginPanel/VBox/StatusRow"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.75, 0.9, 1, 1)
+theme_override_font_sizes/font_size = 15
+text = "Sẵn sàng kết nối"
+
+[node name="Buttons" type="HBoxContainer" parent="SafeArea/Flow/PanelCenter/LoginPanel/VBox"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="LoginButton" type="Button" parent="SafeArea/Flow/PanelCenter/LoginPanel/VBox/Buttons"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(115, 46)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_stretch_ratio = 1.2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 16
+text = "ĐĂNG NHẬP"
+script = ExtResource("3_button")
+
+[node name="CreateButton" type="Button" parent="SafeArea/Flow/PanelCenter/LoginPanel/VBox/Buttons"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(115, 46)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 15
+text = "TẠO TÀI KHOẢN"
+script = ExtResource("3_button")
+
+[node name="ForgotButton" type="Button" parent="SafeArea/Flow/PanelCenter/LoginPanel/VBox/Buttons"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 46)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 15
+text = "QUÊN MẬT KHẨU"
+script = ExtResource("3_button")
+
+[node name="FooterHint" type="Label" parent="SafeArea/Flow/PanelCenter/LoginPanel/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.55, 0.76, 0.94, 1)
+theme_override_font_sizes/font_size = 12
+text = "ENTER: xác nhận  •  TAB: chuyển ô"
+horizontal_alignment = 1
+
+[node name="BottomBalance" type="Control" parent="SafeArea/Flow"]
+custom_minimum_size = Vector2(0, 42)
+layout_mode = 2

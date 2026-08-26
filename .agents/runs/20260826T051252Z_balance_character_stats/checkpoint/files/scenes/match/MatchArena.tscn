@@ -1,0 +1,45 @@
+[gd_scene load_steps=10 format=3]
+
+[ext_resource type="Script" path="res://scripts/match/MatchManager.gd" id="1_match"]
+[ext_resource type="PackedScene" path="res://scenes/maps/ArenaMap.tscn" id="2_map"]
+[ext_resource type="Script" path="res://scripts/water_balloon/WaterBalloonManager.gd" id="3_water_balloon"]
+[ext_resource type="Script" path="res://scripts/items/ItemManager.gd" id="4_item"]
+[ext_resource type="Script" path="res://scripts/water_burst/WaterStreamRenderer.gd" id="5_exp"]
+[ext_resource type="PackedScene" path="res://scenes/ui/MatchHUD.tscn" id="6_hud"]
+[ext_resource type="Script" path="res://scripts/utilities/DebugOverlay.gd" id="7_dbg"]
+[ext_resource type="Script" path="res://scripts/utilities/GridDebugRenderer.gd" id="8_grid_dbg"]
+[ext_resource type="Script" path="res://scripts/ui/MatchFrameUI.gd" id="9_frame"]
+
+[node name="MatchArena" type="Node2D"]
+script = ExtResource("1_match")
+
+[node name="MatchFrameUI" type="Control" parent="."]
+process_mode = 3
+z_index = -20
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+script = ExtResource("9_frame")
+
+[node name="ArenaMap" parent="." instance=ExtResource("2_map")]
+z_index = 0
+
+[node name="ItemManager" type="Node2D" parent="."]
+z_index = 2
+script = ExtResource("4_item")
+
+[node name="WaterBalloonManager" type="Node2D" parent="."]
+z_index = 3
+script = ExtResource("3_water_balloon")
+
+[node name="WaterStreamRenderer" type="Node2D" parent="."]
+z_index = 10
+script = ExtResource("5_exp")
+
+[node name="MatchHUD" parent="." instance=ExtResource("6_hud")]
+
+[node name="DebugOverlay" type="CanvasLayer" parent="."]
+script = ExtResource("7_dbg")
+
+[node name="GridDebugRenderer" type="Node2D" parent="."]
+script = ExtResource("8_grid_dbg")

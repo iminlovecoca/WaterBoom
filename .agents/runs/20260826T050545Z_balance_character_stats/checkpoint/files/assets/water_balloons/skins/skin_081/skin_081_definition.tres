@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="WaterBalloonSkinDefinition" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/water_balloon/WaterBalloonSkinDefinition.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/water_balloons/skins/skin_081/icon.png" id="2_icon"]
+[ext_resource type="SpriteFrames" path="res://assets/water_balloons/skins/skin_081/skin_081_frames.tres" id="3_frames"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"skin_081"
+display_name = "Cloud Pearl"
+theme = "sky"
+motif = "pearl_cloud"
+description = "Bóng nước xanh tím dịu với ngọc mây và ánh sáng ngọc trai"
+rarity = "epic"
+price = 175000
+vfx_profile = "water_sparkle"
+burst_accent = "blue_splash"
+icon = ExtResource("2_icon")
+sprite_frames = ExtResource("3_frames")

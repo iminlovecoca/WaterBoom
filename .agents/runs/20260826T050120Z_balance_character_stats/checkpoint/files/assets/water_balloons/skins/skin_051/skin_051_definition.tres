@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="WaterBalloonSkinDefinition" format=3]
+
+[ext_resource type="Script" path="res://scripts/water_balloon/WaterBalloonSkinDefinition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/water_balloons/balloon_sprites/balloon_050.png" id="tex1"]
+[ext_resource type="SpriteFrames" path="res://assets/water_balloons/skins/skin_051/skin_051_frames.tres" id="frames1"]
+
+[resource]
+script = ExtResource("1")
+id = &"skin_051"
+display_name = "Tidal Surge"
+theme = "tidal"
+primary_color = Color(0.1882, 0.5647, 0.7529, 1)
+secondary_color = Color(0.3765, 0.7529, 0.9412, 1)
+outline_color = Color(0.0941, 0.2824, 0.3765, 1)
+motif = "wave_crest"
+description = "Tidal water with wave pattern, wave crest motif"
+rarity = "uncommon"
+price = 100000
+vfx_profile = "water_default"
+burst_accent = "blue_splash"
+icon = ExtResource("tex1")
+sprite_frames = ExtResource("frames1")

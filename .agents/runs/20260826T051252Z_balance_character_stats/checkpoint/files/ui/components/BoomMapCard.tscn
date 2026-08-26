@@ -1,0 +1,125 @@
+[gd_scene load_steps=4 format=3 uid="uid://c_boom_map_card"]
+[ext_resource type="Script" path="res://ui/components/BoomMapCard.gd" id="1_mc"]
+[ext_resource type="Texture2D" path="res://ui/assets_generated/panels/inset_dark_box.png" id="2_in"]
+[ext_resource type="Texture2D" path="res://ui/assets_generated/buttons/btn_blue_normal.png" id="3_b"]
+
+[node name="BoomMapCard" type="Control"]
+custom_minimum_size = Vector2(299, 133)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 299.0
+offset_bottom = 133.0
+script = ExtResource("1_mc")
+
+[node name="MapFrame" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_right = 146.0
+offset_bottom = 133.0
+texture = ExtResource("2_in")
+patch_margin_left = 8
+patch_margin_top = 8
+patch_margin_right = 8
+patch_margin_bottom = 8
+
+[node name="MapPreview" type="TextureRect" parent="MapFrame"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 6.0
+offset_top = 6.0
+offset_right = -6.0
+offset_bottom = -6.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="InfoRows" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 152.0
+offset_top = 4.0
+offset_right = 294.0
+offset_bottom = 76.0
+theme_override_constants/separation = 2
+
+[node name="NameRow" type="HBoxContainer" parent="InfoRows"]
+layout_mode = 2
+
+[node name="Val" type="Label" parent="InfoRows/NameRow"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 11
+text = "Planning Plaza"
+
+[node name="PlayersRow" type="HBoxContainer" parent="InfoRows"]
+layout_mode = 2
+
+[node name="Lbl" type="Label" parent="InfoRows/PlayersRow"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.6, 0.88, 1, 1)
+theme_override_font_sizes/font_size = 9
+text = "Người: "
+
+[node name="Val" type="Label" parent="InfoRows/PlayersRow"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 9
+text = "4"
+
+[node name="DiffRow" type="HBoxContainer" parent="InfoRows"]
+layout_mode = 2
+
+[node name="Lbl" type="Label" parent="InfoRows/DiffRow"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.6, 0.88, 1, 1)
+theme_override_font_sizes/font_size = 9
+text = "Cấp: "
+
+[node name="Val" type="Label" parent="InfoRows/DiffRow"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 9
+text = "Dễ"
+
+[node name="SizeRow" type="HBoxContainer" parent="InfoRows"]
+layout_mode = 2
+
+[node name="Lbl" type="Label" parent="InfoRows/SizeRow"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.6, 0.88, 1, 1)
+theme_override_font_sizes/font_size = 9
+text = "Sao: "
+
+[node name="Val" type="Label" parent="InfoRows/SizeRow"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 9
+text = "★☆☆☆☆"
+
+[node name="SelectMapBtn" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 152.0
+offset_top = 80.0
+offset_right = 294.0
+offset_bottom = 130.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("3_b")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Lbl" type="Label" parent="SelectMapBtn"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 12
+text = "CHỌN\nBẢN ĐỒ"
+horizontal_alignment = 1
+vertical_alignment = 1

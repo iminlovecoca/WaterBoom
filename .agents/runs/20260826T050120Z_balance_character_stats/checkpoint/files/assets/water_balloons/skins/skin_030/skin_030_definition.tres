@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="WaterBalloonSkinDefinition" format=3]
+
+[ext_resource type="Script" path="res://scripts/water_balloon/WaterBalloonSkinDefinition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/water_balloons/balloon_sprites/balloon_029.png" id="tex1"]
+[ext_resource type="SpriteFrames" path="res://assets/water_balloons/skins/skin_030/skin_030_frames.tres" id="frames1"]
+
+[resource]
+script = ExtResource("1")
+id = &"skin_030"
+display_name = "Deep Azure"
+theme = "azure"
+primary_color = Color(0.1882, 0.4706, 0.6275, 1)
+secondary_color = Color(0.3765, 0.6902, 0.8157, 1)
+outline_color = Color(0.0941, 0.2510, 0.3137, 1)
+motif = "bubble_chain"
+description = "Deep azure water with depth gradient, bubble chain"
+rarity = "common"
+price = 50000
+vfx_profile = "water_default"
+burst_accent = "blue_splash"
+icon = ExtResource("tex1")
+sprite_frames = ExtResource("frames1")

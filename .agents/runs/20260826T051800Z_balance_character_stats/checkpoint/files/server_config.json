@@ -1,0 +1,13 @@
+{
+  "server": {
+    "name": "Boom Server VN",
+    "host": "0.0.0.0",
+    "port": 7777,
+    "region": "vn"
+  },
+  "client": {
+    "default_host": "jan-assumes-difficulty-gibson.trycloudflare.com",
+    "default_port": 443,
+    "use_tls": true
+  }
+}

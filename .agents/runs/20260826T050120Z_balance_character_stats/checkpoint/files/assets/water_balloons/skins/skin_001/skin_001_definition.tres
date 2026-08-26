@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="WaterBalloonSkinDefinition" format=3]
+
+[ext_resource type="Script" path="res://scripts/water_balloon/WaterBalloonSkinDefinition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/water_balloons/balloon_sprites/balloon_000.png" id="tex1"]
+[ext_resource type="SpriteFrames" path="res://assets/water_balloons/skins/skin_001/skin_001_frames.tres" id="frames1"]
+
+[resource]
+script = ExtResource("1")
+id = &"skin_001"
+display_name = "Aqua Classic"
+theme = "basic_blue"
+primary_color = Color(0.2510, 0.7843, 0.9098, 1)
+secondary_color = Color(0.5020, 0.9176, 1.0000, 1)
+outline_color = Color(0.1020, 0.3765, 0.5020, 1)
+motif = "bubbles"
+description = "Clear cyan water, water line, internal bubbles, caustic reflection"
+rarity = "common"
+price = 0
+vfx_profile = "water_default"
+burst_accent = "blue_splash"
+icon = ExtResource("tex1")
+sprite_frames = ExtResource("frames1")

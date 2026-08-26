@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="WaterBalloonSkinDefinition" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/water_balloon/WaterBalloonSkinDefinition.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/water_balloons/skins/skin_072/icon.png" id="2_icon"]
+[ext_resource type="SpriteFrames" path="res://assets/water_balloons/skins/skin_072/skin_072_frames.tres" id="3_frames"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"skin_072"
+display_name = "Toxic Skull"
+theme = "toxic"
+motif = "purple_skull"
+description = "Bóng nước độc màu xanh chanh với đầu lâu tím và bong bóng độc"
+rarity = "epic"
+price = 175000
+vfx_profile = "water_dark"
+burst_accent = "green_splash"
+icon = ExtResource("2_icon")
+sprite_frames = ExtResource("3_frames")

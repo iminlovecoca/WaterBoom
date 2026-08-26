@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="WaterBalloonSkinDefinition" format=3]
+
+[ext_resource type="Script" path="res://scripts/water_balloon/WaterBalloonSkinDefinition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/water_balloons/balloon_sprites/balloon_016.png" id="tex1"]
+[ext_resource type="SpriteFrames" path="res://assets/water_balloons/skins/skin_017/skin_017_frames.tres" id="frames1"]
+
+[resource]
+script = ExtResource("1")
+id = &"skin_017"
+display_name = "Garden Mix"
+theme = "nature"
+primary_color = Color(0.3137, 0.5020, 0.3137, 1)
+secondary_color = Color(0.5020, 0.6902, 0.4392, 1)
+outline_color = Color(0.1882, 0.2824, 0.1882, 1)
+motif = "flower_bud"
+description = "Nature water with leaf network, flower bud inside"
+rarity = "uncommon"
+price = 100000
+vfx_profile = "water_default"
+burst_accent = "green_splash"
+icon = ExtResource("tex1")
+sprite_frames = ExtResource("frames1")

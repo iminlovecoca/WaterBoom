@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "golden_character": "boom_mascot",
+  "canvas": [112, 112],
+  "feet_anchor": [56, 103],
+  "art_rules": {
+    "short_rounded_one_piece_hands_and_feet": true,
+    "unique_face_hair_skin_and_costume_per_character": true,
+    "upper_left_lighting": true,
+    "no_baked_ground_shadow": true,
+    "raw_background": "#FF00FF",
+    "production_overwrite_before_qc": false
+  },
+  "contract": {
+    "idle_down": 4,
+    "idle_up": 4,
+    "idle_left": 4,
+    "idle_right": 4,
+    "walk_down": 8,
+    "walk_up": 8,
+    "walk_left": 8,
+    "walk_right": 8,
+    "rescue": 4,
+    "water_hit": 4,
+    "bubble": 6,
+    "rescued": 4,
+    "die": 6,
+    "win": 6,
+    "lose": 6
+  },
+  "characters": [
+    "boom_mascot",
+    "cloud_bunny",
+    "cocoa_otter",
+    "coral_diver",
+    "lime_dino",
+    "mint_sprout",
+    "red_rider",
+    "star_skater",
+    "sunny_mechanic"
+  ],
+  "migration": {
+    "staging_root": "assets/characters/<id>/v13_staging",
+    "legacy_v11_retained": true,
+    "v12_retained_for_rollback": true,
+    "runtime_switch_after_visual_and_smoke_qc": true
+  }
+}

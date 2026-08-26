@@ -1,0 +1,4759 @@
+{
+  "character": "All",
+  "failures": [],
+  "frames": {
+    "res://assets/characters/boom_mascot/v11/bubbled/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/boom_mascot/v11/bubbled/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/boom_mascot/v11/bubbled/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/boom_mascot/v11/bubbled/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/boom_mascot/v11/escape/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/boom_mascot/v11/escape/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/boom_mascot/v11/escape/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/boom_mascot/v11/escape/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/boom_mascot/v11/idle_down/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/boom_mascot/v11/idle_down/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/boom_mascot/v11/idle_down/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/boom_mascot/v11/idle_down/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/boom_mascot/v11/idle_left/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/boom_mascot/v11/idle_left/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/boom_mascot/v11/idle_left/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/boom_mascot/v11/idle_left/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/boom_mascot/v11/idle_right/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/boom_mascot/v11/idle_right/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/boom_mascot/v11/idle_right/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/boom_mascot/v11/idle_right/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/boom_mascot/v11/idle_up/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/boom_mascot/v11/idle_up/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/boom_mascot/v11/idle_up/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/boom_mascot/v11/idle_up/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/boom_mascot/v11/lose/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/boom_mascot/v11/lose/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/boom_mascot/v11/lose/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/boom_mascot/v11/lose/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/boom_mascot/v11/walk_down/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/boom_mascot/v11/walk_down/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/boom_mascot/v11/walk_down/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/boom_mascot/v11/walk_down/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/boom_mascot/v11/walk_left/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/boom_mascot/v11/walk_left/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/boom_mascot/v11/walk_left/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/boom_mascot/v11/walk_left/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/boom_mascot/v11/walk_right/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/boom_mascot/v11/walk_right/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/boom_mascot/v11/walk_right/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/boom_mascot/v11/walk_right/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/boom_mascot/v11/walk_up/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/boom_mascot/v11/walk_up/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/boom_mascot/v11/walk_up/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/boom_mascot/v11/walk_up/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/boom_mascot/v11/win/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/boom_mascot/v11/win/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/boom_mascot/v11/win/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/boom_mascot/v11/win/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cloud_bunny/v11/bubbled/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 107,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cloud_bunny/v11/bubbled/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cloud_bunny/v11/bubbled/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cloud_bunny/v11/bubbled/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cloud_bunny/v11/escape/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cloud_bunny/v11/escape/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cloud_bunny/v11/escape/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cloud_bunny/v11/escape/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cloud_bunny/v11/idle_down/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cloud_bunny/v11/idle_down/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cloud_bunny/v11/idle_down/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cloud_bunny/v11/idle_down/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cloud_bunny/v11/idle_left/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cloud_bunny/v11/idle_left/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cloud_bunny/v11/idle_left/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cloud_bunny/v11/idle_left/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cloud_bunny/v11/idle_right/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cloud_bunny/v11/idle_right/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cloud_bunny/v11/idle_right/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cloud_bunny/v11/idle_right/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cloud_bunny/v11/idle_up/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cloud_bunny/v11/idle_up/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cloud_bunny/v11/idle_up/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cloud_bunny/v11/idle_up/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cloud_bunny/v11/lose/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cloud_bunny/v11/lose/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cloud_bunny/v11/lose/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cloud_bunny/v11/lose/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cloud_bunny/v11/walk_down/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cloud_bunny/v11/walk_down/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 107,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cloud_bunny/v11/walk_down/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cloud_bunny/v11/walk_down/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cloud_bunny/v11/walk_left/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cloud_bunny/v11/walk_left/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cloud_bunny/v11/walk_left/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cloud_bunny/v11/walk_left/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cloud_bunny/v11/walk_right/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cloud_bunny/v11/walk_right/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cloud_bunny/v11/walk_right/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cloud_bunny/v11/walk_right/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cloud_bunny/v11/walk_up/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cloud_bunny/v11/walk_up/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cloud_bunny/v11/walk_up/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cloud_bunny/v11/walk_up/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cloud_bunny/v11/win/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cloud_bunny/v11/win/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cloud_bunny/v11/win/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cloud_bunny/v11/win/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cocoa_otter/v11/bubbled/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cocoa_otter/v11/bubbled/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cocoa_otter/v11/bubbled/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cocoa_otter/v11/bubbled/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cocoa_otter/v11/escape/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cocoa_otter/v11/escape/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cocoa_otter/v11/escape/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cocoa_otter/v11/escape/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cocoa_otter/v11/idle_down/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cocoa_otter/v11/idle_down/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cocoa_otter/v11/idle_down/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cocoa_otter/v11/idle_down/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cocoa_otter/v11/idle_left/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cocoa_otter/v11/idle_left/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cocoa_otter/v11/idle_left/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cocoa_otter/v11/idle_left/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cocoa_otter/v11/idle_right/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cocoa_otter/v11/idle_right/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cocoa_otter/v11/idle_right/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cocoa_otter/v11/idle_right/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cocoa_otter/v11/idle_up/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cocoa_otter/v11/idle_up/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cocoa_otter/v11/idle_up/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cocoa_otter/v11/idle_up/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cocoa_otter/v11/lose/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cocoa_otter/v11/lose/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cocoa_otter/v11/lose/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cocoa_otter/v11/lose/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cocoa_otter/v11/walk_down/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cocoa_otter/v11/walk_down/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cocoa_otter/v11/walk_down/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cocoa_otter/v11/walk_down/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 107,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cocoa_otter/v11/walk_left/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cocoa_otter/v11/walk_left/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cocoa_otter/v11/walk_left/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cocoa_otter/v11/walk_left/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cocoa_otter/v11/walk_right/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cocoa_otter/v11/walk_right/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cocoa_otter/v11/walk_right/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cocoa_otter/v11/walk_right/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cocoa_otter/v11/walk_up/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cocoa_otter/v11/walk_up/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cocoa_otter/v11/walk_up/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cocoa_otter/v11/walk_up/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cocoa_otter/v11/win/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cocoa_otter/v11/win/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cocoa_otter/v11/win/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/cocoa_otter/v11/win/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/coral_diver/v11/bubbled/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/coral_diver/v11/bubbled/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/coral_diver/v11/bubbled/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/coral_diver/v11/bubbled/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/coral_diver/v11/escape/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/coral_diver/v11/escape/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/coral_diver/v11/escape/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/coral_diver/v11/escape/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/coral_diver/v11/idle_down/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/coral_diver/v11/idle_down/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/coral_diver/v11/idle_down/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/coral_diver/v11/idle_down/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/coral_diver/v11/idle_left/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/coral_diver/v11/idle_left/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/coral_diver/v11/idle_left/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/coral_diver/v11/idle_left/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/coral_diver/v11/idle_right/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/coral_diver/v11/idle_right/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/coral_diver/v11/idle_right/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/coral_diver/v11/idle_right/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/coral_diver/v11/idle_up/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/coral_diver/v11/idle_up/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/coral_diver/v11/idle_up/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/coral_diver/v11/idle_up/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/coral_diver/v11/lose/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/coral_diver/v11/lose/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/coral_diver/v11/lose/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/coral_diver/v11/lose/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/coral_diver/v11/walk_down/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/coral_diver/v11/walk_down/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/coral_diver/v11/walk_down/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/coral_diver/v11/walk_down/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/coral_diver/v11/walk_left/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/coral_diver/v11/walk_left/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/coral_diver/v11/walk_left/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/coral_diver/v11/walk_left/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/coral_diver/v11/walk_right/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/coral_diver/v11/walk_right/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/coral_diver/v11/walk_right/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/coral_diver/v11/walk_right/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/coral_diver/v11/walk_up/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/coral_diver/v11/walk_up/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/coral_diver/v11/walk_up/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/coral_diver/v11/walk_up/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/coral_diver/v11/win/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/coral_diver/v11/win/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/coral_diver/v11/win/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/coral_diver/v11/win/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/lime_dino/v11/bubbled/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/lime_dino/v11/bubbled/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/lime_dino/v11/bubbled/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/lime_dino/v11/bubbled/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/lime_dino/v11/escape/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/lime_dino/v11/escape/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/lime_dino/v11/escape/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/lime_dino/v11/escape/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/lime_dino/v11/idle_down/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/lime_dino/v11/idle_down/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/lime_dino/v11/idle_down/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/lime_dino/v11/idle_down/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/lime_dino/v11/idle_left/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/lime_dino/v11/idle_left/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/lime_dino/v11/idle_left/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/lime_dino/v11/idle_left/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/lime_dino/v11/idle_right/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/lime_dino/v11/idle_right/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/lime_dino/v11/idle_right/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/lime_dino/v11/idle_right/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/lime_dino/v11/idle_up/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/lime_dino/v11/idle_up/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/lime_dino/v11/idle_up/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/lime_dino/v11/idle_up/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/lime_dino/v11/lose/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/lime_dino/v11/lose/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/lime_dino/v11/lose/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/lime_dino/v11/lose/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/lime_dino/v11/walk_down/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/lime_dino/v11/walk_down/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/lime_dino/v11/walk_down/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/lime_dino/v11/walk_down/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/lime_dino/v11/walk_left/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/lime_dino/v11/walk_left/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/lime_dino/v11/walk_left/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/lime_dino/v11/walk_left/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/lime_dino/v11/walk_right/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/lime_dino/v11/walk_right/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/lime_dino/v11/walk_right/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/lime_dino/v11/walk_right/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/lime_dino/v11/walk_up/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/lime_dino/v11/walk_up/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/lime_dino/v11/walk_up/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/lime_dino/v11/walk_up/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/lime_dino/v11/win/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/lime_dino/v11/win/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/lime_dino/v11/win/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/lime_dino/v11/win/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/mint_sprout/v11/bubbled/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/mint_sprout/v11/bubbled/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/mint_sprout/v11/bubbled/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/mint_sprout/v11/bubbled/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/mint_sprout/v11/escape/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/mint_sprout/v11/escape/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/mint_sprout/v11/escape/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/mint_sprout/v11/escape/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/mint_sprout/v11/idle_down/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/mint_sprout/v11/idle_down/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/mint_sprout/v11/idle_down/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/mint_sprout/v11/idle_down/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/mint_sprout/v11/idle_left/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/mint_sprout/v11/idle_left/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/mint_sprout/v11/idle_left/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/mint_sprout/v11/idle_left/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/mint_sprout/v11/idle_right/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/mint_sprout/v11/idle_right/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/mint_sprout/v11/idle_right/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/mint_sprout/v11/idle_right/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/mint_sprout/v11/idle_up/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/mint_sprout/v11/idle_up/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/mint_sprout/v11/idle_up/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/mint_sprout/v11/idle_up/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/mint_sprout/v11/lose/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/mint_sprout/v11/lose/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/mint_sprout/v11/lose/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/mint_sprout/v11/lose/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/mint_sprout/v11/walk_down/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/mint_sprout/v11/walk_down/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/mint_sprout/v11/walk_down/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/mint_sprout/v11/walk_down/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/mint_sprout/v11/walk_left/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/mint_sprout/v11/walk_left/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/mint_sprout/v11/walk_left/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/mint_sprout/v11/walk_left/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/mint_sprout/v11/walk_right/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/mint_sprout/v11/walk_right/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/mint_sprout/v11/walk_right/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/mint_sprout/v11/walk_right/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/mint_sprout/v11/walk_up/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/mint_sprout/v11/walk_up/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/mint_sprout/v11/walk_up/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/mint_sprout/v11/walk_up/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/mint_sprout/v11/win/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/mint_sprout/v11/win/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/mint_sprout/v11/win/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/mint_sprout/v11/win/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/red_rider/v11/bubbled/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/red_rider/v11/bubbled/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/red_rider/v11/bubbled/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/red_rider/v11/bubbled/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/red_rider/v11/escape/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/red_rider/v11/escape/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/red_rider/v11/escape/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/red_rider/v11/escape/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/red_rider/v11/idle_down/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/red_rider/v11/idle_down/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/red_rider/v11/idle_down/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/red_rider/v11/idle_down/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/red_rider/v11/idle_left/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/red_rider/v11/idle_left/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/red_rider/v11/idle_left/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/red_rider/v11/idle_left/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/red_rider/v11/idle_right/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/red_rider/v11/idle_right/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/red_rider/v11/idle_right/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/red_rider/v11/idle_right/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/red_rider/v11/idle_up/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/red_rider/v11/idle_up/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/red_rider/v11/idle_up/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/red_rider/v11/idle_up/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/red_rider/v11/lose/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/red_rider/v11/lose/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/red_rider/v11/lose/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/red_rider/v11/lose/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/red_rider/v11/walk_down/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/red_rider/v11/walk_down/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/red_rider/v11/walk_down/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/red_rider/v11/walk_down/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/red_rider/v11/walk_left/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/red_rider/v11/walk_left/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/red_rider/v11/walk_left/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/red_rider/v11/walk_left/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/red_rider/v11/walk_right/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/red_rider/v11/walk_right/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/red_rider/v11/walk_right/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/red_rider/v11/walk_right/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/red_rider/v11/walk_up/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/red_rider/v11/walk_up/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/red_rider/v11/walk_up/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/red_rider/v11/walk_up/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/red_rider/v11/win/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/red_rider/v11/win/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/red_rider/v11/win/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/red_rider/v11/win/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/star_skater/v11/bubbled/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/star_skater/v11/bubbled/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/star_skater/v11/bubbled/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/star_skater/v11/bubbled/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/star_skater/v11/escape/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/star_skater/v11/escape/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/star_skater/v11/escape/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/star_skater/v11/escape/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/star_skater/v11/idle_down/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/star_skater/v11/idle_down/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/star_skater/v11/idle_down/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/star_skater/v11/idle_down/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/star_skater/v11/idle_left/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/star_skater/v11/idle_left/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/star_skater/v11/idle_left/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/star_skater/v11/idle_left/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/star_skater/v11/idle_right/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/star_skater/v11/idle_right/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/star_skater/v11/idle_right/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/star_skater/v11/idle_right/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/star_skater/v11/idle_up/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/star_skater/v11/idle_up/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/star_skater/v11/idle_up/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/star_skater/v11/idle_up/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/star_skater/v11/lose/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/star_skater/v11/lose/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/star_skater/v11/lose/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/star_skater/v11/lose/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/star_skater/v11/walk_down/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/star_skater/v11/walk_down/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/star_skater/v11/walk_down/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/star_skater/v11/walk_down/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/star_skater/v11/walk_left/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/star_skater/v11/walk_left/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/star_skater/v11/walk_left/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/star_skater/v11/walk_left/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/star_skater/v11/walk_right/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/star_skater/v11/walk_right/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/star_skater/v11/walk_right/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/star_skater/v11/walk_right/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/star_skater/v11/walk_up/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/star_skater/v11/walk_up/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/star_skater/v11/walk_up/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/star_skater/v11/walk_up/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/star_skater/v11/win/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/star_skater/v11/win/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/star_skater/v11/win/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/star_skater/v11/win/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/sunny_mechanic/v11/bubbled/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/sunny_mechanic/v11/bubbled/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/sunny_mechanic/v11/bubbled/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/sunny_mechanic/v11/bubbled/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/sunny_mechanic/v11/escape/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/sunny_mechanic/v11/escape/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/sunny_mechanic/v11/escape/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/sunny_mechanic/v11/escape/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/sunny_mechanic/v11/idle_down/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/sunny_mechanic/v11/idle_down/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/sunny_mechanic/v11/idle_down/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/sunny_mechanic/v11/idle_down/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/sunny_mechanic/v11/idle_left/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/sunny_mechanic/v11/idle_left/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/sunny_mechanic/v11/idle_left/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/sunny_mechanic/v11/idle_left/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/sunny_mechanic/v11/idle_right/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/sunny_mechanic/v11/idle_right/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/sunny_mechanic/v11/idle_right/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/sunny_mechanic/v11/idle_right/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/sunny_mechanic/v11/idle_up/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/sunny_mechanic/v11/idle_up/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/sunny_mechanic/v11/idle_up/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/sunny_mechanic/v11/idle_up/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/sunny_mechanic/v11/lose/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/sunny_mechanic/v11/lose/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/sunny_mechanic/v11/lose/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/sunny_mechanic/v11/lose/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/sunny_mechanic/v11/walk_down/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/sunny_mechanic/v11/walk_down/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/sunny_mechanic/v11/walk_down/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/sunny_mechanic/v11/walk_down/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/sunny_mechanic/v11/walk_left/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/sunny_mechanic/v11/walk_left/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/sunny_mechanic/v11/walk_left/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/sunny_mechanic/v11/walk_left/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/sunny_mechanic/v11/walk_right/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/sunny_mechanic/v11/walk_right/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/sunny_mechanic/v11/walk_right/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/sunny_mechanic/v11/walk_right/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/sunny_mechanic/v11/walk_up/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/sunny_mechanic/v11/walk_up/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/sunny_mechanic/v11/walk_up/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/sunny_mechanic/v11/walk_up/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/sunny_mechanic/v11/win/00.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/sunny_mechanic/v11/win/01.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/sunny_mechanic/v11/win/02.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    },
+    "res://assets/characters/sunny_mechanic/v11/win/03.png": {
+      "dimensions": [
+        112,
+        112
+      ],
+      "duplicate_of": "",
+      "feet_baseline": 108,
+      "has_alpha": true,
+      "opaque_border_pixels": 0,
+      "status": "PASS"
+    }
+  },
+  "status": "PASS"
+}

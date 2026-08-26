@@ -1,0 +1,29 @@
+{
+	"captured_at_unix": 1787547101.354,
+	"engine": "4.7.1-stable (official)",
+	"logical_viewport": [
+		960.0,
+		720.0
+	],
+	"renderer": "NVIDIA GeForce RTX 4060 Laptop GPU",
+	"samples": [
+		{
+			"average_frame_ms": 6.06,
+			"estimated_fps": 165.0,
+			"frame_count": 180,
+			"load_ms": 91.25,
+			"max_frame_ms": 6.75,
+			"name": "login",
+			"p95_frame_ms": 6.56
+		},
+		{
+			"average_frame_ms": 6.06,
+			"estimated_fps": 165.0,
+			"frame_count": 180,
+			"load_ms": 213.34,
+			"max_frame_ms": 6.9,
+			"name": "match_training_plaza",
+			"p95_frame_ms": 6.62
+		}
+	]
+}

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="WaterBalloonSkinDefinition" format=3]
+
+[ext_resource type="Script" path="res://scripts/water_balloon/WaterBalloonSkinDefinition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/water_balloons/balloon_sprites/balloon_017.png" id="tex1"]
+[ext_resource type="SpriteFrames" path="res://assets/water_balloons/skins/skin_018/skin_018_frames.tres" id="frames1"]
+
+[resource]
+script = ExtResource("1")
+id = &"skin_018"
+display_name = "Shadow Void"
+theme = "void"
+primary_color = Color(0.1255, 0.1569, 0.2510, 1)
+secondary_color = Color(0.2510, 0.3137, 0.5020, 1)
+outline_color = Color(0.0627, 0.0941, 0.1569, 1)
+motif = "void_eye"
+description = "Dark void water with swirl, void eye motif, purple particles"
+rarity = "epic"
+price = 300000
+vfx_profile = "water_dark"
+burst_accent = "dark_splash"
+icon = ExtResource("tex1")
+sprite_frames = ExtResource("frames1")

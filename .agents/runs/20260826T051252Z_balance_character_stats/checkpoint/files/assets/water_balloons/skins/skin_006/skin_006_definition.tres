@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="WaterBalloonSkinDefinition" format=3]
+
+[ext_resource type="Script" path="res://scripts/water_balloon/WaterBalloonSkinDefinition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/water_balloons/balloon_sprites/balloon_005.png" id="tex1"]
+[ext_resource type="SpriteFrames" path="res://assets/water_balloons/skins/skin_006/skin_006_frames.tres" id="frames1"]
+
+[resource]
+script = ExtResource("1")
+id = &"skin_006"
+display_name = "Teal Wave"
+theme = "teal"
+primary_color = Color(0.1882, 0.6275, 0.6275, 1)
+secondary_color = Color(0.3765, 0.8157, 0.8157, 1)
+outline_color = Color(0.0941, 0.3137, 0.3137, 1)
+motif = "bubbles"
+description = "Teal water with wave lines, bubble accents"
+rarity = "common"
+price = 50000
+vfx_profile = "water_default"
+burst_accent = "blue_splash"
+icon = ExtResource("tex1")
+sprite_frames = ExtResource("frames1")

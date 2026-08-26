@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="CharacterDefinition" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://resources/characters/CharacterDefinition.gd" id="1_script"]
+[ext_resource type="SpriteFrames" path="res://resources/characters/aqua_pacifier_frames_v14.tres" id="2_frames"]
+[ext_resource type="Texture2D" path="res://assets/characters/v14_rebuild/aqua_pacifier/runtime_frames/idle_down/000.png" id="3_preview"]
+
+[resource]
+script = ExtResource("1_script")
+id = "aqua_pacifier"
+display_name = "Aqua Pacifier"
+base_speed = 176.0
+base_water_balloon_capacity = 2
+base_water_power = 1
+max_speed = 280.0
+max_water_balloon_capacity = 8
+max_water_power = 8
+sprite_frames = ExtResource("2_frames")
+preview_texture = ExtResource("3_preview")
+selection_card_texture = ExtResource("3_preview")
+banner_background_texture = ExtResource("3_preview")
+selfie_texture = ExtResource("3_preview")
+shadow_offset_y = 10.0
+visual_scale = 1.25

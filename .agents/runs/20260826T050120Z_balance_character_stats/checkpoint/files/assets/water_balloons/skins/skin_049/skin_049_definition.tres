@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="WaterBalloonSkinDefinition" format=3]
+
+[ext_resource type="Script" path="res://scripts/water_balloon/WaterBalloonSkinDefinition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/water_balloons/balloon_sprites/balloon_048.png" id="tex1"]
+[ext_resource type="SpriteFrames" path="res://assets/water_balloons/skins/skin_049/skin_049_frames.tres" id="frames1"]
+
+[resource]
+script = ExtResource("1")
+id = &"skin_049"
+display_name = "Electric Cyan"
+theme = "neon_blue"
+primary_color = Color(0.1255, 0.8157, 0.9412, 1)
+secondary_color = Color(0.3765, 1.0000, 1.0000, 1)
+outline_color = Color(0.0627, 0.4392, 0.5020, 1)
+motif = "lightning_bolt"
+description = "Electric cyan water with arcs, lightning bolt motif"
+rarity = "rare"
+price = 200000
+vfx_profile = "water_glow"
+burst_accent = "blue_splash"
+icon = ExtResource("tex1")
+sprite_frames = ExtResource("frames1")

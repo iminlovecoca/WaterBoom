@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="WaterBalloonSkinDefinition" format=3]
+
+[ext_resource type="Script" path="res://scripts/water_balloon/WaterBalloonSkinDefinition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/water_balloons/balloon_sprites/balloon_014.png" id="tex1"]
+[ext_resource type="SpriteFrames" path="res://assets/water_balloons/skins/skin_015/skin_015_frames.tres" id="frames1"]
+
+[resource]
+script = ExtResource("1")
+id = &"skin_015"
+display_name = "Peach Blossom"
+theme = "peach"
+primary_color = Color(0.9412, 0.6275, 0.4392, 1)
+secondary_color = Color(1.0000, 0.8157, 0.6902, 1)
+outline_color = Color(0.6275, 0.3137, 0.1882, 1)
+motif = "blossom"
+description = "Peach pearlescent water with soft gradient, blossom motif"
+rarity = "rare"
+price = 200000
+vfx_profile = "water_glow"
+burst_accent = "pink_splash"
+icon = ExtResource("tex1")
+sprite_frames = ExtResource("frames1")

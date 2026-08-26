@@ -1,0 +1,16 @@
+{
+  "iteration": {
+    "added": [],
+    "deleted": [],
+    "modified": []
+  },
+  "cumulative": {
+    "added": [],
+    "deleted": [],
+    "modified": []
+  },
+  "git": {
+    "available": false,
+    "reason": "not a Git worktree; manifest checkpoint is active"
+  }
+}

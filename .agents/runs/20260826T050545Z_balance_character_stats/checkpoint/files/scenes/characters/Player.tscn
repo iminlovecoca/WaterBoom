@@ -1,0 +1,62 @@
+[gd_scene load_steps=9 format=3]
+
+[ext_resource type="Script" path="res://scripts/player/PlayerController.gd" id="1_ctrl"]
+[ext_resource type="Script" path="res://scripts/player/PlayerVisual.gd" id="3_vis"]
+[ext_resource type="Script" path="res://scripts/player/CharacterShadow.gd" id="4_shadow"]
+[ext_resource type="Script" path="res://scripts/player/BubbleVisual.gd" id="5_bubble"]
+[ext_resource type="Script" path="res://scripts/player/DevelopmentCharacter.gd" id="6_dev"]
+[ext_resource type="Resource" path="res://resources/characters/boom_mascot.tres" id="7_character"]
+[ext_resource type="Script" path="res://scripts/player/CharacterStatusVFX.gd" id="8_vfx"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1"]
+radius = 13.0
+
+[node name="Player" type="CharacterBody2D"]
+z_index = 5
+collision_layer = 1
+collision_mask = 2
+script = ExtResource("1_ctrl")
+character_def = ExtResource("7_character")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_1")
+
+[node name="Visual" type="Node2D" parent="."]
+script = ExtResource("3_vis")
+
+[node name="Shadow" type="Node2D" parent="Visual"]
+position = Vector2(0, 10)
+script = ExtResource("4_shadow")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Visual"]
+texture_filter = 1
+position = Vector2(0, -32)
+scale = Vector2(0.68, 0.68)
+
+[node name="DevelopmentCharacter" type="Node2D" parent="Visual"]
+position = Vector2(0, -4)
+script = ExtResource("6_dev")
+
+[node name="Bubble" type="Node2D" parent="Visual"]
+visible = false
+position = Vector2(0, -14)
+script = ExtResource("5_bubble")
+
+[node name="StatusVFX" type="Node2D" parent="Visual"]
+position = Vector2(0, -4)
+script = ExtResource("8_vfx")
+
+[node name="HeadAccessory" type="Sprite2D" parent="Visual"]
+position = Vector2(0, -43)
+texture_filter = 1
+z_index = 7
+
+[node name="NameLabel" type="Label" parent="Visual"]
+offset_left = -40.0
+offset_top = -54.0
+offset_right = 40.0
+offset_bottom = -38.0
+theme_override_font_sizes/font_size = 10
+text = "P1"
+horizontal_alignment = 1
+vertical_alignment = 1

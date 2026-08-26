@@ -1,0 +1,341 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/MatchHUD.gd" id="1_hud"]
+
+[node name="MatchHUD" type="Control"]
+process_mode = 3
+z_index = 100
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+script = ExtResource("1_hud")
+
+[node name="TopBar" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -100.0
+offset_top = 10.0
+offset_right = 100.0
+offset_bottom = 46.0
+grow_horizontal = 2
+
+[node name="TimerLabel" type="Label" parent="TopBar"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+text = "03:00"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CenterBanner" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -60.0
+offset_right = 200.0
+offset_bottom = 60.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="BannerLabel" type="Label" parent="CenterBanner"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 48
+text = "3"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BottomBar" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -40.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="P1Stats" type="Label" parent="BottomBar"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 20.0
+offset_top = -12.0
+offset_right = 350.0
+offset_bottom = 12.0
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.4, 0.7, 1, 1)
+text = "P1: WaterBalloon 0/1 | Range 1 | Spd 160"
+vertical_alignment = 1
+
+[node name="P2Stats" type="Label" parent="BottomBar"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -350.0
+offset_top = -12.0
+offset_right = -20.0
+offset_bottom = 12.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 0.4, 0.4, 1)
+text = "P2: WaterBalloon 0/1 | Range 1 | Spd 160"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="ResultModal" type="Panel" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -180.0
+offset_top = -200.0
+offset_right = 320.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ResultTitle" type="TextureRect" parent="ResultModal"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 18.0
+offset_top = 12.0
+offset_right = -18.0
+offset_bottom = 92.0
+grow_horizontal = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="ResultTable" type="Panel" parent="ResultModal"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 88.0
+offset_right = 476.0
+offset_bottom = 274.0
+
+[node name="HeaderName" type="Label" parent="ResultModal/ResultTable"]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 8.0
+offset_right = 205.0
+offset_bottom = 36.0
+theme_override_font_sizes/font_size = 14
+text = "NHÂN VẬT"
+horizontal_alignment = 1
+
+[node name="HeaderResult" type="Label" parent="ResultModal/ResultTable"]
+layout_mode = 0
+offset_left = 205.0
+offset_top = 8.0
+offset_right = 330.0
+offset_bottom = 36.0
+theme_override_font_sizes/font_size = 14
+text = "KẾT QUẢ"
+horizontal_alignment = 1
+
+[node name="HeaderMoney" type="Label" parent="ResultModal/ResultTable"]
+layout_mode = 0
+offset_left = 330.0
+offset_top = 8.0
+offset_right = 438.0
+offset_bottom = 36.0
+theme_override_font_sizes/font_size = 14
+text = "COKECY"
+horizontal_alignment = 1
+
+[node name="NameColumn" type="Label" parent="ResultModal/ResultTable"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 40.0
+offset_right = 205.0
+offset_bottom = 112.0
+theme_override_font_sizes/font_size = 15
+vertical_alignment = 0
+
+[node name="ResultColumn" type="RichTextLabel" parent="ResultModal/ResultTable"]
+layout_mode = 0
+offset_left = 205.0
+offset_top = 40.0
+offset_right = 330.0
+offset_bottom = 112.0
+theme_override_font_sizes/font_size = 15
+bbcode_enabled = true
+scroll_active = false
+
+[node name="MoneyColumn" type="Label" parent="ResultModal/ResultTable"]
+layout_mode = 0
+offset_left = 330.0
+offset_top = 40.0
+offset_right = 432.0
+offset_bottom = 112.0
+theme_override_font_sizes/font_size = 15
+horizontal_alignment = 1
+vertical_alignment = 0
+
+[node name="BossHUD" type="Control" parent="."]
+visible = false
+layout_mode = 0
+offset_right = 500.0
+offset_bottom = 38.0
+
+[node name="Background" type="Panel" parent="BossHUD"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BossName" type="Label" parent="BossHUD"]
+layout_mode = 0
+anchor_right = 1.0
+offset_left = 10.0
+offset_top = 0.0
+offset_right = -10.0
+offset_bottom = 17.0
+theme_override_font_sizes/font_size = 11
+text = "BẠCH TUỘC HẢI TẶC • PHASE 1"
+horizontal_alignment = 1
+
+[node name="HealthBar" type="ProgressBar" parent="BossHUD"]
+layout_mode = 0
+anchor_right = 1.0
+offset_left = 16.0
+offset_top = 18.0
+offset_right = -16.0
+offset_bottom = 33.0
+show_percentage = false
+
+[node name="RoundLabel" type="Label" parent="BossHUD"]
+layout_mode = 0
+anchor_right = 1.0
+offset_left = 10.0
+offset_top = 0.0
+offset_right = -10.0
+offset_bottom = 38.0
+theme_override_font_sizes/font_size = 13
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Reward" type="Label" parent="ResultModal/ResultTable"]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 126.0
+offset_right = 438.0
+offset_bottom = 155.0
+theme_override_font_sizes/font_size = 16
+horizontal_alignment = 1
+
+[node name="Balance" type="Label" parent="ResultModal/ResultTable"]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 155.0
+offset_right = 438.0
+offset_bottom = 177.0
+theme_override_font_sizes/font_size = 13
+horizontal_alignment = 1
+
+[node name="VBox" type="VBoxContainer" parent="ResultModal"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -100.0
+offset_top = -110.0
+offset_right = 100.0
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 12
+
+[node name="RestartButton" type="Button" parent="ResultModal/VBox"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "CHƠI LẠI"
+
+[node name="MenuButton" type="Button" parent="ResultModal/VBox"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "VỀ PHÒNG"
+
+[node name="PauseModal" type="Panel" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -170.0
+offset_top = -150.0
+offset_right = 170.0
+offset_bottom = 150.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title" type="Label" parent="PauseModal"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 22.0
+offset_bottom = 68.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 28
+text = "PAUSED"
+horizontal_alignment = 1
+
+[node name="VBox" type="VBoxContainer" parent="PauseModal"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -110.0
+offset_top = -42.0
+offset_right = 110.0
+offset_bottom = 112.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 10
+
+[node name="ResumeButton" type="Button" parent="PauseModal/VBox"]
+custom_minimum_size = Vector2(0, 42)
+layout_mode = 2
+text = "Resume"
+[node name="RestartButton" type="Button" parent="PauseModal/VBox"]
+custom_minimum_size = Vector2(0, 42)
+layout_mode = 2
+text = "Restart Match"
+[node name="MenuButton" type="Button" parent="PauseModal/VBox"]
+custom_minimum_size = Vector2(0, 42)
+layout_mode = 2
+text = "Main Menu"

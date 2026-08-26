@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="WaterBalloonSkinDefinition" format=3]
+
+[ext_resource type="Script" path="res://scripts/water_balloon/WaterBalloonSkinDefinition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/water_balloons/skins/skin_065/icon.png" id="tex1"]
+[ext_resource type="SpriteFrames" path="res://assets/water_balloons/skins/skin_065/skin_065_frames.tres" id="frames1"]
+
+[resource]
+script = ExtResource("1")
+id = &"skin_065"
+display_name = "Straw Hat Pirate / Hải Tặc Mũ Rơm"
+theme = "pirate"
+primary_color = Color(0.0627, 0.5020, 0.8784, 1)
+secondary_color = Color(1.0000, 0.8157, 0.1255, 1)
+outline_color = Color(0.0392, 0.2275, 0.4392, 1)
+motif = "straw_hat"
+description = "Bóng nước Hải Tặc Mũ Rơm với bản đồ kho báu, la bàn và thuyền hải tặc"
+rarity = "legendary"
+price = 200000
+vfx_profile = "water_default"
+burst_accent = "blue_splash"
+icon = ExtResource("tex1")
+sprite_frames = ExtResource("frames1")

@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "id": "balance_character_stats",
+  "task": "Normalize the character water-balloon starting and maximum stats for the current character resource roster. Every character definition must start with exactly 2 active balloons. Keep each character's existing speed identity and power identity where reasonable, but keep all starting values within a fair range. Set sensible shared progression caps: maximum balloon capacity 6, maximum water power 6, maximum speed 240. Update fallback GameConstants and MatchConfig defaults to match the same contract. Do not touch account, database, save, network, economy, UI, map, or asset files.",
+  "scope": [
+    "resources/characters/CharacterDefinition.gd",
+    "resources/characters/*.tres",
+    "resources/balance/MatchConfig.gd",
+    "scripts/core/GameConstants.gd",
+    "tests/CharacterStatsBalanceSmoke.gd",
+    "tests/CharacterStatsBalanceSmoke.tscn"
+  ],
+  "protected_paths": [
+    "README.md",
+    "CODEX_HANDOFF.md",
+    "DEBUG_HANDOFF.md",
+    "scripts/data/**",
+    "data/database/**",
+    "scripts/network/**",
+    "scripts/core/GameSession.gd",
+    "assets/**",
+    "scenes/**",
+    "ui/**",
+    "scripts/water_balloon/**",
+    "scripts/player/**"
+  ],
+  "acceptance_criteria": [
+    {
+      "id": "two_starting_balloons",
+      "description": "Every resource under resources/characters/*.tres has base_water_balloon_capacity == 2."
+    },
+    {
+      "id": "balanced_caps",
+      "description": "CharacterDefinition, MatchConfig and GameConstants use max capacity 6, max power 6 and max speed 240, and all base values are valid under those caps."
+    },
+    {
+      "id": "stats_smoke",
+      "description": "The dedicated CharacterStatsBalanceSmoke scene loads every character resource and reports a PASS without parser/resource errors."
+    }
+  ],
+  "validators": [
+    {
+      "id": "character_stats_smoke",
+      "type": "godot_scene",
+      "scene": "res://tests/CharacterStatsBalanceSmoke.tscn",
+      "success_regex": "CHARACTER_STATS_BALANCE_RESULT: 0 failed"
+    },
+    {
+      "id": "godot_import",
+      "type": "godot_import",
+      "success_regex": ""
+    }
+  ],
+  "max_iterations": 2,
+  "worker": {
+    "mode": "auto",
+    "timeout_seconds": 600
+  },
+  "allowed_output_paths": []
+}

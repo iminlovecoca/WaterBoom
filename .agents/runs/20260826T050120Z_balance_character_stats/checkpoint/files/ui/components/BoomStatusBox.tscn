@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://c_boom_stat_box"]
+[ext_resource type="Script" path="res://ui/components/BoomStatusBox.gd" id="1_st"]
+[ext_resource type="Script" path="res://scripts/ui/StatBarUI.gd" id="2_sb"]
+
+[node name="BoomStatusBox" type="Control"]
+custom_minimum_size = Vector2(283, 67)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 283.0
+offset_bottom = 67.0
+script = ExtResource("1_st")
+
+[node name="StatContainer" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_sb")
+
+

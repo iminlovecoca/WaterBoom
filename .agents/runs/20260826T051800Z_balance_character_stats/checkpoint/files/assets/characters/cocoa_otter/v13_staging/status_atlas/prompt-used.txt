@@ -1,0 +1,4 @@
+Identity reference: cocoa_otter/v12_staging/master/processed/clean.png
+Motion/layout reference: assets/characters/v13_templates/status_reference.png
+
+6 columns x 7 rows. Rows: rescue, water_hit, bubble body, rescued, die, win, lose. Bubble shell and water VFX remain shared gameplay effects and are intentionally not baked into character art.

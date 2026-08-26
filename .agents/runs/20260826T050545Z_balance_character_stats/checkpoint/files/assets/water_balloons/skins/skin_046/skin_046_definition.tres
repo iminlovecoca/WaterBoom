@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="WaterBalloonSkinDefinition" format=3]
+
+[ext_resource type="Script" path="res://scripts/water_balloon/WaterBalloonSkinDefinition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/water_balloons/balloon_sprites/balloon_045.png" id="tex1"]
+[ext_resource type="SpriteFrames" path="res://assets/water_balloons/skins/skin_046/skin_046_frames.tres" id="frames1"]
+
+[resource]
+script = ExtResource("1")
+id = &"skin_046"
+display_name = "Shadow Noir"
+theme = "noir"
+primary_color = Color(0.1569, 0.1569, 0.1882, 1)
+secondary_color = Color(0.2824, 0.2824, 0.3765, 1)
+outline_color = Color(0.0627, 0.0627, 0.0941, 1)
+motif = "noir_eye"
+description = "Shadow water with tendrils, noir eye motif, minimal highlight"
+rarity = "epic"
+price = 300000
+vfx_profile = "water_dark"
+burst_accent = "dark_splash"
+icon = ExtResource("tex1")
+sprite_frames = ExtResource("frames1")

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="WaterBalloonSkinDefinition" format=3]
+
+[ext_resource type="Script" path="res://scripts/water_balloon/WaterBalloonSkinDefinition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/water_balloons/balloon_sprites/balloon_049.png" id="tex1"]
+[ext_resource type="SpriteFrames" path="res://assets/water_balloons/skins/skin_050/skin_050_frames.tres" id="frames1"]
+
+[resource]
+script = ExtResource("1")
+id = &"skin_050"
+display_name = "Blood Moon"
+theme = "blood_moon"
+primary_color = Color(0.6275, 0.1882, 0.1882, 1)
+secondary_color = Color(0.8157, 0.3137, 0.3137, 1)
+outline_color = Color(0.3765, 0.0627, 0.0627, 1)
+motif = "crescent_moon"
+description = "Blood moon water with moon phases, crescent moon motif"
+rarity = "rare"
+price = 200000
+vfx_profile = "water_fire_accent"
+burst_accent = "fire_splash"
+icon = ExtResource("tex1")
+sprite_frames = ExtResource("frames1")

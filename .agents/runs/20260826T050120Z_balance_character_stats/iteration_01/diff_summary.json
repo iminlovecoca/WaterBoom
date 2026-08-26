@@ -1,0 +1,27 @@
+{
+  "iteration": {
+    "added": [
+      "addons/godot-sqlite/bin/~libgdsqlite.windows.template_debug.x86_64.dll~RFa260e8.TMP"
+    ],
+    "deleted": [
+      "addons/godot-sqlite/bin/~libgdsqlite.windows.template_debug.x86_64.dll"
+    ],
+    "modified": []
+  },
+  "cumulative": {
+    "added": [
+      "addons/godot-sqlite/bin/~libgdsqlite.windows.template_debug.x86_64.dll~RFa260e8.TMP"
+    ],
+    "deleted": [
+      "addons/godot-sqlite/bin/~libgdsqlite.windows.template_debug.x86_64.dll"
+    ],
+    "modified": []
+  },
+  "git": {
+    "available": true,
+    "root": "C:/Users/khang/Documents/Build/Boom",
+    "status": "## main...origin/main\n D addons/godot-sqlite/bin/~libgdsqlite.windows.template_debug.x86_64.dll\n?? .agents/runs/\n?? .agents/tasks/\n",
+    "diff_stat": " .../~libgdsqlite.windows.template_debug.x86_64.dll    | Bin 3163136 -> 0 bytes\n 1 file changed, 0 insertions(+), 0 deletions(-)\n",
+    "staged_diff_stat": ""
+  }
+}

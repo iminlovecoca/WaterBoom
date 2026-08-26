@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="WaterBalloonSkinDefinition" format=3]
+
+[ext_resource type="Script" path="res://scripts/water_balloon/WaterBalloonSkinDefinition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/water_balloons/balloon_sprites/balloon_047.png" id="tex1"]
+[ext_resource type="SpriteFrames" path="res://assets/water_balloons/skins/skin_048/skin_048_frames.tres" id="frames1"]
+
+[resource]
+script = ExtResource("1")
+id = &"skin_048"
+display_name = "Neon Pulse"
+theme = "neon_pink"
+primary_color = Color(0.8784, 0.1882, 0.6275, 1)
+secondary_color = Color(1.0000, 0.3765, 0.8157, 1)
+outline_color = Color(0.5020, 0.0627, 0.3765, 1)
+motif = "neon_bolt"
+description = "Neon pink water with grid, neon bolt motif, glow effect"
+rarity = "rare"
+price = 200000
+vfx_profile = "water_glow"
+burst_accent = "pink_splash"
+icon = ExtResource("tex1")
+sprite_frames = ExtResource("frames1")

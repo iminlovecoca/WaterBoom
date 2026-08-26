@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://c_boom_panel"]
+[ext_resource type="Script" path="res://ui/components/BoomPanel.gd" id="1_pan"]
+[ext_resource type="Texture2D" path="res://ui/assets_generated/panels/left_room_panel.png" id="2_tex"]
+
+[node name="BoomPanel" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 100.0
+offset_bottom = 100.0
+script = ExtResource("1_pan")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_tex")
+patch_margin_left = 16
+patch_margin_top = 16
+patch_margin_right = 16
+patch_margin_bottom = 16

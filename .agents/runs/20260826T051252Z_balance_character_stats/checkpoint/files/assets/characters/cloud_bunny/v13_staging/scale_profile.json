@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "name": "cloud_bunny_v13_pilot",
+  "processing": {
+    "cell_size": 112,
+    "fit_scale": 0.84,
+    "trim_border": 0,
+    "edge_clean_depth": 3,
+    "align": "feet",
+    "shared_scale": true,
+    "scale_strategy": "fit",
+    "component_mode": "largest",
+    "component_padding": 2,
+    "min_component_area": 32,
+    "edge_touch_margin": 1
+  },
+  "output_origin": [
+    56.0,
+    104
+  ],
+  "reference": {
+    "target": "player",
+    "mode": "idle",
+    "rows": 1,
+    "cols": 4,
+    "body_scale_mean": 0.5723521648060182,
+    "body_scale_cv": 0.016158167884155788,
+    "anchor_y_mean": 0.952076677316294
+  },
+  "qc": {
+    "max_body_scale_drift": 0.1
+  }
+}

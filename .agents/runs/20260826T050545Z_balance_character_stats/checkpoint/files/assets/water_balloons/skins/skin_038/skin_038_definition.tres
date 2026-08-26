@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="WaterBalloonSkinDefinition" format=3]
+
+[ext_resource type="Script" path="res://scripts/water_balloon/WaterBalloonSkinDefinition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/water_balloons/balloon_sprites/balloon_037.png" id="tex1"]
+[ext_resource type="SpriteFrames" path="res://assets/water_balloons/skins/skin_038/skin_038_frames.tres" id="frames1"]
+
+[resource]
+script = ExtResource("1")
+id = &"skin_038"
+display_name = "Glacier Ice"
+theme = "glacier"
+primary_color = Color(0.3137, 0.7216, 0.8471, 1)
+secondary_color = Color(0.5647, 0.8784, 0.9725, 1)
+outline_color = Color(0.1569, 0.3765, 0.4706, 1)
+motif = "ice_shard"
+description = "Glacier water with ice cracks, ice shard motif"
+rarity = "rare"
+price = 200000
+vfx_profile = "water_ice"
+burst_accent = "ice_splash"
+icon = ExtResource("tex1")
+sprite_frames = ExtResource("frames1")

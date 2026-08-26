@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="WaterBalloonSkinDefinition" format=3]
+
+[ext_resource type="Script" path="res://scripts/water_balloon/WaterBalloonSkinDefinition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/water_balloons/balloon_sprites/balloon_003.png" id="tex1"]
+[ext_resource type="SpriteFrames" path="res://assets/water_balloons/skins/skin_004/skin_004_frames.tres" id="frames1"]
+
+[resource]
+script = ExtResource("1")
+id = &"skin_004"
+display_name = "Crimson Ruby"
+theme = "ruby_red"
+primary_color = Color(0.8157, 0.1882, 0.2510, 1)
+secondary_color = Color(1.0000, 0.3765, 0.4392, 1)
+outline_color = Color(0.4392, 0.0627, 0.1255, 1)
+motif = "glowing_star"
+description = "Ruby water, internal red swirl, glowing star refraction, warm highlights"
+rarity = "uncommon"
+price = 100000
+vfx_profile = "water_default"
+burst_accent = "red_splash"
+icon = ExtResource("tex1")
+sprite_frames = ExtResource("frames1")

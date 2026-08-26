@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="WaterBalloonSkinDefinition" format=3]
+
+[ext_resource type="Script" path="res://scripts/water_balloon/WaterBalloonSkinDefinition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/water_balloons/balloon_sprites/balloon_054.png" id="tex1"]
+[ext_resource type="SpriteFrames" path="res://assets/water_balloons/skins/skin_055/skin_055_frames.tres" id="frames1"]
+
+[resource]
+script = ExtResource("1")
+id = &"skin_055"
+display_name = "Mystic Lavender"
+theme = "lavender_mystic"
+primary_color = Color(0.4392, 0.3765, 0.6902, 1)
+secondary_color = Color(0.6275, 0.5647, 0.8784, 1)
+outline_color = Color(0.2196, 0.1882, 0.3765, 1)
+motif = "mystic_star"
+description = "Mystic lavender water with spiral, mystic star motif"
+rarity = "uncommon"
+price = 100000
+vfx_profile = "water_default"
+burst_accent = "purple_splash"
+icon = ExtResource("tex1")
+sprite_frames = ExtResource("frames1")

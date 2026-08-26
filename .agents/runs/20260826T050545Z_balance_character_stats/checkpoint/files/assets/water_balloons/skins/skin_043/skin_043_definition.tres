@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="WaterBalloonSkinDefinition" format=3]
+
+[ext_resource type="Script" path="res://scripts/water_balloon/WaterBalloonSkinDefinition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/water_balloons/balloon_sprites/balloon_042.png" id="tex1"]
+[ext_resource type="SpriteFrames" path="res://assets/water_balloons/skins/skin_043/skin_043_frames.tres" id="frames1"]
+
+[resource]
+script = ExtResource("1")
+id = &"skin_043"
+display_name = "Magical Heart"
+theme = "heart_magic"
+primary_color = Color(0.9412, 0.4392, 0.6275, 1)
+secondary_color = Color(1.0000, 0.5647, 0.7529, 1)
+outline_color = Color(0.6275, 0.1882, 0.3765, 1)
+motif = "heart_large"
+description = "Magic pink water with heart rain, large heart inside, heart particles"
+rarity = "epic"
+price = 300000
+vfx_profile = "water_heart"
+burst_accent = "heart_splash"
+icon = ExtResource("tex1")
+sprite_frames = ExtResource("frames1")

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="WaterBalloonSkinDefinition" format=3]
+
+[ext_resource type="Script" path="res://scripts/water_balloon/WaterBalloonSkinDefinition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/water_balloons/balloon_sprites/balloon_015.png" id="tex1"]
+[ext_resource type="SpriteFrames" path="res://assets/water_balloons/skins/skin_016/skin_016_frames.tres" id="frames1"]
+
+[resource]
+script = ExtResource("1")
+id = &"skin_016"
+display_name = "Aqua Mint"
+theme = "mint"
+primary_color = Color(0.3765, 0.6902, 0.6902, 1)
+secondary_color = Color(0.6275, 0.9098, 0.8784, 1)
+outline_color = Color(0.1882, 0.3765, 0.3765, 1)
+motif = "droplet"
+description = "Minty water with fresh pattern, crisp highlights"
+rarity = "common"
+price = 50000
+vfx_profile = "water_default"
+burst_accent = "blue_splash"
+icon = ExtResource("tex1")
+sprite_frames = ExtResource("frames1")

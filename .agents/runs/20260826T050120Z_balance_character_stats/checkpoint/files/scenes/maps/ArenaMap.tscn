@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/maps/ArenaMap.gd" id="1_map"]
+
+[node name="ArenaMap" type="Node2D"]
+script = ExtResource("1_map")
+
+[node name="FloorLayer" type="Node2D" parent="."]
+
+[node name="WallsLayer" type="Node2D" parent="."]
+
+[node name="DestructiblesLayer" type="Node2D" parent="."]
+
+[node name="DecorationsLayer" type="Node2D" parent="."]

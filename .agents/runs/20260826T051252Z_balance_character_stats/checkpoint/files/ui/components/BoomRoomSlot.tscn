@@ -1,0 +1,126 @@
+[gd_scene load_steps=6 format=3 uid="uid://c_boom_room_slot"]
+[ext_resource type="Script" path="res://ui/components/BoomRoomSlot.gd" id="1_slot"]
+[ext_resource type="Texture2D" path="res://ui/assets_generated/slots/room_card_9slice.png" id="2_card"]
+[ext_resource type="Texture2D" path="res://ui/assets_generated/slots/slot_name_plate.png" id="3_name"]
+[ext_resource type="Texture2D" path="res://ui/assets_generated/slots/slot_status_plate.png" id="4_stat"]
+[ext_resource type="Texture2D" path="res://ui/assets_generated/badges/crown_gold.png" id="5_cr"]
+
+[node name="BoomRoomSlot" type="Control"]
+custom_minimum_size = Vector2(96, 144)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 96.0
+offset_bottom = 144.0
+script = ExtResource("1_slot")
+
+[node name="CardPanel" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_right = 96.0
+offset_bottom = 94.0
+# The portrait uses the complete 112x112 runtime canvas.  The card is already
+# sized to contain the shared feet anchor, so clipping here would cut the
+# lower rows of tall characters and terminal VFX.  The rounded card texture
+# remains the visual mask; children are kept on explicit z layers below.
+clip_contents = false
+texture = ExtResource("2_card")
+patch_margin_left = 10
+patch_margin_top = 10
+patch_margin_right = 10
+patch_margin_bottom = 10
+
+[node name="Portrait" type="AnimatedSprite2D" parent="CardPanel"]
+position = Vector2(48, 48)
+scale = Vector2(0.72, 0.72)
+z_index = 3
+
+[node name="HeadView" type="TextureRect" parent="CardPanel"]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 10.0
+offset_right = 82.0
+offset_bottom = 54.0
+expand_mode = 1
+stretch_mode = 5
+z_index = 4
+
+[node name="FlagView" type="TextureRect" parent="CardPanel"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 36.0
+offset_right = 90.0
+offset_bottom = 54.0
+expand_mode = 1
+stretch_mode = 5
+z_index = 4
+
+[node name="CrownIcon" type="TextureRect" parent="CardPanel"]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 6.0
+offset_right = 26.0
+offset_bottom = 22.0
+texture = ExtResource("5_cr")
+expand_mode = 1
+stretch_mode = 5
+z_index = 5
+
+[node name="NamePanel" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_top = 98.0
+offset_right = 96.0
+offset_bottom = 118.0
+texture = ExtResource("3_name")
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 6
+
+[node name="NameLabel" type="Label" parent="NamePanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 11
+horizontal_alignment = 1
+vertical_alignment = 1
+text_overrun_behavior = 3
+
+[node name="StatusPanel" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_top = 122.0
+offset_right = 96.0
+offset_bottom = 144.0
+texture = ExtResource("4_stat")
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 6
+
+[node name="StatusLabel" type="Label" parent="StatusPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 10
+text = "TRỐNG"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ClickButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+flat = true

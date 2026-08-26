@@ -1,0 +1,1 @@
+Cloud Bunny water_hit, 2x2/4 frames, using Boom Bear motion reference. Same identity and scale, real recoil poses, uniform #FF00FF, body only.

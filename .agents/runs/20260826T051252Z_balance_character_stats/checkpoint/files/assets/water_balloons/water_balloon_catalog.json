@@ -1,0 +1,506 @@
+{
+  "version": 3,
+  "total_skins": 16,
+  "grid": {
+    "columns": 8,
+    "rows": 2,
+    "empty_cells": []
+  },
+  "skins": [
+    {
+      "id": "skin_066",
+      "name": "Aqua Classic Reforge",
+      "theme": "basic_blue",
+      "primary_color": "#40c8e8",
+      "secondary_color": "#8eeeff",
+      "outline_color": "#1a6080",
+      "material": "clear_water",
+      "pattern": "water_line",
+      "motif": "bubbles",
+      "highlight": "soft_caustic",
+      "description": "Bóng nước xanh trong được làm lại với highlight mềm và gợn nước mượt",
+      "rarity": "rare",
+      "price": 90000,
+      "vfx_profile": "water_default",
+      "burst_accent": "blue_splash"
+    },
+    {
+      "id": "skin_067",
+      "name": "Moonlit Abyss",
+      "theme": "deep_ocean",
+      "primary_color": "#3023a6",
+      "secondary_color": "#5c8cff",
+      "outline_color": "#17145c",
+      "material": "deep_water",
+      "pattern": "moonlit_wave",
+      "motif": "moonlight",
+      "highlight": "cool_glow",
+      "description": "Bóng nước xanh tím sâu với ánh trăng lạnh và gợn sóng đêm",
+      "rarity": "epic",
+      "price": 160000,
+      "vfx_profile": "water_dark",
+      "burst_accent": "blue_splash"
+    },
+    {
+      "id": "skin_068",
+      "name": "Starlight Aurora",
+      "theme": "aurora",
+      "primary_color": "#22c7d6",
+      "secondary_color": "#9df7e9",
+      "outline_color": "#1767a4",
+      "material": "aurora_water",
+      "pattern": "aurora_ribbon",
+      "motif": "starlight",
+      "highlight": "sparkle",
+      "description": "Bóng nước cực quang với dải sáng xanh lục lam chuyển động bên trong",
+      "rarity": "legendary",
+      "price": 220000,
+      "vfx_profile": "water_sparkle",
+      "burst_accent": "blue_splash"
+    },
+    {
+      "id": "skin_069",
+      "name": "Watermelon Fresh",
+      "theme": "fruit_water",
+      "primary_color": "#3a9e3a",
+      "secondary_color": "#e84060",
+      "outline_color": "#1a5a1a",
+      "material": "fruit_water",
+      "pattern": "rind_stripes",
+      "motif": "watermelon_seeds",
+      "highlight": "juicy",
+      "description": "Bóng nước dưa hấu tươi với vỏ xanh, ruột đỏ và hạt đen",
+      "rarity": "rare",
+      "price": 150000,
+      "vfx_profile": "water_default",
+      "burst_accent": "green_splash"
+    },
+    {
+      "id": "skin_070",
+      "name": "Duckling Splash",
+      "theme": "cute_water",
+      "primary_color": "#38bde9",
+      "secondary_color": "#9beeff",
+      "outline_color": "#2c729c",
+      "motif": "yellow_duck",
+      "description": "Bóng nước trong veo với chú vịt vàng đang bơi và gợn nước lấp lánh",
+      "rarity": "uncommon",
+      "price": 100000,
+      "vfx_profile": "water_default",
+      "burst_accent": "blue_splash",
+      "source_asset": "source_user_2026_08_25/codex-clipboard-68b6da9b-c708-4d27-990f-3320ab6e28cf.jpg"
+    },
+    {
+      "id": "skin_071",
+      "name": "Rose Gem",
+      "theme": "crystal",
+      "primary_color": "#ef9fce",
+      "secondary_color": "#ffe5f7",
+      "outline_color": "#a94a87",
+      "motif": "rose_crystal",
+      "description": "Bóng nước hồng trong suốt với pha lê hồng và cánh hoa bay nhẹ",
+      "rarity": "epic",
+      "price": 180000,
+      "vfx_profile": "water_sparkle",
+      "burst_accent": "pink_splash",
+      "source_asset": "source_user_2026_08_25/codex-clipboard-6f7384c3-5b43-4d7e-b353-992ad0939f81.jpg"
+    },
+    {
+      "id": "skin_072",
+      "name": "Toxic Skull",
+      "theme": "toxic",
+      "primary_color": "#8cdf32",
+      "secondary_color": "#d9ff72",
+      "outline_color": "#4d7020",
+      "motif": "purple_skull",
+      "description": "Bóng nước độc màu xanh chanh với đầu lâu tím và bong bóng độc",
+      "rarity": "epic",
+      "price": 175000,
+      "vfx_profile": "water_dark",
+      "burst_accent": "green_splash",
+      "source_asset": "source_user_2026_08_25/codex-clipboard-de189092-3dde-49e2-9bb6-fcdfd13d58ef.jpg"
+    },
+    {
+      "id": "skin_073",
+      "name": "Kitty Paw",
+      "theme": "cute",
+      "primary_color": "#f4a8cb",
+      "secondary_color": "#ffe5f2",
+      "outline_color": "#aa5c8c",
+      "motif": "cat_paw",
+      "description": "Bóng nước mèo hồng với tai mèo, dấu chân và trái tim nhỏ",
+      "rarity": "rare",
+      "price": 130000,
+      "vfx_profile": "water_heart",
+      "burst_accent": "pink_splash",
+      "source_asset": "source_user_2026_08_25/codex-clipboard-0c9d19f8-2ae5-44c9-ab07-944b6504b4fa.jpg"
+    },
+    {
+      "id": "skin_074",
+      "name": "Galaxy Orbit",
+      "theme": "cosmic",
+      "primary_color": "#3f276d",
+      "secondary_color": "#c28cff",
+      "outline_color": "#211a54",
+      "motif": "ringed_planet",
+      "description": "Bóng nước vũ trụ với hành tinh có vành đai giữa dải ngân hà",
+      "rarity": "legendary",
+      "price": 240000,
+      "vfx_profile": "water_galaxy",
+      "burst_accent": "galaxy_splash",
+      "source_asset": "source_user_2026_08_25/codex-clipboard-d9bf1cd0-a052-4f95-b649-b664cb752a3e.jpg"
+    },
+    {
+      "id": "skin_075",
+      "name": "Cyber Cube",
+      "theme": "cyber",
+      "primary_color": "#193b7e",
+      "secondary_color": "#4fe9ff",
+      "outline_color": "#162b72",
+      "motif": "neon_cube",
+      "description": "Bóng nước cyber xanh tím với mạch neon và khối lập phương phát sáng",
+      "rarity": "legendary",
+      "price": 250000,
+      "vfx_profile": "water_sparkle",
+      "burst_accent": "sparkle_splash",
+      "source_asset": "source_user_2026_08_25/codex-clipboard-14a206c8-dad9-492f-8a39-08a4ce2046c2.jpg"
+    },
+    {
+      "id": "skin_076",
+      "name": "Lava Prism",
+      "theme": "fire",
+      "primary_color": "#b63f26",
+      "secondary_color": "#ff9f3d",
+      "outline_color": "#6e2420",
+      "motif": "orange_crystal",
+      "description": "Bóng nước dung nham cam đỏ với pha lê nóng rực ở trung tâm",
+      "rarity": "legendary",
+      "price": 260000,
+      "vfx_profile": "water_fire_accent",
+      "burst_accent": "fire_splash",
+      "source_asset": "source_user_2026_08_25/codex-clipboard-afb5d15e-4812-4752-adef-e0c0e58bb6bc.jpg"
+    },
+    {
+      "id": "skin_077",
+      "name": "Honey Gold",
+      "theme": "sweet",
+      "primary_color": "#e6a928",
+      "secondary_color": "#ffe17a",
+      "outline_color": "#916321",
+      "motif": "honeycomb",
+      "description": "Bóng nước mật ong vàng óng với cụm lục giác phát sáng",
+      "rarity": "rare",
+      "price": 145000,
+      "vfx_profile": "water_glow",
+      "burst_accent": "gold_splash",
+      "source_asset": "source_user_2026_08_25/codex-clipboard-1450e872-d5e4-40f6-b7c4-2f4cf79dc9c4.jpg"
+    },
+    {
+      "id": "skin_078",
+      "name": "Prism Pearl",
+      "theme": "prism",
+      "primary_color": "#326fc2",
+      "secondary_color": "#b7e8ff",
+      "outline_color": "#20518e",
+      "motif": "iridescent_pearl",
+      "description": "Bóng nước xanh sâu với viên ngọc cầu vồng lấp lánh ở giữa",
+      "rarity": "epic",
+      "price": 190000,
+      "vfx_profile": "water_sparkle",
+      "burst_accent": "sparkle_splash",
+      "source_asset": "source_user_2026_08_25/codex-clipboard-9b97f8e0-3174-4772-854d-a219d3aad00f.jpg"
+    },
+    {
+      "id": "skin_079",
+      "name": "Jellyfish Bubble",
+      "theme": "ocean",
+      "primary_color": "#46c8e7",
+      "secondary_color": "#c7f8ff",
+      "outline_color": "#3278aa",
+      "motif": "jellyfish",
+      "description": "Bóng nước biển trong veo với sứa con phát sáng và bong bóng nhỏ",
+      "rarity": "rare",
+      "price": 150000,
+      "vfx_profile": "water_ice",
+      "burst_accent": "ice_splash",
+      "source_asset": "source_user_2026_08_25/codex-clipboard-6f2b6257-fe14-468e-9c93-bd2dae59839f.jpg"
+    },
+    {
+      "id": "skin_080",
+      "name": "Bubble Star",
+      "theme": "cute_water",
+      "primary_color": "#35cbed",
+      "secondary_color": "#b7f5ff",
+      "outline_color": "#1770ae",
+      "material": "clear_water",
+      "pattern": "soft_bubbles",
+      "motif": "golden_starfish",
+      "highlight": "soft_caustic",
+      "description": "Bóng nước xanh trong với sao biển vàng và ánh sáng lấp lánh",
+      "rarity": "rare",
+      "price": 135000,
+      "vfx_profile": "water_star",
+      "burst_accent": "blue_splash",
+      "source_asset": "v14_rebuild_new12_raw/bubble_star_raw.png"
+    },
+    {
+      "id": "skin_081",
+      "name": "Cloud Pearl",
+      "theme": "sky",
+      "primary_color": "#83d9ef",
+      "secondary_color": "#e5ddff",
+      "outline_color": "#477cc6",
+      "material": "pearl_water",
+      "pattern": "cloud_glow",
+      "motif": "pearl_cloud",
+      "highlight": "soft_caustic",
+      "description": "Bóng nước xanh tím dịu với ngọc mây và ánh sáng ngọc trai",
+      "rarity": "epic",
+      "price": 175000,
+      "vfx_profile": "water_sparkle",
+      "burst_accent": "blue_splash",
+      "source_asset": "v14_rebuild_new12_raw/cloud_pearl_raw.png"
+    },
+    {
+      "id": "skin_082",
+      "name": "Dragon Ball 4-Star",
+      "theme": "anime_dragonball",
+      "primary_color": "#ff9a00",
+      "secondary_color": "#ff3b00",
+      "outline_color": "#b35900",
+      "motif": "dragon_stars",
+      "description": "Bóng nước Ngọc Rồng 4 sao cam vàng rực rỡ với năng lượng lấp lánh",
+      "rarity": "legendary",
+      "price": 280000,
+      "vfx_profile": "water_star",
+      "burst_accent": "gold_splash"
+    },
+    {
+      "id": "skin_083",
+      "name": "Straw Hat Ocean",
+      "theme": "anime_onepiece",
+      "primary_color": "#0099ff",
+      "secondary_color": "#ffdd33",
+      "outline_color": "#0055aa",
+      "motif": "straw_hat",
+      "description": "Bóng nước Mũ Rơm của Luffy bồng bềnh trên sóng biển đại hải trình",
+      "rarity": "legendary",
+      "price": 280000,
+      "vfx_profile": "water_default",
+      "burst_accent": "blue_splash"
+    },
+    {
+      "id": "skin_084",
+      "name": "Doraemon Bell",
+      "theme": "anime_doraemon",
+      "primary_color": "#00b4d8",
+      "secondary_color": "#ffd166",
+      "outline_color": "#0077b6",
+      "motif": "cat_bell",
+      "description": "Bóng nước Doraemon xanh biếc với chiếc chuông vàng phát sáng và túi 4D",
+      "rarity": "epic",
+      "price": 220000,
+      "vfx_profile": "water_sparkle",
+      "burst_accent": "blue_splash"
+    },
+    {
+      "id": "skin_085",
+      "name": "Pikachu Spark",
+      "theme": "anime_pokemon",
+      "primary_color": "#ffcc00",
+      "secondary_color": "#ff3333",
+      "outline_color": "#cc9900",
+      "motif": "electric_bolt",
+      "description": "Bóng nước Pikachu vàng tươi với tia sét điện năng lượng và má hồng",
+      "rarity": "legendary",
+      "price": 290000,
+      "vfx_profile": "water_star",
+      "burst_accent": "gold_splash"
+    },
+    {
+      "id": "skin_086",
+      "name": "Rasengan Vortex",
+      "theme": "anime_naruto",
+      "primary_color": "#48cae4",
+      "secondary_color": "#caf0f8",
+      "outline_color": "#0096c7",
+      "motif": "chakra_spin",
+      "description": "Bóng nước Rasengan xoáy luồng khí Chakra lam trắng xoay tít cực đại",
+      "rarity": "legendary",
+      "price": 300000,
+      "vfx_profile": "water_sparkle",
+      "burst_accent": "blue_splash"
+    },
+    {
+      "id": "skin_087",
+      "name": "Totoro Forest",
+      "theme": "anime_ghibli",
+      "primary_color": "#52b788",
+      "secondary_color": "#b7e4c7",
+      "outline_color": "#2d6a4f",
+      "motif": "leaf_umbrella",
+      "description": "Bóng nước Totoro rừng xanh bạc hà cùng chiếc ô lá sen và hạt dẻ",
+      "rarity": "rare",
+      "price": 160000,
+      "vfx_profile": "water_default",
+      "burst_accent": "green_splash"
+    },
+    {
+      "id": "skin_088",
+      "name": "Sailor Moon Crystal",
+      "theme": "anime_magical",
+      "primary_color": "#ff70a6",
+      "secondary_color": "#ffd670",
+      "outline_color": "#d90429",
+      "motif": "moon_wand",
+      "description": "Bóng nước Mặt Trăng pha lê hồng tím với trượng phép thuật và nơ lụa",
+      "rarity": "epic",
+      "price": 240000,
+      "vfx_profile": "water_heart",
+      "burst_accent": "pink_splash"
+    },
+    {
+      "id": "skin_089",
+      "name": "Water Breathing Dragon",
+      "theme": "anime_demonslayer",
+      "primary_color": "#0077b6",
+      "secondary_color": "#90e0ef",
+      "outline_color": "#03045e",
+      "motif": "water_dragon",
+      "description": "Bóng nước Thủy Long Hơi Thở Của Nước cùng nút thắt ca-rô Tanjiro",
+      "rarity": "legendary",
+      "price": 320000,
+      "vfx_profile": "water_ice",
+      "burst_accent": "blue_splash"
+    },
+    {
+      "id": "skin_090",
+      "name": "Soot Candy Star",
+      "theme": "anime_ghibli",
+      "primary_color": "#7209b7",
+      "secondary_color": "#f72585",
+      "outline_color": "#3a0ca3",
+      "motif": "soot_candy",
+      "description": "Bóng nước bồ hóng đen ôm trọn chùm kẹo sao Konpeito sắc màu",
+      "rarity": "rare",
+      "price": 150000,
+      "vfx_profile": "water_galaxy",
+      "burst_accent": "galaxy_splash"
+    },
+    {
+      "id": "skin_091",
+      "name": "Cinnamoroll Cloud",
+      "theme": "anime_sanrio",
+      "primary_color": "#a0c4ff",
+      "secondary_color": "#fdffb6",
+      "outline_color": "#70a1ff",
+      "motif": "cloud_angel",
+      "description": "Bóng nước Cinnamoroll tai cún mây trắng với vòng hào quang thiên thần",
+      "rarity": "rare",
+      "price": 150000,
+      "vfx_profile": "water_sparkle",
+      "burst_accent": "blue_splash"
+    }
+  ],
+  "vfx_profiles": {
+    "water_default": {
+      "tint": [
+        1.18,
+        1.28,
+        1.35
+      ],
+      "particles": [
+        "droplet_small",
+        "bubble_small"
+      ]
+    },
+    "water_sparkle": {
+      "tint": [
+        1.32,
+        1.12,
+        1.42
+      ],
+      "particles": [
+        "sparkle_white",
+        "droplet_small"
+      ]
+    },
+    "water_glow": {
+      "tint": [
+        1.15,
+        1.35,
+        1.25
+      ],
+      "particles": [
+        "sparkle_white",
+        "bubble_small"
+      ]
+    },
+    "water_dark": {
+      "tint": [
+        0.62,
+        0.5,
+        1.4
+      ],
+      "particles": [
+        "dark_particle",
+        "droplet_small"
+      ]
+    },
+    "water_ice": {
+      "tint": [
+        1.1,
+        1.3,
+        1.45
+      ],
+      "particles": [
+        "snowflake_particle",
+        "sparkle_white"
+      ]
+    },
+    "water_fire_accent": {
+      "tint": [
+        1.18,
+        1.28,
+        1.35
+      ],
+      "particles": [
+        "sparkle_gold",
+        "droplet_small"
+      ]
+    },
+    "water_heart": {
+      "tint": [
+        1.25,
+        1.1,
+        1.3
+      ],
+      "particles": [
+        "heart_particle",
+        "sparkle_white"
+      ]
+    },
+    "water_star": {
+      "tint": [
+        1.3,
+        1.28,
+        1.1
+      ],
+      "particles": [
+        "star_particle",
+        "sparkle_gold"
+      ]
+    },
+    "water_galaxy": {
+      "tint": [
+        0.8,
+        0.7,
+        1.3
+      ],
+      "particles": [
+        "sparkle_rainbow",
+        "sparkle_blue"
+      ]
+    }
+  }
+}

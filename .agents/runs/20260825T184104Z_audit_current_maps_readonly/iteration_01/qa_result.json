@@ -1,0 +1,92 @@
+{
+  "status": "PASS",
+  "fatal": false,
+  "failure_signature": "PASS",
+  "unresolved_issues": [],
+  "validators": [
+    {
+      "id": "map_contract",
+      "type": "map_contract",
+      "required": true,
+      "ok": true,
+      "message": "PASS",
+      "command": {
+        "argv": [
+          "C:\\Users\\khang\\Downloads\\Godot_v4.7.1-stable_win64.exe\\Godot_v4.7.1-stable_win64_console.exe",
+          "--headless",
+          "--path",
+          "C:\\Users\\khang\\Documents\\Build\\Boom",
+          "--quit-after",
+          "600",
+          "res://tools/agent_qa/MapContractProbe.tscn",
+          "--",
+          "--agent-task=C:\\Users\\khang\\Documents\\Build\\Boom\\.agents\\runs\\20260825T184104Z_audit_current_maps_readonly\\task.json"
+        ],
+        "exit_code": 0,
+        "stdout": "Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org\n\nOpened database successfully (C:/Users/khang/AppData/Roaming/Godot/app_userdata/Boom/boom_water_accounts.db)\n[NetworkManager] Config loaded: server=olds-jump.tun.ply.gg:7135 region=vn\n[AGENT MAP PASS] map_id: snow_village is a standard map\n[AGENT MAP PASS] width: expected 16, got 16\n[AGENT MAP PASS] height: expected 16, got 16\n[AGENT MAP PASS] tile_size: expected 40, got 40\n[AGENT MAP PASS] breakables: expected 128, got 128\n[AGENT MAP PASS] cell_total: layout covers every cell\n[AGENT MAP PASS] symmetry: layout is mirrored on both axes\n[AGENT MAP PASS] center: 4x4 footprint at [6.0, 6.0] uses allowed tile types [2]\n[AGENT MAP PASS] spawn_safe: all 8 spawns have 3 connected floor cells\n[AGENT MAP PASS] hard_border: outermost cells are hard walls\nAGENT_QA_JSON:{\"checks\":10,\"failures\":[],\"ok\":true}\nClosed database (C:/Users/khang/AppData/Roaming/Godot/app_userdata/Boom/boom_water_accounts.db)\n",
+        "stderr": "",
+        "duration_seconds": 0.734,
+        "timed_out": false,
+        "launch_error": "",
+        "ok": true
+      },
+      "qa_report": {
+        "checks": 10,
+        "failures": [],
+        "ok": true
+      }
+    },
+    {
+      "id": "map_layout",
+      "type": "godot_scene",
+      "required": true,
+      "ok": true,
+      "message": "PASS",
+      "command": {
+        "argv": [
+          "C:\\Users\\khang\\Downloads\\Godot_v4.7.1-stable_win64.exe\\Godot_v4.7.1-stable_win64_console.exe",
+          "--headless",
+          "--path",
+          "C:\\Users\\khang\\Documents\\Build\\Boom",
+          "res://tests/MapLayoutSmoke.tscn"
+        ],
+        "exit_code": 0,
+        "stdout": "Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org\n\nOpened database successfully (C:/Users/khang/AppData/Roaming/Godot/app_userdata/Boom/boom_water_accounts.db)\n[NetworkManager] Config loaded: server=olds-jump.tun.ply.gg:7135 region=vn\n[MAP LAYOUT PASS] training_plaza initializes gameplay grid\n[MAP LAYOUT PASS] training_plaza provides the standard 16x16 arena\n[MAP LAYOUT PASS] training_plaza enlarges cells beyond 40px to fill the available arena\n[MAP LAYOUT PASS] training_plaza keeps full character sprites one cell inside the frame-free 16x16 corners\n[MAP LAYOUT PASS] training_plaza keeps tile and breakable placement balanced in all four corners\n[MAP LAYOUT PASS] training_plaza removes the legacy giant centre decoration\n[MAP LAYOUT PASS] training_plaza reserves no hidden landmark footprint\n[MAP LAYOUT PASS] training_plaza has no overlapping gameplay decoration footprints\n[MAP LAYOUT PASS] training_plaza keeps every spawn clear with a connected escape route\n[MAP LAYOUT PASS] training_plaza uses the outer row as a themed hard-block visual safety buffer\n[MAP LAYOUT PASS] training_plaza resolves from the V2 runtime asset tree\n[MAP LAYOUT PASS] training_plaza fills every non-spawn/non-hard cell with exactly 128 destructible blocks\n[MAP LAYOUT PASS] training_plaza reserves four L pockets and four symmetric team pockets only\n[MAP LAYOUT PASS] training_plaza gives all four corner players an exact connected three-cell L spawn pocket\n[MAP LAYOUT PASS] training_plaza keeps the complete central 4x4 field breakable for straight routes\n[MAP LAYOUT PASS] pirate_harbor initializes gameplay grid\n[MAP LAYOUT PASS] pirate_harbor provides the standard 16x16 arena\n[MAP LAYOUT PASS] pirate_harbor enlarges cells beyond 40px to fill the available arena\n[MAP LAYOUT PASS] pirate_harbor keeps full character sprites one cell inside the frame-free 16x16 corners\n[MAP LAYOUT PASS] pirate_harbor keeps tile and breakable placement balanced in all four corners\n[MAP LAYOUT PASS] pirate_harbor removes the legacy giant centre decoration\n[MAP LAYOUT PASS] pirate_harbor reserves no hidden landmark footprint\n[MAP LAYOUT PASS] pirate_harbor has no overlapping gameplay decoration footprints\n[MAP LAYOUT PASS] pirate_harbor keeps every spawn clear with a connected escape route\n[MAP LAYOUT PASS] pirate_harbor uses the outer row as a themed hard-block visual safety buffer\n[MAP LAYOUT PASS] pirate_harbor resolves from the V2 runtime asset tree\n[MAP LAYOUT PASS] pirate_harbor fills every non-spawn/non-hard cell with exactly 128 destructible blocks\n[MAP LAYOUT PASS] pirate_harbor reserves four L pockets and four symmetric team pockets only\n[MAP LAYOUT PASS] pirate_harbor gives all four corner players an exact connected three-cell L spawn pocket\n[MAP LAYOUT PASS] pirate_harbor keeps the complete central 4x4 field breakable for straight routes\n[MAP LAYOUT PASS] lego_city initializes gameplay grid\n[MAP LAYOUT PASS] lego_city provides the standard 16x16 arena\n[MAP LAYOUT PASS] lego_city enlarges cells beyond 40px to fill the available arena\n[MAP LAYOUT PASS] lego_city keeps full character sprites one cell inside the frame-free 16x16 corners\n[MAP LAYOUT PASS] lego_city keeps tile and breakable placement balanced in all four corners\n[MAP LAYOUT PASS] lego_city removes the legacy giant centre decoration\n[MAP LAYOUT PASS] lego_city reserves no hidden landmark footprint\n[MAP LAYOUT PASS] lego_city has no overlapping gameplay decoration footprints\n[MAP LAYOUT PASS] lego_city keeps every spawn clear with a connected escape route\n[MAP LAYOUT PASS] lego_city uses the outer row as a themed hard-block visual safety buffer\n[MAP LAYOUT PASS] lego_city resolves from the V2 runtime asset tree\n[MAP LAYOUT PASS] lego_city fills every non-spawn/non-hard cell with exactly 128 destructible blocks\n[MAP LAYOUT PASS] lego_city reserves four L pockets and four symmetric team pockets only\n[MAP LAYOUT PASS] lego_city gives all four corner players an exact connected three-cell L spawn pocket\n[MAP LAYOUT PASS] lego_city keeps the complete central 4x4 field breakable for straight routes\n[MAP LAYOUT PASS] aqua_park initializes gameplay grid\n[MAP LAYOUT PASS] aqua_park provides the standard 16x16 arena\n[MAP LAYOUT PASS] aqua_park enlarges cells beyond 40px to fill the available arena\n[MAP LAYOUT PASS] aqua_park keeps full character sprites one cell inside the frame-free 16x16 corners\n[MAP LAYOUT PASS] aqua_park keeps tile and breakable placement balanced in all four corners\n[MAP LAYOUT PASS] aqua_park removes the legacy giant centre decoration\n[MAP LAYOUT PASS] aqua_park reserves no hidden landmark footprint\n[MAP LAYOUT PASS] aqua_park has no overlapping gameplay decoration footprints\n[MAP LAYOUT PASS] aqua_park keeps every spawn clear with a connected escape route\n[MAP LAYOUT PASS] aqua_park uses the outer row as a themed hard-block visual safety buffer\n[MAP LAYOUT PASS] aqua_park resolves from the V2 runtime asset tree\n[MAP LAYOUT PASS] aqua_park fills every non-spawn/non-hard cell with exactly 128 destructible blocks\n[MAP LAYOUT PASS] aqua_park reserves four L pockets and four symmetric team pockets only\n[MAP LAYOUT PASS] aqua_park gives all four corner players an exact connected three-cell L spawn pocket\n[MAP LAYOUT PASS] aqua_park keeps the complete central 4x4 field breakable for straight routes\n[MAP LAYOUT PASS] snow_village initializes gameplay grid\n[MAP LAYOUT PASS] snow_village provides the standard 16x16 arena\n[MAP LAYOUT PASS] snow_village enlarges cells beyond 40px to fill the available arena\n[MAP LAYOUT PASS] snow_village keeps full character sprites one cell inside the frame-free 16x16 corners\n[MAP LAYOUT PASS] snow_village keeps tile and breakable placement balanced in all four corners\n[MAP LAYOUT PASS] snow_village removes the legacy giant centre decoration\n[MAP LAYOUT PASS] snow_village reserves no hidden landmark footprint\n[MAP LAYOUT PASS] snow_village has no overlapping gameplay decoration footprints\n[MAP LAYOUT PASS] snow_village keeps every spawn clear with a connected escape route\n[MAP LAYOUT PASS] snow_village uses the outer row as a themed hard-block visual safety buffer\n[MAP LAYOUT PASS] snow_village resolves from the V2 runtime asset tree\n[MAP LAYOUT PASS] snow_village fills every non-spawn/non-hard cell with exactly 128 destructible blocks\n[MAP LAYOUT PASS] snow_village reserves four L pockets and four symmetric team pockets only\n[MAP LAYOUT PASS] snow_village gives all four corner players an exact connected three-cell L spawn pocket\n[MAP LAYOUT PASS] snow_village keeps the complete central 4x4 field breakable for straight routes\n[MAP LAYOUT PASS] egypt_temple initializes gameplay grid\n[MAP LAYOUT PASS] egypt_temple provides the standard 16x16 arena\n[MAP LAYOUT PASS] egypt_temple enlarges cells beyond 40px to fill the available arena\n[MAP LAYOUT PASS] egypt_temple keeps full character sprites one cell inside the frame-free 16x16 corners\n[MAP LAYOUT PASS] egypt_temple keeps tile and breakable placement balanced in all four corners\n[MAP LAYOUT PASS] egypt_temple removes the legacy giant centre decoration\n[MAP LAYOUT PASS] egypt_temple reserves no hidden landmark footprint\n[MAP LAYOUT PASS] egypt_temple has no overlapping gameplay decoration footprints\n[MAP LAYOUT PASS] egypt_temple keeps every spawn clear with a connected escape route\n[MAP LAYOUT PASS] egypt_temple uses the outer row as a themed hard-block visual safety buffer\n[MAP LAYOUT PASS] egypt_temple resolves from the V2 runtime asset tree\n[MAP LAYOUT PASS] egypt_temple fills every non-spawn/non-hard cell with exactly 128 destructible blocks\n[MAP LAYOUT PASS] egypt_temple reserves four L pockets and four symmetric team pockets only\n[MAP LAYOUT PASS] egypt_temple gives all four corner players an exact connected three-cell L spawn pocket\n[MAP LAYOUT PASS] egypt_temple keeps the complete central 4x4 field breakable for straight routes\nMAP_LAYOUT_SMOKE_RESULT: 90 passed | 0 failed\nClosed database (C:/Users/khang/AppData/Roaming/Godot/app_userdata/Boom/boom_water_accounts.db)\n",
+        "stderr": "",
+        "duration_seconds": 1.735,
+        "timed_out": false,
+        "launch_error": "",
+        "ok": true
+      }
+    },
+    {
+      "id": "map_gameplay",
+      "type": "godot_scene",
+      "required": true,
+      "ok": true,
+      "message": "PASS",
+      "command": {
+        "argv": [
+          "C:\\Users\\khang\\Downloads\\Godot_v4.7.1-stable_win64.exe\\Godot_v4.7.1-stable_win64_console.exe",
+          "--headless",
+          "--path",
+          "C:\\Users\\khang\\Documents\\Build\\Boom",
+          "res://tests/MapGameplayRegressionSmoke.tscn"
+        ],
+        "exit_code": 0,
+        "stdout": "Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org\n\nOpened database successfully (C:/Users/khang/AppData/Roaming/Godot/app_userdata/Boom/boom_water_accounts.db)\n[NetworkManager] Config loaded: server=olds-jump.tun.ply.gg:7135 region=vn\n[MAP GAMEPLAY PASS] training_plaza spawn cell is walkable\n[MAP GAMEPLAY PASS] training_plaza world boundary replaces the removed in-grid frame\n[MAP GAMEPLAY PASS] training_plaza Water Burst stops at the true 16x16 world boundary\n[MAP GAMEPLAY PASS] training_plaza exposes a valid floor-to-breakable test lane\n[MAP GAMEPLAY PASS] training_plaza Water Burst reaches the first breakable\n[MAP GAMEPLAY PASS] training_plaza breakable is registered for destruction\n[MAP GAMEPLAY PASS] training_plaza Water Burst stops after the breakable\n[MAP GAMEPLAY PASS] pirate_harbor spawn cell is walkable\n[MAP GAMEPLAY PASS] pirate_harbor world boundary replaces the removed in-grid frame\n[MAP GAMEPLAY PASS] pirate_harbor Water Burst stops at the true 16x16 world boundary\n[MAP GAMEPLAY PASS] pirate_harbor exposes a valid floor-to-breakable test lane\n[MAP GAMEPLAY PASS] pirate_harbor Water Burst reaches the first breakable\n[MAP GAMEPLAY PASS] pirate_harbor breakable is registered for destruction\n[MAP GAMEPLAY PASS] pirate_harbor Water Burst stops after the breakable\n[MAP GAMEPLAY PASS] lego_city spawn cell is walkable\n[MAP GAMEPLAY PASS] lego_city world boundary replaces the removed in-grid frame\n[MAP GAMEPLAY PASS] lego_city Water Burst stops at the true 16x16 world boundary\n[MAP GAMEPLAY PASS] lego_city exposes a valid floor-to-breakable test lane\n[MAP GAMEPLAY PASS] lego_city Water Burst reaches the first breakable\n[MAP GAMEPLAY PASS] lego_city breakable is registered for destruction\n[MAP GAMEPLAY PASS] lego_city Water Burst stops after the breakable\n[MAP GAMEPLAY PASS] aqua_park spawn cell is walkable\n[MAP GAMEPLAY PASS] aqua_park world boundary replaces the removed in-grid frame\n[MAP GAMEPLAY PASS] aqua_park Water Burst stops at the true 16x16 world boundary\n[MAP GAMEPLAY PASS] aqua_park exposes a valid floor-to-breakable test lane\n[MAP GAMEPLAY PASS] aqua_park Water Burst reaches the first breakable\n[MAP GAMEPLAY PASS] aqua_park breakable is registered for destruction\n[MAP GAMEPLAY PASS] aqua_park Water Burst stops after the breakable\n[MAP GAMEPLAY PASS] snow_village spawn cell is walkable\n[MAP GAMEPLAY PASS] snow_village world boundary replaces the removed in-grid frame\n[MAP GAMEPLAY PASS] snow_village Water Burst stops at the true 16x16 world boundary\n[MAP GAMEPLAY PASS] snow_village exposes a valid floor-to-breakable test lane\n[MAP GAMEPLAY PASS] snow_village Water Burst reaches the first breakable\n[MAP GAMEPLAY PASS] snow_village breakable is registered for destruction\n[MAP GAMEPLAY PASS] snow_village Water Burst stops after the breakable\n[MAP GAMEPLAY PASS] egypt_temple spawn cell is walkable\n[MAP GAMEPLAY PASS] egypt_temple world boundary replaces the removed in-grid frame\n[MAP GAMEPLAY PASS] egypt_temple Water Burst stops at the true 16x16 world boundary\n[MAP GAMEPLAY PASS] egypt_temple exposes a valid floor-to-breakable test lane\n[MAP GAMEPLAY PASS] egypt_temple Water Burst reaches the first breakable\n[MAP GAMEPLAY PASS] egypt_temple breakable is registered for destruction\n[MAP GAMEPLAY PASS] egypt_temple Water Burst stops after the breakable\n[MAP GAMEPLAY PASS] destroyed breakable can still produce a collectible item drop\n[MAP GAMEPLAY PASS] occupied Ctrl slot rejects a replacement held item\n[MAP GAMEPLAY PASS] rejected pickup never overwrites the unused held item\n[MAP GAMEPLAY PASS] a second held item stays on the ground while the current Ctrl item is unused\n[MAP GAMEPLAY PASS] held item is removed from the ground only when the inventory slot can accept it\n[MAP GAMEPLAY PASS] accepted held item is applied exactly once\nMAP_GAMEPLAY_REGRESSION_RESULT: 48 passed | 0 failed\nClosed database (C:/Users/khang/AppData/Roaming/Godot/app_userdata/Boom/boom_water_accounts.db)\n",
+        "stderr": "",
+        "duration_seconds": 0.718,
+        "timed_out": false,
+        "launch_error": "",
+        "ok": true
+      }
+    }
+  ],
+  "safety": {
+    "ok": true,
+    "protected_changes": [],
+    "outside_scope_changes": [],
+    "all_changes": []
+  }
+}

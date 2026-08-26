@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="CosmeticDefinition" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://resources/cosmetics/CosmeticDefinition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/cosmetics/backgrounds/ocean_coral_lobby.png" id="2"]
+[ext_resource type="Texture2D" path="res://assets/cosmetics/backgrounds/ocean_coral_match.png" id="3"]
+
+[resource]
+script = ExtResource("1")
+id = &"background_ocean_coral"
+display_name = "Nền Đại Dương San Hô"
+category = "player_background"
+description = "Đại dương xanh dịu dành cho thẻ nhân vật."
+price = 600
+icon = ExtResource("2")
+lobby_asset = ExtResource("2")
+match_list_asset = ExtResource("3")
+primary_color = Color(0.01, 0.18, 0.34, 1)
+accent_color = Color(0.03, 0.55, 0.77, 1)

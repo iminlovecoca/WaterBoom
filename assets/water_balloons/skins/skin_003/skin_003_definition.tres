@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="WaterBalloonSkinDefinition" format=3]
+
+[ext_resource type="Script" path="res://scripts/water_balloon/WaterBalloonSkinDefinition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/water_balloons/balloon_sprites/balloon_002.png" id="tex1"]
+[ext_resource type="SpriteFrames" path="res://assets/water_balloons/skins/skin_003/skin_003_frames.tres" id="frames1"]
+
+[resource]
+script = ExtResource("1")
+id = &"skin_003"
+display_name = "Sky Drifter"
+theme = "sky_blue"
+primary_color = Color(0.3137, 0.7216, 0.9412, 1)
+secondary_color = Color(0.6275, 0.8784, 1.0000, 1)
+outline_color = Color(0.1255, 0.3765, 0.6275, 1)
+motif = "rainbow_refraction"
+description = "Azure water, soft cloud forms, rainbow refraction, sky sparkles"
+rarity = "uncommon"
+price = 100000
+vfx_profile = "water_default"
+burst_accent = "blue_splash"
+icon = ExtResource("tex1")
+sprite_frames = ExtResource("frames1")

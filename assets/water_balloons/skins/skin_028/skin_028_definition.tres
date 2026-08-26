@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="WaterBalloonSkinDefinition" format=3]
+
+[ext_resource type="Script" path="res://scripts/water_balloon/WaterBalloonSkinDefinition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/water_balloons/balloon_sprites/balloon_027.png" id="tex1"]
+[ext_resource type="SpriteFrames" path="res://assets/water_balloons/skins/skin_028/skin_028_frames.tres" id="frames1"]
+
+[resource]
+script = ExtResource("1")
+id = &"skin_028"
+display_name = "Lavender Dream"
+theme = "lavender"
+primary_color = Color(0.6902, 0.5647, 0.8784, 1)
+secondary_color = Color(0.8157, 0.6902, 1.0000, 1)
+outline_color = Color(0.3765, 0.3137, 0.6275, 1)
+motif = "dream_star"
+description = "Lavender water with soft swirl, dream star motif"
+rarity = "uncommon"
+price = 100000
+vfx_profile = "water_default"
+burst_accent = "purple_splash"
+icon = ExtResource("tex1")
+sprite_frames = ExtResource("frames1")

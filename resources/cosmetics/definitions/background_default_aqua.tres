@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="CosmeticDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://resources/cosmetics/CosmeticDefinition.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = &"background_default_aqua"
+display_name = "Nền Biển Xanh"
+category = "player_background"
+description = "Nền xanh mặc định của thẻ người chơi."
+price = 0
+is_default = true
+primary_color = Color(0.015, 0.16, 0.31, 1)
+accent_color = Color(0.02, 0.38, 0.62, 1)

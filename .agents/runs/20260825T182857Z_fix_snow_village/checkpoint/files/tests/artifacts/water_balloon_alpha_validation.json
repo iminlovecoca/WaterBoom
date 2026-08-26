@@ -1,0 +1,1721 @@
+{
+  "catalog_range": [
+    "skin_066",
+    "skin_081"
+  ],
+  "skins": {
+    "skin_066": {
+      "icon.png": {
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          6,
+          5,
+          58,
+          59
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_0.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          17,
+          14,
+          111,
+          113
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_1.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          12,
+          17,
+          115,
+          111
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_2.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          16,
+          14,
+          111,
+          114
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_3.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          21,
+          10,
+          107,
+          117
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      }
+    },
+    "skin_067": {
+      "icon.png": {
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          6,
+          4,
+          58,
+          60
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_0.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          17,
+          13,
+          111,
+          114
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_1.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          14,
+          21,
+          114,
+          106
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_2.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          17,
+          14,
+          110,
+          113
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_3.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          21,
+          10,
+          106,
+          117
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      }
+    },
+    "skin_068": {
+      "icon.png": {
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          5,
+          3,
+          58,
+          61
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_0.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          16,
+          11,
+          111,
+          117
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_1.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          12,
+          16,
+          115,
+          112
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_2.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          16,
+          11,
+          111,
+          116
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_3.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          21,
+          10,
+          106,
+          117
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      }
+    },
+    "skin_069": {
+      "icon.png": {
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          7,
+          4,
+          57,
+          59
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_0.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          19,
+          14,
+          108,
+          114
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_1.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          18,
+          19,
+          109,
+          108
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_2.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          19,
+          14,
+          108,
+          113
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_3.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          24,
+          10,
+          104,
+          117
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      }
+    },
+    "skin_070": {
+      "icon.png": {
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          9,
+          7,
+          55,
+          57
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_0.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          23,
+          20,
+          105,
+          108
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_1.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          23,
+          19,
+          105,
+          109
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_2.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          14,
+          29,
+          113,
+          99
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_3.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          30,
+          10,
+          97,
+          117
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      }
+    },
+    "skin_071": {
+      "icon.png": {
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          9,
+          7,
+          55,
+          57
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_0.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          23,
+          18,
+          105,
+          110
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_1.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          22,
+          17,
+          106,
+          110
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_2.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          21,
+          28,
+          106,
+          100
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_3.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          27,
+          10,
+          101,
+          117
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      }
+    },
+    "skin_072": {
+      "icon.png": {
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          6,
+          5,
+          58,
+          59
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_0.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          16,
+          14,
+          111,
+          113
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_1.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          13,
+          17,
+          115,
+          111
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_2.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          15,
+          22,
+          113,
+          106
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_3.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          21,
+          10,
+          107,
+          117
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      }
+    },
+    "skin_073": {
+      "icon.png": {
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          7,
+          7,
+          56,
+          57
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_0.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          20,
+          20,
+          108,
+          108
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_1.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          20,
+          19,
+          107,
+          108
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_2.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          17,
+          28,
+          111,
+          100
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_3.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          33,
+          10,
+          94,
+          117
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      }
+    },
+    "skin_074": {
+      "icon.png": {
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          6,
+          5,
+          58,
+          59
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_0.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          16,
+          14,
+          111,
+          113
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_1.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          12,
+          13,
+          115,
+          115
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_2.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          12,
+          14,
+          116,
+          114
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_3.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          21,
+          10,
+          107,
+          117
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      }
+    },
+    "skin_075": {
+      "icon.png": {
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          6,
+          4,
+          57,
+          60
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_0.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          18,
+          13,
+          109,
+          114
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_1.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          19,
+          15,
+          109,
+          113
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_2.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          16,
+          23,
+          112,
+          105
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_3.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          25,
+          10,
+          103,
+          117
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      }
+    },
+    "skin_076": {
+      "icon.png": {
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          11,
+          8,
+          53,
+          56
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_0.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          26,
+          21,
+          101,
+          106
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_1.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          25,
+          20,
+          103,
+          107
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_2.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          20,
+          26,
+          108,
+          101
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_3.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          26,
+          10,
+          102,
+          117
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      }
+    },
+    "skin_077": {
+      "icon.png": {
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          8,
+          7,
+          56,
+          57
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_0.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          20,
+          18,
+          108,
+          109
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_1.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          16,
+          20,
+          111,
+          107
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_2.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          18,
+          25,
+          109,
+          102
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_3.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          27,
+          10,
+          101,
+          117
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      }
+    },
+    "skin_078": {
+      "icon.png": {
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          8,
+          7,
+          55,
+          57
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_0.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          22,
+          18,
+          105,
+          109
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_1.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          18,
+          21,
+          109,
+          107
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_2.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          12,
+          26,
+          115,
+          101
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_3.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          25,
+          10,
+          103,
+          117
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      }
+    },
+    "skin_079": {
+      "icon.png": {
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          9,
+          8,
+          54,
+          56
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_0.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          23,
+          20,
+          104,
+          108
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_1.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          23,
+          22,
+          104,
+          106
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_2.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          17,
+          29,
+          111,
+          99
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_3.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          28,
+          10,
+          99,
+          117
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      }
+    },
+    "skin_080": {
+      "icon.png": {
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          3,
+          2,
+          60,
+          61
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_0.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          12,
+          10,
+          115,
+          117
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_1.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          12,
+          10,
+          115,
+          117
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_2.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          12,
+          10,
+          116,
+          117
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_3.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          12,
+          10,
+          116,
+          117
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      }
+    },
+    "skin_081": {
+      "icon.png": {
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          4,
+          2,
+          60,
+          61
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_0.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          14,
+          10,
+          114,
+          117
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_1.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          14,
+          10,
+          114,
+          117
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_2.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          14,
+          10,
+          114,
+          117
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      },
+      "idle_3.png": {
+        "size": [
+          128,
+          128
+        ],
+        "mode": "RGBA",
+        "bbox": [
+          14,
+          10,
+          114,
+          117
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_matte_like_pixels": 0,
+        "ok": true
+      }
+    }
+  },
+  "ok": true
+}

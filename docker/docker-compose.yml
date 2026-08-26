@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  boom-server:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: boom-server
+    restart: unless-stopped
+    ports:
+      - "80:7777"
+    environment:
+      - SERVER_PORT=7777
+      - REGION=vn
+    deploy:
+      resources:
+        limits:
+          cpus: '1.5'
+          memory: 1500M
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"

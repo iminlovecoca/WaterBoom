@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="CosmeticDefinition" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://resources/cosmetics/CosmeticDefinition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/cosmetics/frames/ember_dragon_lobby.png" id="2"]
+[ext_resource type="Texture2D" path="res://assets/cosmetics/frames/ember_dragon_match.png" id="3"]
+
+[resource]
+script = ExtResource("1")
+id = &"frame_ember_dragon"
+display_name = "Hỏa Long Bùng Cháy"
+category = "player_frame"
+description = "Đôi cánh rồng đỏ và tàn lửa than hồng bốc lên nhẹ nhàng."
+price = 900
+icon = ExtResource("2")
+lobby_asset = ExtResource("2")
+match_list_asset = ExtResource("3")
+primary_color = Color(0.35, 0.04, 0.04, 1)
+accent_color = Color(1, 0.55, 0.05, 1)

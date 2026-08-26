@@ -1,0 +1,58 @@
+# Debug handoff
+
+## Open issue 1 — balloon economy authority
+
+`GameSession.buy_balloon_skin()` currently performs client-side balance mutation before unlock RPC. The server unlock handler must calculate price from its own catalog, confirm ownership/balance, write balance + ownership atomically and return the authoritative snapshot.
+
+## Water-balloon runtime cleanup — 2026-08-25
+
+The runtime registry is no longer allowed to fall back to `skin_001`/`skin_039`. It uses `skin_066` and exposes only catalog IDs `skin_066`–`skin_081`. The old folders remain recoverable on disk but are not shown or selected. All 16 active skins have transparent RGBA icons/idle frames; the low-alpha matte cleanup and alpha validation are recorded in `tests/artifacts/water_balloon_alpha_validation.json`.
+
+The remaining visible magenta cast inside translucent blue balloons was corrected
+without destructive background removal. `tools/DespillWaterBalloonMatte.py` applies
+a narrow hue-only correction to the smooth upper glass of `skin_078`–`skin_081`,
+leaving alpha, bounds and interior motifs unchanged. Evidence and per-file counts
+are in `tests/artifacts/water_balloon_despill_report.json` and the 16-skin board
+`tests/artifacts/water_balloon_alpha_qa.png`.
+The before/after comparison is `tests/artifacts/water_balloon_despill_before_after.png`.
+
+Stop rule: do not patch only the client. Fix is complete only when a hostile client cannot unlock/equip/place an unowned skin and network tests prove rejection.
+
+## Resolved issue 2 — default skin identity
+
+The runtime and new-account seed now use `skin_066` (`Aqua Classic Reforge`).
+Profiles that still contain legacy IDs are normalized against the active
+catalog (`skin_066`–`skin_081`) and always retain an owned valid selection after
+reconnect. The old folders remain rollback-only and are not exposed by the
+registry/shop.
+
+## Open issue 3 — stale legacy TestRunner
+
+`tests/TestRunner.gd` reports 22 failures against removed architecture (8 maps, 40 px tiles, old paths/API). Modern focused smokes pass. The old runner also does not reliably fail the process from its assertion count.
+
+Stop rule: update or retire each legacy assertion explicitly; never hide the suite or treat `--quit-after` exit 0 as a pass.
+
+## Fixed in checkpoint
+
+Headless UI tests previously entered dedicated-server mode and could seize port 7777. `LoginScreen` now starts the server only with explicit `--server`.
+
+Dedicated-server authentication previously had a disconnect race: `AccountDatabase.request_authenticate()` could call `rpc_id()` after ENet had removed the peer, producing `Attempt to call RPC with unknown peer ID`. `NetworkManager.start_host()` is now idempotent for the live same-port host, and AccountDatabase gates all server response RPCs through a live-peer check. The reachable localhost server passed `LocalAuthNetworkSmoke` after the patch was parsed and loaded.
+
+Character runtime previously mixed a 14-action V12 resource contract with a 15-action staging contract. All nine CharacterDefinitions now load V13 resources with the same 15 actions/84 frames; `CharacterAnimationSmoke` and `CharacterV13ResourceConsistencySmoke` enforce this and the Godot importer reports no duplicate UID.
+
+## Character V14 checkpoint
+
+- Fixed/verified: Shadow Ninja and Aqua Pacifier now have their own processed 112×112 source sheets and runtime resources. They are no longer cut from a shared atlas at runtime, which prevents missing feet or side pixels in room cards and gameplay.
+- Fixed/verified: `ActiveCharacterRoster` and `MatchManager` resolve the two new IDs; `AccountDatabase` accepts them during character normalization. Legacy character IDs still normalize to Boom Mascot.
+- Fixed/verified: `CharacterPresentationContainmentSmoke` now checks every active character (4/4), including complete frame regions and room-card containment. `CharacterAnimationSmoke` is green at 26/26 after the active-roster gate was separated from rollback-only sheets.
+- Intentional deferral: no new dedicated bubble/water-hit/death/win/lose art was commissioned in this pass. Those named clips use safe character-local idle frames, while `PlayerVisual`/`BubbleVisual` continues to supply the gameplay bubble shell/pop VFX. This avoids another crop regression until a dedicated status-art pass is approved.
+- If a future status-sheet pass is started, preserve the same per-character source-sheet workflow, 112×112 cell, feet anchor and strict-QC thresholds; do not reuse a multi-character atlas.
+- Proof-video note: Godot Movie Maker crashed in the headless dummy renderer while attempting a V14 showcase capture (`texture_2d_get` null). This is an engine/capture-path limitation; the normal headless scene tests and editor import remain green. Retry the video on a GPU-backed editor session rather than changing the character resources.
+
+## Display-size normalization checkpoint — 2026-08-26
+
+- Fixed the white bunny's smaller room/lobby appearance without touching source art: `CharacterPresentation` applies an x-only 1.18 correction to the shared 112×112 canvas. The vertical scale and feet baseline remain identical to Gấu Nâu, Shadow Ninja and Aqua Pacifier.
+- Fixed the QA balloon preview path: changing skin/animation now reapplies the same alpha-footprint runtime normalization used by gameplay, lobby, shop and inventory.
+- Applied the same contract to `PlayerVisual`, `PlayerCardPreview`, `BoomRoomSlot`, `BoomSlot`, `BootManager` room/character cards and `MatchHUD` sidebar avatars.
+- Balloon skins use alpha-footprint normalization through `WaterBalloonSkinRegistry` for both gameplay (`get_runtime_scale`) and shop/inventory/gallery icons (`get_icon_scale`); this corrects inconsistent source margins without recropping or removing interior detail.
+- Verification: `CHARACTER_PRESENTATION_RESULT: 20 passed | 0 failed`; `WATER_BALLOON_SCALE_RESULT: 54 passed | 0 failed`; Godot editor import exit 0.

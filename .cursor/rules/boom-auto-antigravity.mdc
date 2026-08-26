@@ -1,0 +1,18 @@
+---
+description: Automatically route bounded Boom implementation work through the local Codex supervisor and Antigravity worker.
+alwaysApply: true
+---
+
+# Boom automatic supervisor routing
+
+When the user asks to change, build, fix, polish, integrate, or QA the Boom Godot project, Codex must automatically use the local supervisor loop instead of editing routine implementation files directly:
+
+1. Audit `AGENTS.md`, `CODEX_HANDOFF.md`, `DEBUG_HANDOFF.md`, owning files, and existing tests.
+2. Create a narrow data-driven task JSON under `.agents/tasks/` with explicit `scope`, `protected_paths`, `acceptance_criteria`, validators, and `max_iterations` no greater than 5.
+3. Invoke `agent-run.ps1` or `python tools/agent_orchestrator.py` from the project root. Do not tell the user to run it manually unless the local worker is unavailable.
+4. Review the generated QA result, safety boundary, diff summary, logs, and screenshots. PASS belongs to Codex only after the required gates pass.
+5. If QA fails and the failure is actionable, let the orchestrator generate the correction prompt; never create an unbounded retry loop.
+
+Do not invoke the worker for explanations, planning-only questions, read-only audits, destructive actions, publishing, commits/pushes, secrets, paid generation, save/database migrations, economy authority, or networking architecture unless the user explicitly authorizes that scope. If `agy` is not found, run safe dry-run/read-only checks and report the exact `ANTIGRAVITY_CMD` configuration needed.
+
+The worker is normally headless (`agy -p`) so stdout/stderr and exit status can be captured. Do not use `--dangerously-skip-permissions` by default. Preserve the existing gameplay, networking, save/account and database contracts.

@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "id": "audit_current_maps_readonly",
+  "task": "Read-only audit of the current Snow Village map contract and adjacent map gameplay regression gates. Do not invoke Antigravity and do not edit project source.",
+  "mode": "read_only",
+  "scope": [
+    "scripts/maps/**"
+  ],
+  "protected_paths": [
+    "scripts/network/**",
+    "scripts/data/**",
+    "data/database/**",
+    "scripts/core/GameSession.gd",
+    "scripts/match/**",
+    "scripts/player/**",
+    "project.godot",
+    "export_presets.cfg"
+  ],
+  "allowed_output_paths": [
+    "tests/artifacts/**"
+  ],
+  "acceptance_criteria": [
+    {
+      "id": "current_snow_contract",
+      "description": "Current Snow Village remains 16x16, tile size 40, 128 breakables, complete central 4x4 breakable field, safe spawns, symmetry and hard border.",
+      "type": "map_contract",
+      "map_id": "snow_village",
+      "width": 16,
+      "height": 16,
+      "tile_size": 40,
+      "breakables": 128,
+      "center": {
+        "origin": [
+          6,
+          6
+        ],
+        "size": [
+          4,
+          4
+        ],
+        "allowed_tile_types": [
+          2
+        ]
+      },
+      "spawn_safe_cells": 3,
+      "four_way_symmetry": true,
+      "hard_border": true,
+      "validator_ids": [
+        "map_contract",
+        "map_layout",
+        "map_gameplay"
+      ]
+    }
+  ],
+  "validators": [
+    {
+      "id": "map_contract",
+      "type": "map_contract",
+      "required": true,
+      "timeout_seconds": 180
+    },
+    {
+      "id": "map_layout",
+      "type": "godot_scene",
+      "required": true,
+      "scene": "res://tests/MapLayoutSmoke.tscn",
+      "timeout_seconds": 300,
+      "success_regex": "MAP_LAYOUT_SMOKE_RESULT: .* 0 failed"
+    },
+    {
+      "id": "map_gameplay",
+      "type": "godot_scene",
+      "required": true,
+      "scene": "res://tests/MapGameplayRegressionSmoke.tscn",
+      "timeout_seconds": 300,
+      "success_regex": "MAP_GAMEPLAY_REGRESSION_RESULT: .* 0 failed"
+    }
+  ],
+  "max_iterations": 1
+}

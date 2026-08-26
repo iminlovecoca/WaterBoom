@@ -1,0 +1,8 @@
+.godot/
+trash/
+*.exe
+*.zip
+*.tar.gz
+*.pck
+*.tmp
+*.log

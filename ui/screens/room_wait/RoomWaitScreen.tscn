@@ -1,0 +1,251 @@
+[gd_scene load_steps=10 format=3 uid="uid://c_room_wait_screen"]
+[ext_resource type="Script" path="res://ui/screens/room_wait/RoomWaitScreen.gd" id="1_scr"]
+[ext_resource type="Texture2D" path="res://ui/assets_generated/backgrounds/checkered_bg.png" id="2_bg"]
+[ext_resource type="PackedScene" path="res://ui/components/BoomPanel.tscn" id="3_pan"]
+[ext_resource type="PackedScene" path="res://ui/components/BoomHeader.tscn" id="4_hdr"]
+[ext_resource type="PackedScene" path="res://ui/components/BoomTab.tscn" id="5_tab"]
+[ext_resource type="PackedScene" path="res://ui/components/BoomButton.tscn" id="6_btn"]
+[ext_resource type="PackedScene" path="res://ui/components/BoomStatusBox.tscn" id="7_stb"]
+[ext_resource type="PackedScene" path="res://ui/components/BoomMapCard.tscn" id="8_map"]
+
+[node name="RoomWaitScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 800.0
+offset_bottom = 600.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_scr")
+
+[node name="CheckeredBackground" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_bg")
+stretch_mode = 1
+
+[node name="TopBanner" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 800.0
+offset_bottom = 36.0
+color = Color(0, 0.15, 0.43, 1)
+
+[node name="BannerTrim" type="ColorRect" parent="TopBanner"]
+layout_mode = 0
+offset_top = 34.0
+offset_right = 800.0
+offset_bottom = 36.0
+color = Color(0, 0.82, 1, 1)
+
+[node name="LeftPanel" parent="." instance=ExtResource("3_pan")]
+offset_left = 6.0
+offset_top = 37.0
+offset_right = 462.0
+offset_bottom = 558.0
+
+[node name="TabCyan" parent="LeftPanel" instance=ExtResource("5_tab")]
+offset_left = 18.0
+offset_top = 10.0
+offset_right = 66.0
+offset_bottom = 28.0
+text = ""
+is_active = true
+
+[node name="Header" parent="LeftPanel" instance=ExtResource("4_hdr")]
+offset_left = 72.0
+offset_top = 8.0
+offset_right = 432.0
+offset_bottom = 32.0
+
+[node name="SlotsContainer" type="Control" parent="LeftPanel"]
+layout_mode = 1
+anchors_preset = 0
+offset_left = 18.0
+offset_top = 38.0
+offset_right = 442.0
+offset_bottom = 348.0
+
+[node name="ChatLogBox" parent="LeftPanel" instance=ExtResource("3_pan")]
+offset_left = 14.0
+offset_top = 368.0
+offset_right = 442.0
+offset_bottom = 478.0
+variant = 3
+
+[node name="ChatLog" type="RichTextLabel" parent="LeftPanel/ChatLogBox"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = 6.0
+offset_right = -24.0
+offset_bottom = -6.0
+grow_horizontal = 2
+grow_vertical = 2
+bbcode_enabled = true
+scroll_following = true
+
+[node name="ChatInputBox" parent="LeftPanel" instance=ExtResource("3_pan")]
+offset_left = 14.0
+offset_top = 484.0
+offset_right = 360.0
+offset_bottom = 512.0
+variant = 4
+
+[node name="ChatInput" type="LineEdit" parent="LeftPanel/ChatInputBox"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 6.0
+offset_right = -6.0
+grow_horizontal = 2
+grow_vertical = 2
+placeholder_text = "Nhập nội dung trò chuyện..."
+flat = true
+
+[node name="ChatSendBtn" parent="LeftPanel" instance=ExtResource("6_btn")]
+offset_left = 366.0
+offset_top = 484.0
+offset_right = 442.0
+offset_bottom = 512.0
+text = "GỬI"
+variant = 1
+font_size = 12
+
+[node name="RightPanel" parent="." instance=ExtResource("3_pan")]
+offset_left = 464.0
+offset_top = 5.0
+offset_right = 795.0
+offset_bottom = 563.0
+variant = 1
+
+[node name="StatusBox" parent="RightPanel" instance=ExtResource("7_stb")]
+offset_left = 24.0
+offset_top = 18.0
+offset_right = 307.0
+offset_bottom = 85.0
+
+[node name="CharGridContainer" type="Control" parent="RightPanel"]
+layout_mode = 1
+anchors_preset = 0
+offset_left = 24.0
+offset_top = 88.0
+offset_right = 307.0
+offset_bottom = 214.0
+
+[node name="CycleColorButton" parent="RightPanel" instance=ExtResource("6_btn")]
+offset_left = 108.0
+offset_top = 222.0
+offset_right = 223.0
+offset_bottom = 246.0
+text = "ĐỔI MÀU SẮC"
+variant = 2
+font_size = 11
+
+[node name="TeamSelectLabel" type="Label" parent="RightPanel"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 248.0
+offset_right = 120.0
+offset_bottom = 266.0
+theme_override_colors/font_color = Color(0.6, 0.88, 1, 1)
+theme_override_font_sizes/font_size = 10
+text = "CHỌN ĐỘI"
+
+[node name="TeamSelectBox" parent="RightPanel" instance=ExtResource("3_pan")]
+offset_left = 16.0
+offset_top = 268.0
+offset_right = 315.0
+offset_bottom = 308.0
+variant = 2
+
+[node name="RedTeamBtn" parent="RightPanel/TeamSelectBox" instance=ExtResource("6_btn")]
+offset_left = 8.0
+offset_top = 6.0
+offset_right = 142.0
+offset_bottom = 34.0
+text = "ĐỘI ĐỎ"
+variant = 1
+font_size = 11
+
+[node name="BlueTeamBtn" parent="RightPanel/TeamSelectBox" instance=ExtResource("6_btn")]
+offset_left = 150.0
+offset_top = 6.0
+offset_right = 284.0
+offset_bottom = 34.0
+text = "ĐỘI XANH"
+variant = 1
+font_size = 11
+
+[node name="MapCard" parent="RightPanel" instance=ExtResource("8_map")]
+offset_left = 16.0
+offset_top = 318.0
+offset_right = 315.0
+offset_bottom = 451.0
+
+[node name="StartButton" parent="RightPanel" instance=ExtResource("6_btn")]
+offset_left = 40.0
+offset_top = 466.0
+offset_right = 242.0
+offset_bottom = 528.0
+text = "BẮT ĐẦU"
+variant = 0
+font_size = 22
+
+[node name="AutoReadyButton" parent="RightPanel" instance=ExtResource("6_btn")]
+offset_left = 248.0
+offset_top = 466.0
+offset_right = 296.0
+offset_bottom = 518.0
+text = "TỰ ĐỘNG\nSẴN SÀNG"
+variant = 3
+font_size = 8
+
+[node name="FooterNavigation" type="Control" parent="."]
+layout_mode = 0
+offset_top = 564.0
+offset_right = 800.0
+offset_bottom = 600.0
+
+[node name="LeaveBtn" parent="FooterNavigation" instance=ExtResource("6_btn")]
+offset_left = 14.0
+offset_top = 4.0
+offset_right = 124.0
+offset_bottom = 32.0
+text = "THOÁT PHÒNG"
+variant = 1
+font_size = 11
+
+[node name="ShopBtn" parent="FooterNavigation" instance=ExtResource("6_btn")]
+offset_left = 132.0
+offset_top = 4.0
+offset_right = 228.0
+offset_bottom = 32.0
+text = "CỬA HÀNG"
+variant = 1
+font_size = 11
+
+[node name="InventoryBtn" parent="FooterNavigation" instance=ExtResource("6_btn")]
+offset_left = 236.0
+offset_top = 4.0
+offset_right = 332.0
+offset_bottom = 32.0
+text = "TÚI ĐỒ"
+variant = 1
+font_size = 11
+
+[node name="SettingsBtn" parent="FooterNavigation" instance=ExtResource("6_btn")]
+offset_left = 736.0
+offset_top = 4.0
+offset_right = 786.0
+offset_bottom = 32.0
+text = "CÀI ĐẶT"
+variant = 1
+font_size = 10

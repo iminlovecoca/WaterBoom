@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CosmeticDefinition" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://resources/cosmetics/CosmeticDefinition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/cosmetics/flags/flag_default_water.png" id="2"]
+[ext_resource type="Texture2D" path="res://assets/cosmetics/flags/flag_default_water_leaf.png" id="3"]
+
+[resource]
+script = ExtResource("1")
+id = &"flag_default_water"
+display_name = "Cờ Bóng Nước"
+category = "flag"
+description = "Lá cờ chữ nhật mặc định với biểu tượng bóng nước."
+price = 0
+is_default = true
+icon = ExtResource("2")
+lobby_asset = ExtResource("3")
+match_list_asset = ExtResource("3")
+lobby_scale = 1.0
+match_list_scale = 1.0
+primary_color = Color(0.02, 0.36, 0.86, 1)
+accent_color = Color(0.25, 0.88, 1, 1)

@@ -1,0 +1,28 @@
+# Boom Water Arcade — Gameplay
+
+F5 opens the login screen and continues to the water-themed room lobby. The complete game shares the bundled Chakra Petch SemiBold arcade font with Vietnamese glyph support. The lobby has eight player slots, a paginated 3×3 character grid, and an in-layout 4×2 map picker with exact 16:9 previews for all eight 16×16 maps. Lobby actions, character slots, map preview, map cards, and navigation are real Godot controls with normal, hover, pressed, focus, disabled, and selected feedback. Character resources are discovered dynamically, so characters beyond slot nine automatically use the next page. Solo supports up to four total players. Team supports up to eight total players in balanced 4v4 teams. Local starts two-player controls.
+
+The supplied BOOM character artwork is configured as the Godot project/application brand icon and inspired the fully playable Boom Bear character. The lobby's bottom dock contains four large icon buttons only: Shop, Túi đồ, Cài đặt, and Tắt game. Shop and Túi đồ use real interactive cards rather than flattened screenshots. Players earn Cokecy for match wins, purchase balloon skins in Shop, and equip owned skins in Túi đồ. Match configuration remains in the room-information panel so it does not compete with the persistent navigation dock.
+
+- P1: WASD or arrow keys, Space places a Water Balloon.
+- P2: IJKL, Enter places a Water Balloon.
+- Esc: pause (offline/local only).
+- F1/F2/F3: debug stats/grid/gameplay cells.
+
+The loop is move → place Water Balloon → escape → wobble → POP → four-direction water cells → break soft blocks → collect capacity/power/speed items → bubble an opponent → timeout/rescue → winner → Result. The local player can equip classic blue, watermelon, dark, or pearlescent sparkle water balloons. Every skin provides four 40×40 squash/stretch frames; the dark and sparkle skins deliberately have no face. Burst sprites inherit each skin's palette, bloom to a complete cell, and connect as center, horizontal, vertical, four directional caps, or a cross, producing continuous multi-direction waves without changing the authoritative grid range.
+
+Every character owns an individual starting profile for Water Balloon count, water range, and movement speed. The result modal uses image-based Vietnamese victory/defeat titles, lists player outcomes, awards Cokecy once, and shows the updated balance.
+
+The lobby mode selector cycles between Classic solo, Classic team, and Boss Battle. Boss Battle is bot-free and reserves the remaining room slots for future invited online players. Rounds 1/2/3 spawn 4/5/6 simple squid pets, followed by round four against the giant Pirate Octopus cannon boss. A pet hit by player water is trapped rather than killed; a player must cross its cell to pop it, otherwise it escapes after five seconds. During round four the boss summons waves of 4–6 pets as a skill, and can only arm the next wave after the current wave is completely cleared. Both enemy types use true front/left/right/back six-frame locomotion sheets and grid pathfinding, so they turn around collision footprints instead of sliding sideways. The boss pursues the living player with the highest accumulated damage threat, telegraphs its close cross burst for 1.5 seconds, enrages after losing 60% health, and gains a five-second rotating water pattern in phase two. Boss water uses the same authoritative obstruction grid as player water, so walls, breakable blocks, and decoration footprints stop it and provide safe cover. The boss health/phase bar occupies the cabinet strip above the arena rather than covering playable cells.
+
+Boss Battle always loads the open Pirate Boss Deck. It contains no checkerboard pillars, crates, or breakable blocks—only the border and ship decorations with honest collision, centered around a 3×3 pirate mast and flag. Pets and the boss cannot enter those occupied cells.
+
+All eight classic map themes retain their exact 40×40 logical cells but now render in a unified 2.5D treatment: beveled floor slabs, raised top planes, darker front faces, and contact shadows. Character locomotion combines six directional foot-step frames with shared acceleration, bob, rotation, squash/stretch, directional dust, and contact-ring VFX. Every water-burst piece now fills almost the complete cell and joins across all propagated directions.
+
+The rare `BUBBLE_PIN` pickup appears as a glossy blue-handled pin and is stored in the first Match Items slot. While bubbled, press the normal place-balloon button to consume one pin, puncture the bubble, and receive 0.75 seconds of rescue protection.
+
+Hard blocks stop water before their cell. A soft block is destroyed on contact and stops that direction. Another Water Balloon is triggered through the event queue. Water cells remain hazardous for `water_active_duration`, synchronized with their visual lifetime.
+
+Players transition `NORMAL → WATER_HIT → BUBBLED → NORMAL/DEAD`. Hurt and bubbled characters visibly cry with animated tear streams, a trembling mouth, and a contained `SOB` cue inside the bubble. A bubble lasts exactly 5 seconds. In team mode, contact from a teammate rescues the trapped player; enemy contact bursts the bubble immediately and eliminates the player early. In free-for-all every other player counts as an enemy. If nobody touches the bubble, its timer expires and the trapped player is eliminated normally. The code-rendered shell hides the ground shadow and fits the complete character—including the feet—inside it.
+
+The player power/speed/range text and bottom stat strip are removed. Only local Water Balloon capacity appears at the upper-left as a balloon icon with `BOOM ×N`.

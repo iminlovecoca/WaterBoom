@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="WaterBalloonSkinDefinition" format=3]
+
+[ext_resource type="Script" path="res://scripts/water_balloon/WaterBalloonSkinDefinition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/water_balloons/balloon_sprites/balloon_044.png" id="tex1"]
+[ext_resource type="SpriteFrames" path="res://assets/water_balloons/skins/skin_045/skin_045_frames.tres" id="frames1"]
+
+[resource]
+script = ExtResource("1")
+id = &"skin_045"
+display_name = "Sapphire Star"
+theme = "sapphire"
+primary_color = Color(0.0627, 0.3765, 0.7529, 1)
+secondary_color = Color(0.1882, 0.5647, 0.9412, 1)
+outline_color = Color(0.0314, 0.1882, 0.3765, 1)
+motif = "sapphire_gem"
+description = "Sapphire water with star field, sapphire gem inside"
+rarity = "rare"
+price = 200000
+vfx_profile = "water_default"
+burst_accent = "blue_splash"
+icon = ExtResource("tex1")
+sprite_frames = ExtResource("frames1")

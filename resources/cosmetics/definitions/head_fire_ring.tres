@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="CosmeticDefinition" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/cosmetics/CosmeticDefinition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/cosmetics/head/fire_ring.png" id="2"]
+
+[resource]
+script = ExtResource("1")
+id = &"head_fire_ring"
+display_name = "Vòng Lửa 2.5D"
+category = "head_accessory"
+description = "Vòng lửa 2.5D ôm quanh trán với ngọn lửa chuyển động sống động."
+price = 720
+icon = ExtResource("2")
+lobby_asset = ExtResource("2")
+match_list_asset = ExtResource("2")
+world_asset = ExtResource("2")
+lobby_offset = Vector2(0, 0)
+lobby_scale = 1.0
+match_list_offset = Vector2(0, 0)
+match_list_scale = 1.0
+world_offset = Vector2(0, 0)
+world_scale = 1.0
+animation = "bob"
+animation_speed = 1.0
+animation_amplitude = 1.0
+primary_color = Color(1, 0.28, 0.03, 1)
+accent_color = Color(1, 0.82, 0.08, 1)

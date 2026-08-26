@@ -1,0 +1,4 @@
+Identity reference: cocoa_otter/v12_staging/master/processed/clean.png
+Motion/layout reference: cloud_bunny/v13_staging/idle_directional/raw_sheet.png
+
+4 columns x 4 rows. Rows: down, left, right, up. Four genuine idle-motion frames per direction. Exact #FF00FF raw background. Preserve Cocoa Otter identity; share the V13 motion contract only.

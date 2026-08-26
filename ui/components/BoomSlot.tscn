@@ -1,0 +1,63 @@
+[gd_scene load_steps=4 format=3 uid="uid://c_boom_slot"]
+[ext_resource type="Script" path="res://ui/components/BoomSlot.gd" id="1_s"]
+[ext_resource type="Texture2D" path="res://ui/assets_generated/slots/char_slot_x_normal.png" id="2_bg"]
+[ext_resource type="Texture2D" path="res://assets/ui/icons/check_badge.svg" id="3_ck"]
+
+[node name="BoomSlot" type="Control"]
+custom_minimum_size = Vector2(68, 38)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 68.0
+offset_bottom = 38.0
+script = ExtResource("1_s")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_bg")
+expand_mode = 1
+
+[node name="Icon" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -19.0
+offset_top = -19.0
+offset_right = 19.0
+offset_bottom = 19.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="CheckBadge" type="TextureRect" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -14.0
+offset_top = -2.0
+offset_right = 2.0
+offset_bottom = 14.0
+grow_horizontal = 0
+texture = ExtResource("3_ck")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+flat = true

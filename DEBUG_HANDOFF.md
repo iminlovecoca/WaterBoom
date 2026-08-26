@@ -1,5 +1,9 @@
 # Debug handoff
 
+## Current balloon/stat checkpoint — 2026-08-26
+
+The runtime registry currently exposes `skin_066`–`skin_101` (36 active skins). Ten new skins `skin_092`–`skin_101` are true-alpha packages from the accepted RGBA bundle, with 64×64 icons and four 128×128 idle frames; they pass `TransparentBalloonSkinsSmoke` 10/10 and contain no opaque magenta matte. Character balance smoke passes all 11 definitions with 2 starting balloons and shared caps 6 balloons / 6 power / 240 speed. The older 16-skin notes below are historical and superseded by this checkpoint.
+
 ## Open issue 1 — balloon economy authority
 
 `GameSession.buy_balloon_skin()` currently performs client-side balance mutation before unlock RPC. The server unlock handler must calculate price from its own catalog, confirm ownership/balance, write balance + ownership atomically and return the authoritative snapshot.

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="WaterBalloonSkinDefinition" format=3]
+
+[ext_resource type="Script" path="res://scripts/water_balloon/WaterBalloonSkinDefinition.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/water_balloons/skins/skin_094/icon.png" id="2_icon"]
+[ext_resource type="SpriteFrames" path="res://assets/water_balloons/skins/skin_094/skin_094_frames.tres" id="3_frames"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"skin_094"
+display_name = "Moonlit Tide"
+theme = "moonlight"
+primary_color = Color(0.1922, 0.3686, 0.7961, 1)
+secondary_color = Color(0.5686, 0.8471, 1.0000, 1)
+outline_color = Color(0.0902, 0.1373, 0.3725, 1)
+motif = "moon_tide"
+description = "Bóng nước Moonlit Tide với chất liệu trong suốt, highlight mềm và nút thắt nguyên vẹn"
+rarity = "epic"
+price = 165000
+vfx_profile = "water_dark"
+burst_accent = "blue_splash"
+icon = ExtResource("2_icon")
+sprite_frames = ExtResource("3_frames")

@@ -1,5 +1,13 @@
 # Codex handoff
 
+## Current delivery checkpoint — 2026-08-26
+
+- Added ten new transparent balloon skins `skin_092`–`skin_101` to the runtime catalog and existing Shop/Inventory/equip path. They are packaged from the accepted RGBA source bundle at `assets/water_balloons/v14_new16_transparent_final/`; no paid image generation was called because a generation budget was not confirmed.
+- Each new skin has `icon.png` at 64×64, four `idle_0..3.png` frames at 128×128 and a shared canonical `pop_burst.png`. The source pixels and interior glass details are preserved; no magenta matte is present in the packaged files.
+- Catalog is now 36 active IDs (`skin_066`–`skin_101`) and `WaterBalloonCatalogV3Normalizer` validates that range. Character balance is locked to 2 starting balloons for all 11 definitions, with shared caps of 6 balloons / 6 power / 240 speed.
+- New focused gates: `TransparentBalloonSkinsSmoke` passes 10/10 skins and 60/60 required files; `CharacterStatsBalanceSmoke` passes 11/11; `WaterBalloonDisplayScaleSmoke` passes 74/74. The stray parse suffix in `MatchManager.gd` was removed before the final test run.
+- Remaining art limitation: the ten new skins currently use one accepted source frame replicated across the four idle slots and the canonical pop burst. Dedicated per-skin burst/animation art is intentionally deferred; runtime transparency and scale contracts are complete.
+
 ## Local supervisor automation checkpoint — 2026-08-26
 
 - Added a bounded local Codex-supervisor/Antigravity-worker framework in `tools/agent_orchestrator.py`, with task schema/examples under `.agents/tasks/`, machine-readable Godot map/UI probes, Windows/Git Bash wrappers, safety checkpoints and iteration evidence.
@@ -97,7 +105,7 @@ The approved Aqua Arcade v2 UI/HUD pass remains integrated. The active productio
 - Character V13 resource consistency: `PASS characters=2 actions=15 frames_per_character=84`; both active CharacterDefinitions load V13.
 - Active character roster (historical V13 checkpoint): `ACTIVE_CHARACTER_ROSTER PASS active=boom_mascot,cloud_bunny`.
 - Character presentation containment: `CHARACTER_PRESENTATION_RESULT: 20 passed | 0 failed`; all four active idle frames are 112×112 and fit room/player cards at the shared 0.72 UI scale, including the bunny's x-only correction.
-- Balloon display normalization: `WATER_BALLOON_SCALE_RESULT: 54 passed | 0 failed`; all `skin_066`–`skin_091` runtime and icon scales are finite and normalized, including the tall cloud balloon.
+- Balloon display normalization: `WATER_BALLOON_SCALE_RESULT: 74 passed | 0 failed`; all `skin_066`–`skin_101` runtime and icon scales are finite and normalized, including the tall cloud balloon.
 - QA gallery preview now applies the same runtime normalization after skin/animation changes (`scripts/water_balloon/WaterBalloonAnimationQA.gd`), so debug previews do not reintroduce per-skin size drift.
 - Room-slot layer smoke: `ROOM_SLOT_LAYER_RESULT: pass`; CardPanel clipping is disabled and decorative frame is behind portrait.
 - V13 source/runtime lower-body audit: 756/756 PNGs present; all idle/walk frames have non-empty alpha through the feet band (bbox end.y ≥ 100); no source crop detected.
@@ -143,9 +151,9 @@ Review skill also requires user to choose exactly one: Bugbot or Security Review
 - `resources/characters/shadow_ninja.tres`, `aqua_pacifier.tres` and their `_frames_v14.tres` resources are wired into `ActiveCharacterRoster`, `MatchManager`, and account-character normalization. The active roster is now `boom_mascot`, `cloud_bunny`, `shadow_ninja`, `aqua_pacifier`; the older nine-character source bundles remain rollback-only.
 - V14 idle correction (2026-08-26): Shadow Ninja and Aqua Pacifier no longer cycle walk frames while idle in the left/right/up directions. Those directions hold their correct standing pose; down-facing idle keeps the authored blink frames. `CharacterV14ResourceSmoke` includes a regression check that the three static directions do not reintroduce body motion.
 
-## Current water-balloon transparency checkpoint — 2026-08-25
+## Current water-balloon transparency checkpoint — 2026-08-26 (supersedes the historical 2026-08-25 scope below)
 
-- Runtime catalog scope is now exactly 16 IDs: `skin_066`–`skin_081`. The four approved existing designs remain, the ten user-supplied designs remain, and `skin_080` Bubble Star plus `skin_081` Cloud Pearl were added. Old `skin_001`–`skin_065` folders are retained for rollback only and are not discoverable at runtime.
+- Runtime catalog scope is now exactly 36 IDs: `skin_066`–`skin_101`. The four approved existing designs, the prior user/Anime additions and the ten new RGBA skins remain discoverable. Old `skin_001`–`skin_065` folders are retained for rollback only and are not discoverable at runtime.
 - Runtime defaults and network fallbacks now use `skin_066` (Aqua Classic Reforge). `GameSession` filters legacy database rows against the runtime registry and migrates invalid selected IDs to `skin_066`; new accounts seed `skin_066`.
 - Every active skin is packaged as RGBA PNGs: one 64×64 icon, four 128×128 idle frames, and a shared pop burst. Magenta is never loaded by runtime; it exists only in raw/staging source sheets.
 - `tools/CleanWaterBalloonMatte.py` removes only low-alpha magenta matte residue and intentionally preserves opaque internal glass colors. `tools/ValidateWaterBalloonAlpha.py` currently passes all 16 skins (96 PNGs) with transparent corners and no visible matte-like pixels; report: `tests/artifacts/water_balloon_alpha_validation.json`.
@@ -153,4 +161,4 @@ Review skill also requires user to choose exactly one: Bugbot or Security Review
 - `tests/CharacterPresentationContainmentSmoke.tscn`: `CHARACTER_PRESENTATION_RESULT: 18 passed | 0 failed`; all active portraits preserve the complete 112×112 frame inside room/player cards.
 - `tests/CharacterV14ResourceSmoke.tscn`: `CHARACTER_V14_RESOURCE_RESULT: 36 passed | 0 failed`; both new resources expose all 15 actions, expected frame counts and 112×112 textures, while left/right/up idle frames are verified static.
 - `tests/CharacterAnimationSmoke.tscn`: `CHARACTER_ANIMATION_RESULT: 26 passed | 0 failed`; active-roster movement, idle, hit, bubble, rescue, death, win and lose runtime wiring remains intact. Dedicated “kẹt trong bóng nước” art is intentionally not part of this pass.
-- Godot 4.7.1 headless scene run and editor import both exit 0 after the V14 resources are rebuilt.
+- Godot 4.7.1 headless scene run and editor import both exit 0 after the V14 resources are rebuilt. The transparent-balloon smoke writes `tests/artifacts/transparent_balloon_skins.json` for the current checkpoint.

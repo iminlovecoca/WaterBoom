@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="WaterBalloonSkinDefinition" format=3]
+
+[ext_resource type="Script" path="res://scripts/water_balloon/WaterBalloonSkinDefinition.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/water_balloons/skins/skin_097/icon.png" id="2_icon"]
+[ext_resource type="SpriteFrames" path="res://assets/water_balloons/skins/skin_097/skin_097_frames.tres" id="3_frames"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"skin_097"
+display_name = "Candy Orbit"
+theme = "candy"
+primary_color = Color(0.9451, 0.4314, 0.6745, 1)
+secondary_color = Color(1.0000, 0.8392, 0.9843, 1)
+outline_color = Color(0.6078, 0.2471, 0.7373, 1)
+motif = "candy_orbit"
+description = "Bóng nước Candy Orbit với chất liệu trong suốt, highlight mềm và nút thắt nguyên vẹn"
+rarity = "epic"
+price = 175000
+vfx_profile = "water_sparkle"
+burst_accent = "pink_splash"
+icon = ExtResource("2_icon")
+sprite_frames = ExtResource("3_frames")

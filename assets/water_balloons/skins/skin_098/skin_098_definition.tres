@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="WaterBalloonSkinDefinition" format=3]
+
+[ext_resource type="Script" path="res://scripts/water_balloon/WaterBalloonSkinDefinition.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/water_balloons/skins/skin_098/icon.png" id="2_icon"]
+[ext_resource type="SpriteFrames" path="res://assets/water_balloons/skins/skin_098/skin_098_frames.tres" id="3_frames"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"skin_098"
+display_name = "Cherry Pop"
+theme = "cherry"
+primary_color = Color(0.8588, 0.2353, 0.3333, 1)
+secondary_color = Color(1.0000, 0.7569, 0.7804, 1)
+outline_color = Color(0.5255, 0.1059, 0.2039, 1)
+motif = "cherry_pop"
+description = "Bóng nước Cherry Pop với chất liệu trong suốt, highlight mềm và nút thắt nguyên vẹn"
+rarity = "rare"
+price = 140000
+vfx_profile = "water_fire_accent"
+burst_accent = "red_splash"
+icon = ExtResource("2_icon")
+sprite_frames = ExtResource("3_frames")

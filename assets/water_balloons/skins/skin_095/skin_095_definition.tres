@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="WaterBalloonSkinDefinition" format=3]
+
+[ext_resource type="Script" path="res://scripts/water_balloon/WaterBalloonSkinDefinition.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/water_balloons/skins/skin_095/icon.png" id="2_icon"]
+[ext_resource type="SpriteFrames" path="res://assets/water_balloons/skins/skin_095/skin_095_frames.tres" id="3_frames"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"skin_095"
+display_name = "Cloud Drift"
+theme = "sky"
+primary_color = Color(0.4431, 0.7882, 0.9373, 1)
+secondary_color = Color(0.9333, 0.9843, 1.0000, 1)
+outline_color = Color(0.2353, 0.5137, 0.7412, 1)
+motif = "cloud_drift"
+description = "Bóng nước Cloud Drift với chất liệu trong suốt, highlight mềm và nút thắt nguyên vẹn"
+rarity = "rare"
+price = 145000
+vfx_profile = "water_ice"
+burst_accent = "blue_splash"
+icon = ExtResource("2_icon")
+sprite_frames = ExtResource("3_frames")

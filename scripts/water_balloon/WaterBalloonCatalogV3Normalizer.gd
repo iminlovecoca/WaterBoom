@@ -1,14 +1,14 @@
 class_name WaterBalloonCatalogV3Normalizer
 extends RefCounted
 
-## Non-mutating validator for the current 16-skin catalog.
+## Non-mutating validator for the current runtime catalog.
 ## It never writes JSON or SQL; callers can use the preview result to gate a
 ## later migration once purchase/equip authority and art are ready.
 
 const DEFAULT_SOURCE_PATH := "res://assets/water_balloons/water_balloon_catalog.json"
-const ACTIVE_SKIN_COUNT := 16
+const ACTIVE_SKIN_COUNT := 36
 const EXPECTED_ID_MIN := 66
-const EXPECTED_ID_MAX := 81
+const EXPECTED_ID_MAX := 101
 const ALLOWED_STATUS := [&"active", &"hidden_legacy"]
 
 static func load_source(path: String = DEFAULT_SOURCE_PATH) -> Dictionary:

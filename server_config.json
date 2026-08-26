@@ -6,7 +6,7 @@
     "region": "vn"
   },
   "client": {
-    "default_host": "jan-assumes-difficulty-gibson.trycloudflare.com",
+    "default_host": "boomserver-coca-v2.loca.lt",
     "default_port": 443,
     "use_tls": true
   }

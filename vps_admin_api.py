@@ -59,11 +59,54 @@ class AdminHandler(BaseHTTPRequestHandler):
                 new_balance = res[0] if res else 0
                 self._set_headers(200)
                 self.wfile.write(json.dumps({"ok": True, "username": username, "new_balance": new_balance}).encode())
+        elif self.path == "/api/players/update":
+            try:
+                uid = data.get("id")
+                cokecy = data.get("cokecy", 0)
+                level = data.get("level", 1)
+                nickname = data.get("nickname", "")
+                all_unlocked = data.get("allUnlocked", False)
+
+                if uid:
+                    conn = sqlite3.connect(DB_PATH)
+                    cur = conn.cursor()
+                    cur.execute("UPDATE users SET cokecy = ?, level = ?, nickname = ? WHERE id = ?", (cokecy, level, nickname, uid))
+                    if all_unlocked:
+                        import time
+                        now = int(time.time())
+                        for s in range(1, 108):
+                            cur.execute("INSERT OR IGNORE INTO user_balloon_skins (user_id, skin_id, unlocked_at) VALUES (?, ?, ?)", (uid, f"skin_{s:03d}", now))
+                    conn.commit()
+                    conn.close()
+
+                self._set_headers(200)
+                self.wfile.write(json.dumps({"ok": True, "success": True}).encode())
             except Exception as e:
                 self._set_headers(500)
                 self.wfile.write(json.dumps({"ok": False, "error": str(e)}).encode())
 
+        elif self.path == "/api/players/delete-bulk":
+            try:
+                ids = data.get("ids", [])
+                if ids:
+                    conn = sqlite3.connect(DB_PATH)
+                    cur = conn.cursor()
+                    placeholders = ",".join(["?"] * len(ids))
+                    cur.execute(f"DELETE FROM users WHERE id IN ({placeholders});", ids)
+                    conn.commit()
+                    conn.close()
+
+                self._set_headers(200)
+                self.wfile.write(json.dumps({"ok": True, "success": True, "count": len(ids)}).encode())
+            except Exception as e:
+                self._set_headers(500)
+                self.wfile.write(json.dumps({"ok": False, "error": str(e)}).encode())
+
+        else:
+            self._set_headers(404)
+            self.wfile.write(json.dumps({"ok": False, "error": "Not Found"}).encode())
+
 if __name__ == '__main__':
     server = HTTPServer(('0.0.0.0', 8080), AdminHandler)
-    print("Real-time VPS Admin API running on port 8080...")
+    print("🚀 Real-time VPS Admin API running on port 8080...")
     server.serve_forever()

@@ -61,7 +61,7 @@ func _setup_server_ui() -> void:
 	ip_input = LineEdit.new()
 	ip_input.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	ip_input.placeholder_text = "Server IP"
-	ip_input.text = "127.0.0.1" if OS.is_debug_build() else NetworkManager.DEFAULT_HOST
+	ip_input.text = NetworkManager.DEFAULT_HOST
 	ip_input.add_theme_stylebox_override("normal", UITheme.panel_inset())
 	ip_input.add_theme_stylebox_override("focus", UITheme.panel_inset())
 	ip_input.add_theme_color_override("font_color", Color.WHITE)
@@ -70,7 +70,7 @@ func _setup_server_ui() -> void:
 	port_input = LineEdit.new()
 	port_input.custom_minimum_size = Vector2(90, 44)
 	port_input.placeholder_text = "Port"
-	port_input.text = "7777" if OS.is_debug_build() else str(NetworkManager.DEFAULT_PORT)
+	port_input.text = str(NetworkManager.DEFAULT_PORT)
 	_apply_connection_overrides()
 	port_input.add_theme_stylebox_override("normal", UITheme.panel_inset())
 	port_input.add_theme_stylebox_override("focus", UITheme.panel_inset())
@@ -78,7 +78,7 @@ func _setup_server_ui() -> void:
 	
 	server_container.add_child(ip_input)
 	server_container.add_child(port_input)
-	server_container.visible = false
+	server_container.visible = true
 	
 	var vbox = login_panel.get_node("VBox")
 	vbox.add_child(server_container)

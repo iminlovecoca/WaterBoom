@@ -6,8 +6,8 @@
     "region": "vn"
   },
   "client": {
-    "default_host": "aquaboom.com.vn",
-    "default_port": 443,
-    "use_tls": true
+    "default_host": "aquaboom.duckdns.org",
+    "default_port": 7777,
+    "use_tls": false
   }
 }

@@ -32,7 +32,6 @@ func _ready() -> void:
 		return
 
 	SoundManager.play_bgm("res://assets/audio/music/login.mp3", true)
-	_setup_server_ui()
 	_apply_styles()
 	_setup_focus_navigation()
 	login_panel.pivot_offset = login_panel.size * 0.5
@@ -78,7 +77,7 @@ func _setup_server_ui() -> void:
 	
 	server_container.add_child(ip_input)
 	server_container.add_child(port_input)
-	server_container.visible = true
+	server_container.visible = false
 	
 	var vbox = login_panel.get_node("VBox")
 	vbox.add_child(server_container)

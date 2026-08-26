@@ -1,3 +1,0 @@
-Create one coherent directional walk animation sheet for the approved Cloud Bunny identity. Preserve navy bob hair, blue eyes, white rabbit hood with cyan inner ears, white-and-cyan suit and tiny one-piece rounded mitten hands and feet. Match the Boom Bear golden character's scale, feet anchor and movement cadence.
-
-Exact 8 columns x 4 rows on uniform #FF00FF, no gutters, text, borders or VFX. Rows: walk_down, walk_left, walk_right, walk_up. Columns: contact-left, down-left, passing-left, up-left, contact-right, down-right, passing-right, up-right. Alternate hands and feet with true pose changes; no whole-body scaling, blur, cast shadow or detached effects.

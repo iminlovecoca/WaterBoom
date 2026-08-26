@@ -1,5 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://test_match_res"]
-[ext_resource type="Script" path="res://test_match_res.gd" id="1_m"]
-[node name="TestRoot" type="Control"]
-custom_minimum_size = Vector2(800, 600)
-script = ExtResource("1_m")

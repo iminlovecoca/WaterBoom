@@ -1,2 +1,0 @@
-Identity: accepted Coral Diver V13 idle atlas. Motion: Cloud Bunny approved V13 walk atlas.
-Accepted retry: exact 8x4 directional walk, purple hair and flat magenta background preserved. The first brown-hair/gradient attempt was rejected and is not integrated.

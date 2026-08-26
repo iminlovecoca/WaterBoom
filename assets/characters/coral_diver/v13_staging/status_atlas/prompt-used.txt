@@ -1,2 +1,0 @@
-Identity: coral_diver v12 master. Motion: shared Gấu Nâu V13 status reference.
-Accepted 6x7 status atlas. Outer bubble/water VFX intentionally remain shared gameplay effects.

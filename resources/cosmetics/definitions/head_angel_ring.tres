@@ -20,6 +20,7 @@ match_list_offset = Vector2(0, 0)
 match_list_scale = 1.0
 world_offset = Vector2(0, 0)
 world_scale = 1.0
+placement_profile = "ring"
 animation = "bob"
 animation_speed = 1.0
 animation_amplitude = 1.0

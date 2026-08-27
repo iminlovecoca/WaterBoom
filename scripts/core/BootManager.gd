@@ -1344,17 +1344,20 @@ func _apply_room_slot_equipment(index: int, equipment: Dictionary) -> void:
 	room_flag_views[index].visible = room_flag_masts[index].visible and room_flag_views[index].texture != null
 
 	var head := CosmeticRegistry.get_definition(sanitized.get("head_accessory", ""))
-	room_head_views[index].texture = head.lobby_asset if head != null else null
+	room_head_views[index].texture = AccessoryPresentation.texture_for(head, AccessoryPresentation.CONTEXT_ROOM)
 	room_head_views[index].visible = room_portraits[index].visible and room_head_views[index].texture != null
 	if head != null:
-		var head_size := Vector2(76, 48) * head.lobby_scale
-		room_head_views[index].size = head_size
-		var head_base := Vector2(45, 33) + head.lobby_offset - head_size * 0.5
+		var head_rect := AccessoryPresentation.control_rect(head, AccessoryPresentation.CONTEXT_ROOM)
+		room_head_views[index].size = head_rect.size
+		var head_base := head_rect.position
 		room_head_views[index].position = head_base
 		room_head_views[index].set_meta("base_position", head_base)
-		room_head_views[index].set_meta("animation", head.animation)
+		room_head_views[index].set_meta("animation", head.animation if AccessoryPresentation.uses_bob_animation(head) else "none")
 		room_head_views[index].set_meta("animation_speed", head.animation_speed)
 		room_head_views[index].set_meta("animation_amplitude", head.animation_amplitude)
+	else:
+		room_head_views[index].remove_meta("base_position")
+		room_head_views[index].set_meta("animation", "none")
 
 	var frame := CosmeticRegistry.get_definition(sanitized.get("player_frame", "frame_default_aqua"))
 	var background := CosmeticRegistry.get_definition(sanitized.get("player_background", "background_default_aqua"))

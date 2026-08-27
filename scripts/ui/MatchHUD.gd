@@ -466,10 +466,15 @@ func _update_sidebar_players() -> void:
 			var background := CosmeticRegistry.get_definition(equipment.get("player_background", "background_default_aqua"))
 			player_slot_backgrounds[slot_idx].texture = background.match_list_asset if background != null else null
 			player_slot_frames[slot_idx].texture = null
-			player_slot_heads[slot_idx].texture = null
+			var head := CosmeticRegistry.get_definition(equipment.get("head_accessory", ""))
+			player_slot_heads[slot_idx].texture = AccessoryPresentation.texture_for(head, AccessoryPresentation.CONTEXT_MATCH_LIST)
 			player_slot_backgrounds[slot_idx].visible = player_slot_backgrounds[slot_idx].texture != null
 			player_slot_frames[slot_idx].visible = false
-			player_slot_heads[slot_idx].visible = false
+			player_slot_heads[slot_idx].visible = player_slot_heads[slot_idx].texture != null
+			if head != null:
+				var head_rect := AccessoryPresentation.control_rect(head, AccessoryPresentation.CONTEXT_MATCH_LIST)
+				player_slot_heads[slot_idx].position = head_rect.position
+				player_slot_heads[slot_idx].size = head_rect.size
 			
 			var is_local: bool = (match_manager != null and match_manager.get_local_player() == p)
 			player_slot_badges[slot_idx].text = "🔥 96" if is_local else "🎖️ %d" % (slot_idx + 1)

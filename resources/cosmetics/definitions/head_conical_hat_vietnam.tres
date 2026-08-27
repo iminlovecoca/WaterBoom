@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="CosmeticDefinition" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/cosmetics/CosmeticDefinition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/cosmetics/head/conical_hat_vietnam.png" id="2"]
+
+[resource]
+script = ExtResource("1")
+id = &"head_conical_hat_vietnam"
+display_name = "Nón Lá Việt Nam"
+category = "head_accessory"
+description = "Nón lá pixel màu lúa, dây quai xanh ngọc và huy hiệu giọt nước."
+price = 580
+is_default = false
+icon = ExtResource("2")
+lobby_asset = ExtResource("2")
+match_list_asset = ExtResource("2")
+world_asset = ExtResource("2")
+lobby_offset = Vector2(0, 0)
+lobby_scale = 1.0
+match_list_offset = Vector2(0, 0)
+match_list_scale = 1.0
+world_offset = Vector2(0, 0)
+world_scale = 1.0
+placement_profile = "hat"
+animation = "none"
+animation_speed = 1.0
+animation_amplitude = 0.0
+primary_color = Color(0.86, 0.66, 0.3, 1)
+accent_color = Color(0.12, 0.75, 0.72, 1)

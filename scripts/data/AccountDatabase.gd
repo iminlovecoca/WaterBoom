@@ -68,6 +68,7 @@ signal auth_result_received(result: Dictionary)
 signal session_terminated(reason: String)
 signal profile_saved_received(success: bool)
 signal skin_bought_received(success: bool)
+signal skin_purchase_received(success: bool, skin_id: StringName, balance: int, message: String)
 signal cokecy_fetched_received(cokecy: int)
 signal equipment_saved_received(success: bool, equipment: Dictionary)
 signal cosmetic_purchase_received(success: bool, cosmetic_id: StringName, balance: int, message: String)
@@ -313,17 +314,80 @@ func request_unlock_skin(skin_id: StringName) -> void:
 	if sender == 0: sender = 1
 	var uid = peer_user_ids.get(sender, 0)
 	if uid <= 0: return
-	var success = _db.insert_row("user_balloon_skins", {
-		"user_id": uid,
-		"skin_id": str(skin_id),
-		"unlocked_at": int(Time.get_unix_time_from_system()),
-	})
-	if _can_send_to_peer(sender):
-		rpc_id(sender, "receive_skin_unlocked", success)
+	var result := _purchase_balloon_skin_for_user(uid, str(skin_id))
+	var success := bool(result.get("success", false))
+	var balance := int(result.get("balance", -1))
+	var message := str(result.get("message", "Không thể mua bóng nước."))
+	if sender == 1:
+		receive_skin_unlocked(success, skin_id, balance, message)
+	elif _can_send_to_peer(sender):
+		rpc_id(sender, "receive_skin_unlocked", success, skin_id, balance, message)
+
+func purchase_balloon_skin_for_current_user(skin_id: StringName) -> Dictionary:
+	# Offline/editor path uses the exact same SQL transaction as the server RPC.
+	return _purchase_balloon_skin_for_user(current_user_id, str(skin_id))
+
+func _purchase_balloon_skin_for_user(uid: int, skin_id: String) -> Dictionary:
+	var result := {
+		"success": false,
+		"balance": -1,
+		"message": "Phiên đăng nhập không hợp lệ.",
+	}
+	if not ready_ok or uid <= 0:
+		return result
+	var definition := WaterBalloonSkinRegistry.get_skin(StringName(skin_id))
+	if definition == null or definition.id != StringName(skin_id):
+		result.message = "Bóng nước không tồn tại trên máy chủ."
+		return result
+	var rows: Array = _db.select_rows("users", "id = %d" % uid, ["cokecy"])
+	if rows.is_empty():
+		return result
+	result.balance = int(rows[0].get("cokecy", 0))
+	var owned_rows: Array = _db.select_rows("user_balloon_skins", "user_id = %d AND skin_id = '%s'" % [uid, skin_id.replace("'", "''")], ["skin_id"])
+	if not owned_rows.is_empty():
+		result.success = true
+		result.message = "Đã sở hữu."
+		return result
+	if definition.price <= 0:
+		result.message = "Vật phẩm không bán."
+		return result
+	if int(result.balance) < definition.price:
+		result.message = "Không đủ Cokecy (thiếu %d)." % (definition.price - int(result.balance))
+		return result
+	if not _db.query("BEGIN IMMEDIATE TRANSACTION;"):
+		result.message = "Cửa hàng đang bận, vui lòng thử lại."
+		return result
+	var committed := false
+	var latest_rows: Array = _db.select_rows("users", "id = %d" % uid, ["cokecy"])
+	var latest_balance := int(latest_rows[0].get("cokecy", 0)) if not latest_rows.is_empty() else 0
+	if latest_balance >= definition.price:
+		var paid := bool(_db.query("UPDATE users SET cokecy = cokecy - %d WHERE id = %d AND cokecy >= %d;" % [definition.price, uid, definition.price]))
+		if paid:
+			var unlocked := bool(_db.insert_row("user_balloon_skins", {
+				"user_id": uid,
+				"skin_id": skin_id,
+				"unlocked_at": int(Time.get_unix_time_from_system()),
+			}))
+			if unlocked:
+				committed = bool(_db.query("COMMIT;"))
+	if not committed:
+		_db.query("ROLLBACK;")
+	var after_rows: Array = _db.select_rows("users", "id = %d" % uid, ["cokecy"])
+	result.balance = int(after_rows[0].get("cokecy", latest_balance)) if not after_rows.is_empty() else latest_balance
+	result.success = committed
+	result.message = "Mua thành công." if committed else "Không thể mở khóa bóng nước."
+	return result
 
 @rpc("authority", "call_local")
-func receive_skin_unlocked(success: bool) -> void:
+func receive_skin_unlocked(success: bool, skin_id: StringName = &"", balance: int = -1, message: String = "") -> void:
+	if success and has_node("/root/GameSession") and skin_id != &"":
+		if not GameSession.owned_balloon_skins.has(skin_id):
+			GameSession.owned_balloon_skins.append(skin_id)
+		if balance >= 0:
+			GameSession.cokecy = balance
+			GameSession.cokecy_changed.emit(balance)
 	skin_bought_received.emit(success)
+	skin_purchase_received.emit(success, skin_id, balance, message)
 
 @rpc("any_peer", "call_local")
 func request_equip_cosmetic(category: String, cosmetic_id: String) -> void:

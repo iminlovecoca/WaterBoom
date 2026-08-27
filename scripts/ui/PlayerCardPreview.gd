@@ -27,9 +27,13 @@ func _ready() -> void:
 	mouse_filter = Control.MOUSE_FILTER_IGNORE
 	_build_layers()
 
-func _process(_delta: float) -> void:
-	# Retained for API compatibility; head rings/accessories are no longer shown.
-	pass
+func _process(delta: float) -> void:
+	if head_view == null or not head_view.visible:
+		return
+	animation_time += delta
+	head_view.position = head_base_position
+	if head_animation == "bob":
+		head_view.position.y += sin(animation_time * head_animation_speed * 3.0) * head_animation_amplitude
 
 func _build_layers() -> void:
 	visual_panel = Panel.new()
@@ -124,11 +128,19 @@ func configure(character: CharacterDefinition, equipment: Dictionary, _player_na
 	var slot_style := _panel_style(Color("#053a78") if background_view.texture == null else Color.TRANSPARENT, Color("#00d2ff"), 2, 10)
 	visual_panel.add_theme_stylebox_override("panel", slot_style)
 
-	head_view.texture = null
-	head_view.visible = false
+	var head := CosmeticRegistry.get_definition(sanitized.get("head_accessory", ""))
+	head_view.texture = AccessoryPresentation.texture_for(head, AccessoryPresentation.CONTEXT_CARD)
+	head_view.visible = head_view.texture != null
 	head_view.scale = Vector2.ONE
 	animation_time = 0.0
-	head_animation = "none"
+	head_animation = head.animation if AccessoryPresentation.uses_bob_animation(head) else "none"
+	head_animation_speed = head.animation_speed if head != null else 1.0
+	head_animation_amplitude = head.animation_amplitude if head != null else 0.0
+	if head != null:
+		var head_rect := AccessoryPresentation.control_rect(head, AccessoryPresentation.CONTEXT_CARD)
+		head_view.position = head_rect.position
+		head_view.size = head_rect.size
+		head_base_position = head_rect.position
 
 func _rounded_clip_material(rect_size: Vector2, radius: float) -> ShaderMaterial:
 	var material := ShaderMaterial.new()

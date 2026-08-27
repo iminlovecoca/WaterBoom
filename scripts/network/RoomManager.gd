@@ -287,7 +287,7 @@ func _broadcast_room_players(room_id: String) -> void:
 		if pid == 1:
 			receive_room_players(players_data)
 			receive_room_data(room)
-		else:
+		elif not has_node("/root/NetworkManager") or NetworkManager.is_peer_connected(pid):
 			rpc_id(pid, "receive_room_players", players_data)
 			rpc_id(pid, "receive_room_data", room)
 
@@ -319,7 +319,13 @@ func _validated_equipment_for_peer(peer_id: int, proposed: Dictionary) -> Dictio
 	if has_node("/root/AccountDatabase"):
 		var user_id := int(AccountDatabase.peer_user_ids.get(peer_id, 0))
 		if user_id > 0:
-			return AccountDatabase._equipment_for_user(user_id)
+			# Equipment persistence and room presentation travel through separate
+			# RPCs. Reading the old equipment row here introduced an ordering race:
+			# the room could broadcast the previous cosmetic while the SQL save was
+			# still in flight. Validate the proposed snapshot against server-owned
+			# inventory instead, then broadcast that authoritative sanitized value.
+			var owned: Array[String] = AccountDatabase._unlocked_cosmetics_for_user(user_id)
+			return CosmeticRegistry.sanitize_equipment(proposed, owned)
 	if peer_id == 1 and has_node("/root/GameSession"):
 		return CosmeticRegistry.sanitize_equipment(proposed, GameSession.owned_cosmetics)
 	return CosmeticRegistry.sanitize_equipment(proposed, CosmeticRegistry.all_default_owned_ids())

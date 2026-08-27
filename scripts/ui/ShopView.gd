@@ -328,6 +328,7 @@ func _build_ui() -> void:
 	var categories := [
 		{"id": "all", "label": "TẤT CẢ"},
 		{"id": "balloon", "label": "BÓNG NƯỚC"},
+		{"id": "head_accessory", "label": "PHỤ KIỆN"},
 		{"id": "flag", "label": "CỜ"},
 		{"id": "player_background", "label": "NỀN"}
 	]
@@ -706,8 +707,9 @@ func _update_preview(skin_id: StringName) -> void:
 	if is_active:
 		preview_status.text = "TRẠNG THÁI: ĐANG DÙNG"
 		preview_status.add_theme_color_override("font_color", Color("#34d399"))
-		preview_action_btn.text = "ĐANG DÙNG"
-		preview_action_btn.disabled = true
+		var can_unequip := str(skin_dict.get("category", "")) == str(CosmeticDefinition.HEAD_ACCESSORY)
+		preview_action_btn.text = "THÁO" if can_unequip else "ĐANG DÙNG"
+		preview_action_btn.disabled = not can_unequip
 		preview_action_btn.add_theme_stylebox_override("normal", _style_3d_button(Color("#065f46"), Color("#023626"), Color("#34d399"), 10))
 		preview_action_btn.add_theme_color_override("font_color", Color.WHITE)
 	elif owned:
@@ -743,8 +745,12 @@ func _on_action_button_pressed() -> void:
 	if owned:
 		if item.get("kind", "balloon") == "cosmetic":
 			var category := StringName(str(item.category))
-			PlayerEquipmentService.equip(category, selected_skin_id)
-			equipment_selected.emit(category, selected_skin_id)
+			if category == CosmeticDefinition.HEAD_ACCESSORY and _item_active(item):
+				PlayerEquipmentService.unequip(category)
+				equipment_selected.emit(category, &"")
+			else:
+				PlayerEquipmentService.equip(category, selected_skin_id)
+				equipment_selected.emit(category, selected_skin_id)
 		else:
 			GameSession.selected_balloon_skin = selected_skin_id
 			GameSession.save_profile()

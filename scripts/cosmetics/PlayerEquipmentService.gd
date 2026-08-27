@@ -42,6 +42,12 @@ func _commit(category: StringName, cosmetic_id: StringName) -> bool:
 	GameSession.save_profile()
 	if has_node("/root/AccountDatabase") and NetworkManager.is_connected_to_server():
 		AccountDatabase.rpc_id(1, "request_equip_cosmetic", str(category), str(cosmetic_id))
-	if has_node("/root/RoomManager") and RoomManager.current_room_id != "":
-		RoomManager.rpc_id(1, "request_update_equipment", GameSession.equipped_cosmetics)
+	# Room equipment is a second channel from the account save.  Only send it
+	# while an actual multiplayer peer exists; a local/offline room can still
+	# have a stale room id and would otherwise try to RPC peer 1.
+	if has_node("/root/RoomManager") and RoomManager.current_room_id != "" and NetworkManager.is_connected_to_server():
+		if multiplayer.is_server():
+			RoomManager.request_update_equipment(GameSession.equipped_cosmetics)
+		elif NetworkManager.is_peer_connected(1):
+			RoomManager.rpc_id(1, "request_update_equipment", GameSession.equipped_cosmetics)
 	return true

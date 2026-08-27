@@ -132,9 +132,15 @@ func disconnect_network() -> void:
 	connection_status_changed.emit(false)
 
 func is_peer_connected(peer_id: int) -> bool:
-	if peer_id == 1 and is_server_active:
-		return true
-	if not is_server_active or not multiplayer.has_multiplayer_peer():
+	if not multiplayer.has_multiplayer_peer() or peer == null:
+		return false
+	if peer_id == 1:
+		if is_server_active:
+			return true
+		if is_client_active:
+			return peer.get_connection_status() == MultiplayerPeer.CONNECTION_CONNECTED
+		return false
+	if not is_server_active:
 		return false
 	return Array(multiplayer.get_peers()).has(peer_id)
 

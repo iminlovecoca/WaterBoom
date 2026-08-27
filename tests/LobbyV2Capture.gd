@@ -50,17 +50,17 @@ func _ready() -> void:
 	await get_tree().process_frame
 	error = maxi(error, _capture("res://tests/artifacts/shop_equipment_categories.png"))
 	var shop := boot.shop_panel as ShopView
-	shop._on_category_selected("flag")
+	shop._on_category_selected("head_accessory")
 	await get_tree().process_frame
-	error = maxi(error, _capture("res://tests/artifacts/shop_flag_category.png"))
+	error = maxi(error, _capture("res://tests/artifacts/shop_head_accessory_category.png"))
 	boot.shop_panel.visible = false
 	boot._open_feature_panel(boot.inventory_panel)
 	await get_tree().process_frame
 	error = maxi(error, _capture("res://tests/artifacts/inventory_equipment_categories.png"))
 	var inventory := boot.inventory_panel as InventoryView
-	inventory._on_category_selected("flag")
+	inventory._on_category_selected("head_accessory")
 	await get_tree().process_frame
-	error = maxi(error, _capture("res://tests/artifacts/inventory_flag_category.png"))
+	error = maxi(error, _capture("res://tests/artifacts/inventory_head_accessory_category.png"))
 	print("LOBBY_V2_CAPTURE error=", error, " path=", ProjectSettings.globalize_path(OUTPUT))
 	get_tree().quit(0 if error == OK else 1)
 

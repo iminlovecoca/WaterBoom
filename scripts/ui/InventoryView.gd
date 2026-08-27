@@ -470,6 +470,7 @@ func _build_ui() -> void:
 	var categories := [
 		{"id": "all", "label": "TẤT CẢ"},
 		{"id": "balloon", "label": "BÓNG"},
+		{"id": "head_accessory", "label": "PHỤ KIỆN"},
 		{"id": "flag", "label": "CỜ"},
 		{"id": "player_background", "label": "NỀN"}
 	]
@@ -861,8 +862,9 @@ func _update_preview(skin_id: StringName) -> void:
 	if is_active:
 		preview_status.text = "TRẠNG THÁI: ĐANG TRANG BỊ"
 		preview_status.add_theme_color_override("font_color", Color("#00ffcc"))
-		preview_action_btn.text = "ĐANG DÙNG"
-		preview_action_btn.disabled = true
+		var can_unequip := str(skin_dict.get("category", "")) == str(CosmeticDefinition.HEAD_ACCESSORY)
+		preview_action_btn.text = "THÁO" if can_unequip else "ĐANG DÙNG"
+		preview_action_btn.disabled = not can_unequip
 		preview_action_btn.add_theme_stylebox_override("normal", _style_3d_btn(Color("#004e8c"), Color("#003560"), Color("#0070c0"), 8))
 		preview_action_btn.add_theme_stylebox_override("disabled", _style_3d_btn(Color("#004e8c"), Color("#003560"), Color("#0070c0"), 8))
 		preview_action_btn.add_theme_color_override("font_color", Color("#7ee8ff"))
@@ -900,7 +902,10 @@ func _on_action_button_pressed() -> void:
 		GameSession.save_profile()
 	else:
 		var category: String = str(skin_dict.get("category", ""))
-		PlayerEquipmentService.equip(category, selected_skin_id)
+		if category == str(CosmeticDefinition.HEAD_ACCESSORY) and _item_active(skin_dict):
+			PlayerEquipmentService.unequip(StringName(category))
+		else:
+			PlayerEquipmentService.equip(StringName(category), selected_skin_id)
 		
 	_update_left_panel()
 	_populate_grid()

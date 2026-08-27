@@ -1,5 +1,13 @@
 # Debug handoff
 
+## Head accessory art checkpoint — 2026-08-27
+
+Three new head assets are now imported and registered: `head_sunglasses_red` (`face`), `head_cowboy_hat` (`hat`) and `head_conical_hat_vietnam` (`hat`). They are transparent RGBA PNGs generated through the approved `generate2dsprite`/`asset-gen` route and cleaned locally with border-connected chroma removal so internal blue/cyan detail is not erased. Raw and intermediate images remain under `assets/cosmetics/head/generated_2026_08_27/` for reproducibility. The shared presentation layer keeps rings bobbing while hats and face items stay locked to their anchors.
+
+Verification after Godot reimport: `COSMETIC_PRESENTATION PASS visible=14 compatible_total=20`; `ROOM_SLOT_LAYER_RESULT: pass`; `CHARACTER_PRESENTATION_RESULT: 20 passed | 0 failed`; `PlayableSmoke` passed. `LobbyV2Capture` still cannot create PNGs under Godot's dummy renderer (`texture_2d_get` null); use the existing GPU-backed capture for visual review.
+
+The local `rembg_matting.py --preview` helper also now keeps the sampled matte color in single-image mode, removing the old `NameError` after successful output generation.
+
 ## Current balloon/stat checkpoint — 2026-08-26
 
 The runtime registry currently exposes `skin_066`–`skin_101` (36 active skins). Ten new skins `skin_092`–`skin_101` are true-alpha packages from the accepted RGBA bundle, with 64×64 icons and four 128×128 idle frames; they pass `TransparentBalloonSkinsSmoke` 10/10 and contain no opaque magenta matte. Character balance smoke passes all 11 definitions with 2 starting balloons and shared caps 6 balloons / 6 power / 240 speed. The older 16-skin notes below are historical and superseded by this checkpoint.

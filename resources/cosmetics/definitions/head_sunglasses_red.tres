@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="CosmeticDefinition" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/cosmetics/CosmeticDefinition.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/cosmetics/head/sunglasses_red.png" id="2"]
+
+[resource]
+script = ExtResource("1")
+id = &"head_sunglasses_red"
+display_name = "Kính Râm Đỏ Pixel"
+category = "head_accessory"
+description = "Kính râm đỏ khối pixel, đặt khớp trước mắt nhân vật."
+price = 620
+is_default = false
+icon = ExtResource("2")
+lobby_asset = ExtResource("2")
+match_list_asset = ExtResource("2")
+world_asset = ExtResource("2")
+lobby_offset = Vector2(0, 0)
+lobby_scale = 1.0
+match_list_offset = Vector2(0, 0)
+match_list_scale = 1.0
+world_offset = Vector2(0, 0)
+world_scale = 1.0
+placement_profile = "face"
+animation = "none"
+animation_speed = 1.0
+animation_amplitude = 0.0
+primary_color = Color(0.95, 0.06, 0.08, 1)
+accent_color = Color(0.1, 0.86, 1, 1)

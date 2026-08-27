@@ -22,6 +22,7 @@ var development_base_scale := Vector2.ONE
 var locomotion_time := 0.0
 var locomotion_blend := 0.0
 var head_accessory_tween: Tween
+var head_accessory_equipped := false
 
 func _process(_delta: float) -> void:
 	pass
@@ -58,17 +59,26 @@ func setup(p_char_def: CharacterDefinition) -> void:
 	_restore_character_from_bubble()
 	status_vfx.set_mode(&"idle")
 
-func apply_equipment(_equipment: Dictionary) -> void:
+func apply_equipment(equipment: Dictionary) -> void:
 	if head_accessory_tween != null:
 		head_accessory_tween.kill()
 		head_accessory_tween = null
-	head_accessory.texture = null
-	head_accessory.visible = false
-	head_accessory.position = Vector2(0, -32)
-	head_accessory.scale = Vector2.ONE
-	head_accessory.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
-	# Intentionally ignore the legacy head_accessory field. Ownership remains in
-	# account data for backward compatibility, but the visual is retired.
+	var sanitized := CosmeticRegistry.sanitize_equipment(equipment)
+	var definition := CosmeticRegistry.get_definition(sanitized.get("head_accessory", ""))
+	var texture := AccessoryPresentation.texture_for(definition, AccessoryPresentation.CONTEXT_WORLD)
+	head_accessory.texture = texture
+	head_accessory_equipped = definition != null and texture != null
+	head_accessory.visible = head_accessory_equipped and not bubble.visible and not terminal_animation
+	head_accessory.position = AccessoryPresentation.world_position(definition)
+	head_accessory.scale = AccessoryPresentation.world_sprite_scale(definition, texture)
+	head_accessory.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS
+	if head_accessory.visible and AccessoryPresentation.uses_bob_animation(definition):
+		var base_position := head_accessory.position
+		var amplitude := maxf(definition.animation_amplitude, 0.5)
+		var duration := 0.55 / maxf(definition.animation_speed, 0.1)
+		head_accessory_tween = create_tween().set_loops()
+		head_accessory_tween.tween_property(head_accessory, "position:y", base_position.y - amplitude, duration).set_trans(Tween.TRANS_SINE)
+		head_accessory_tween.tween_property(head_accessory, "position:y", base_position.y + amplitude, duration).set_trans(Tween.TRANS_SINE)
 
 func set_player_name(nickname: String, player_color: Color = Color.WHITE) -> void:
 	name_label.text = nickname
@@ -125,6 +135,7 @@ func set_bubble(active: bool) -> void:
 	if bubble_tween != null and bubble_tween.is_valid():
 		bubble_tween.kill()
 	bubble.visible = active
+	head_accessory.visible = head_accessory_equipped and not active and not terminal_animation
 	if active:
 		pending_bubble = true
 		bubble.modulate = Color.WHITE
@@ -214,6 +225,7 @@ func _restore_character_from_bubble() -> void:
 
 func play_death() -> void:
 	bubble.visible = false
+	head_accessory.visible = false
 	pending_bubble = false
 	terminal_animation = true
 	one_shot_active = false
@@ -225,6 +237,7 @@ func play_death() -> void:
 
 func play_win() -> void:
 	terminal_animation = true
+	head_accessory.visible = head_accessory_equipped
 	one_shot_active = false
 	_play_exact(&"win", true)
 	status_vfx.set_mode(&"win")
@@ -233,6 +246,7 @@ func play_lose() -> void:
 	if terminal_animation:
 		return
 	terminal_animation = true
+	head_accessory.visible = head_accessory_equipped
 	one_shot_active = false
 	_play_exact(&"lose", true)
 	status_vfx.set_mode(&"lose")

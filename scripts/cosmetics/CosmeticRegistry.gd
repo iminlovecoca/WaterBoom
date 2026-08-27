@@ -8,11 +8,10 @@ const VALID_CATEGORIES: Array[StringName] = [
 	CosmeticDefinition.PLAYER_BACKGROUND,
 ]
 
-# These legacy categories stay in the registry/database so old accounts remain
-# readable, but they are intentionally retired from shop, inventory, lobby and
-# match presentation.  Flags and card backgrounds remain supported.
+# Player frames stay readable in old accounts but remain retired from current
+# presentation. Head accessories are active again as the single optional
+# character-overlay slot.
 const RETIRED_PRESENTATION_CATEGORIES: Array[StringName] = [
-	CosmeticDefinition.HEAD_ACCESSORY,
 	CosmeticDefinition.PLAYER_FRAME,
 ]
 

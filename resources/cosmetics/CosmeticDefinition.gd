@@ -29,6 +29,10 @@ const PLAYER_BACKGROUND: StringName = &"player_background"
 @export var world_offset: Vector2 = Vector2.ZERO
 @export var world_scale: float = 1.0
 
+# Shared placement family. Rings encircle the head, face items align to the
+# eyes/nose area, and hats sit flush against the top of the head.
+@export_enum("ring", "face", "hat") var placement_profile: String = "ring"
+
 @export_enum("none", "bob", "orbit", "pulse") var animation: String = "none"
 @export var animation_speed: float = 1.0
 @export var animation_amplitude: float = 2.0

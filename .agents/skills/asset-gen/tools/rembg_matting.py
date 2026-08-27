@@ -296,6 +296,11 @@ def main():
     h, w = img.shape[:2]
     print(f"Image: {w}x{h} ({input_path})")
 
+    # Keep the sampled source matte available for the optional QA composite.
+    # `remove_background` samples it internally as well, but the previous
+    # single-image path referenced an undefined local when --preview was used.
+    bg_color = sample_bg_color(img)
+
     # Process
     out = remove_background(img, img_pil, regime=args.mode,
                             bg_thresh=args.bg_thresh, fg_thresh=args.fg_thresh)

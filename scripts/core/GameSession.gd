@@ -157,12 +157,38 @@ func buy_balloon_skin(skin_id: StringName, price: int) -> bool:
 		return true
 	if cokecy < price:
 		return false
-	cokecy -= price
-	owned_balloon_skins.append(skin_id)
-	if NetworkManager.is_connected_to_server():
-		AccountDatabase.rpc_id(1, "request_unlock_skin", skin_id)
-	_save_sql_profile()
-	return true
+	# Networked clients never mutate their own currency before the server has
+	# atomically charged and unlocked the skin.  The shop receives the result
+	# through AccountDatabase.skin_purchase_received.
+	var online := has_node("/root/NetworkManager") and NetworkManager.is_connected_to_server()
+	if online:
+		if has_node("/root/AccountDatabase") and AccountDatabase.current_user_id > 0:
+			AccountDatabase.rpc_id(1, "request_unlock_skin", skin_id)
+		return false
+
+	# Offline/editor sessions use the same transactional SQL path when an
+	# authenticated local account exists, keeping the balance and ownership in
+	# sync with the account database.
+	if has_node("/root/AccountDatabase") and AccountDatabase.current_user_id > 0:
+		var result := AccountDatabase.purchase_balloon_skin_for_current_user(skin_id)
+		if not bool(result.get("success", false)):
+			return false
+		if not owned_balloon_skins.has(skin_id):
+			owned_balloon_skins.append(skin_id)
+		var authoritative_balance := int(result.get("balance", -1))
+		if authoritative_balance >= 0 and authoritative_balance != cokecy:
+			cokecy = authoritative_balance
+			cokecy_changed.emit(cokecy)
+		return true
+
+	# Keep the legacy headless/editor harness deterministic for old catalog IDs;
+	# production shop entries are all catalog-backed and take the path above.
+	if skin_id in [&"classic", &"watermelon", &"dark"]:
+		cokecy -= price
+		owned_balloon_skins.append(skin_id)
+		cokecy_changed.emit(cokecy)
+		return true
+	return false
 
 func save_profile() -> void:
 	_save_sql_profile()

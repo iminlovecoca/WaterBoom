@@ -43,6 +43,7 @@ var preview_action_btn: Button
 var back_button: Button
 var purchase_pending: bool = false
 var pending_cosmetic_id: StringName = &""
+var pending_balloon_id: StringName = &""
 
 func _is_background(skin: Dictionary) -> bool:
 	return skin.get("kind", "") == "cosmetic" and str(skin.get("category", "")) == "player_background"
@@ -71,6 +72,7 @@ func _ready() -> void:
 		GameSession.cokecy_changed.connect(_on_cokecy_changed)
 	if has_node("/root/AccountDatabase"):
 		AccountDatabase.cosmetic_purchase_received.connect(_on_cosmetic_purchase_received)
+		AccountDatabase.skin_purchase_received.connect(_on_skin_purchase_received)
 
 func _load_all_skins() -> void:
 	all_skins.clear()
@@ -330,7 +332,8 @@ func _build_ui() -> void:
 		{"id": "balloon", "label": "BÓNG NƯỚC"},
 		{"id": "head_accessory", "label": "PHỤ KIỆN"},
 		{"id": "flag", "label": "CỜ"},
-		{"id": "player_background", "label": "NỀN"}
+		{"id": "player_background", "label": "NỀN"},
+		{"id": "player_frame", "label": "KHUNG"}
 	]
 	
 	for cat in categories:
@@ -760,11 +763,33 @@ func _on_action_button_pressed() -> void:
 		if item.get("kind", "balloon") == "cosmetic":
 			_request_cosmetic_purchase(selected_skin_id)
 		else:
-			if GameSession.buy_balloon_skin(selected_skin_id, int(item.price)):
-				GameSession.selected_balloon_skin = selected_skin_id
-				GameSession.save_profile()
-				skin_purchased.emit(selected_skin_id)
-				refresh()
+			_request_balloon_purchase(selected_skin_id)
+
+func _request_balloon_purchase(skin_id: StringName) -> void:
+	if not has_node("/root/AccountDatabase"):
+		_show_purchase_feedback("Không thể kết nối cửa hàng.", true)
+		return
+	purchase_pending = true
+	pending_balloon_id = skin_id
+	preview_action_btn.text = "ĐANG MUA..."
+	preview_action_btn.disabled = true
+	preview_status.text = "Đang xác nhận giao dịch..."
+	preview_status.add_theme_color_override("font_color", Color("#7dd3fc"))
+
+	var online := has_node("/root/NetworkManager") and NetworkManager.is_connected_to_server()
+	if online:
+		AccountDatabase.rpc_id(1, "request_unlock_skin", skin_id)
+		return
+
+	# Local/editor sessions use the server-equivalent transaction directly and
+	# route through the same callback so the UI has one authoritative code path.
+	var result := AccountDatabase.purchase_balloon_skin_for_current_user(skin_id)
+	AccountDatabase.receive_skin_unlocked(
+		bool(result.get("success", false)),
+		skin_id,
+		int(result.get("balance", -1)),
+		str(result.get("message", "Không thể mua bóng nước."))
+	)
 
 func _request_cosmetic_purchase(cosmetic_id: StringName) -> void:
 	if not has_node("/root/AccountDatabase"):
@@ -819,6 +844,20 @@ func _on_cosmetic_purchase_received(success: bool, cosmetic_id: StringName, _bal
 		var definition := CosmeticRegistry.get_definition(cosmetic_id)
 		if definition != null:
 			PlayerEquipmentService.equip(definition.category_id(), cosmetic_id)
+	refresh()
+	_show_purchase_feedback(message, not success)
+
+func _on_skin_purchase_received(success: bool, skin_id: StringName, _balance: int, message: String) -> void:
+	if pending_balloon_id != &"" and skin_id != pending_balloon_id:
+		return
+	purchase_pending = false
+	pending_balloon_id = &""
+	if success and has_node("/root/GameSession"):
+		if not GameSession.owned_balloon_skins.has(skin_id):
+			GameSession.owned_balloon_skins.append(skin_id)
+		GameSession.selected_balloon_skin = skin_id
+		GameSession.save_profile()
+		skin_purchased.emit(skin_id)
 	refresh()
 	_show_purchase_feedback(message, not success)
 

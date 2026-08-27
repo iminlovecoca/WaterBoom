@@ -6,9 +6,9 @@
 [resource]
 script = ExtResource("1")
 id = &"head_fire_ring"
-display_name = "Vòng Lửa 2.5D"
+display_name = "Vòng Lửa"
 category = "head_accessory"
-description = "Vòng lửa 2.5D ôm quanh trán với ngọn lửa chuyển động sống động."
+description = "Vòng lửa ôm quanh trán với ngọn lửa chuyển động sống động."
 price = 720
 icon = ExtResource("2")
 lobby_asset = ExtResource("2")

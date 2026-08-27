@@ -6,14 +6,16 @@ func _ready() -> void:
 	var all := CosmeticRegistry.all_definitions()
 	var has_flag := false
 	var has_background := false
+	var has_frame := false
 	var head_count := 0
-	var has_retired_data := false
+	var frame_count := 0
 	var head_profiles := {}
 	for definition in visible:
 		if definition.category == CosmeticDefinition.PLAYER_FRAME:
-			push_error("COSMETIC_PRESENTATION FAIL retired category remains visible: %s" % definition.id)
-			get_tree().quit(1)
-			return
+			frame_count += 1
+			has_frame = has_frame or definition.lobby_asset != null
+			if definition.lobby_asset != null and AccessoryPresentation.texture_for(definition, AccessoryPresentation.CONTEXT_CARD) != null:
+				pass
 		if definition.category == CosmeticDefinition.HEAD_ACCESSORY:
 			head_count += 1
 			head_profiles[str(definition.id)] = str(definition.placement_profile)
@@ -44,7 +46,10 @@ func _ready() -> void:
 		has_flag = has_flag or definition.category == CosmeticDefinition.FLAG
 		has_background = has_background or definition.category == CosmeticDefinition.PLAYER_BACKGROUND
 	for definition in all:
-		has_retired_data = has_retired_data or definition.category == CosmeticDefinition.HEAD_ACCESSORY or definition.category == CosmeticDefinition.PLAYER_FRAME
+		# All definitions remain discoverable for save compatibility, including
+		# frame data that older accounts may not have equipped yet.
+		if definition.category == CosmeticDefinition.PLAYER_FRAME:
+			has_frame = has_frame or definition.lobby_asset != null
 	var equipped_head := CosmeticRegistry.sanitize_equipment({"head_accessory": "head_halo_aqua"})
 	var unequipped_head := CosmeticRegistry.sanitize_equipment({"head_accessory": ""})
 	if str(equipped_head.get("head_accessory", "")) != "head_halo_aqua" or not str(unequipped_head.get("head_accessory", "")).is_empty():
@@ -59,7 +64,7 @@ func _ready() -> void:
 		push_error("COSMETIC_PRESENTATION FAIL hat accessory profiles are not hat")
 		get_tree().quit(1)
 		return
-	if not has_flag or not has_background or head_count < 7 or not has_retired_data:
+	if not has_flag or not has_background or not has_frame or frame_count < 5 or head_count < 9:
 		push_error("COSMETIC_PRESENTATION FAIL enabled presentation or compatibility data is missing")
 		get_tree().quit(1)
 		return

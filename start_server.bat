@@ -3,7 +3,7 @@ title Boom 2D - Dedicated Server (Port 7777)
 echo ========================================================
 echo        BOOM 2D - DEDICATED SERVER IS RUNNING
 echo ========================================================
-echo Port: 7777 (UDP)
+echo Port: 7777 (WebSocket)
 echo Max Players: 8
 echo.
 

@@ -472,7 +472,8 @@ func _build_ui() -> void:
 		{"id": "balloon", "label": "BÓNG"},
 		{"id": "head_accessory", "label": "PHỤ KIỆN"},
 		{"id": "flag", "label": "CỜ"},
-		{"id": "player_background", "label": "NỀN"}
+		{"id": "player_background", "label": "NỀN"},
+		{"id": "player_frame", "label": "KHUNG"}
 	]
 	for cat in categories:
 		var c_btn := Button.new()

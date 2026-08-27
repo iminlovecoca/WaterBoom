@@ -2,9 +2,9 @@
 
 ## Head accessory art checkpoint — 2026-08-27
 
-Three new head assets are now imported and registered: `head_sunglasses_red` (`face`), `head_cowboy_hat` (`hat`) and `head_conical_hat_vietnam` (`hat`). They are transparent RGBA PNGs generated through the approved `generate2dsprite`/`asset-gen` route and cleaned locally with border-connected chroma removal so internal blue/cyan detail is not erased. Raw and intermediate images remain under `assets/cosmetics/head/generated_2026_08_27/` for reproducibility. The shared presentation layer keeps rings bobbing while hats and face items stay locked to their anchors.
+Five head assets are now imported and registered: `head_sunglasses_red` (`face`), `head_cowboy_hat`, `head_conical_hat_vietnam`, `head_birthday_hat` and `head_crown_royal` (`hat`). They are transparent RGBA PNGs generated through the approved `generate2dsprite`/`asset-gen` route and cleaned locally with border-connected chroma removal so internal blue/cyan detail is not erased. Raw and intermediate images remain under `assets/cosmetics/head/generated_2026_08_27/` for reproducibility. The shared presentation layer keeps rings bobbing while hats and face items stay locked to their anchors.
 
-Verification after Godot reimport: `COSMETIC_PRESENTATION PASS visible=14 compatible_total=20`; `ROOM_SLOT_LAYER_RESULT: pass`; `CHARACTER_PRESENTATION_RESULT: 20 passed | 0 failed`; `PlayableSmoke` passed. `LobbyV2Capture` still cannot create PNGs under Godot's dummy renderer (`texture_2d_get` null); use the existing GPU-backed capture for visual review.
+The accessory registry now exposes 9 head items plus 6 live `KHUNG` frame definitions. PlayerCardPreview crops the selected frame into a rounded layer behind the portrait, so inventory and lobby use the same geometry. Verification after Godot reimport: `COSMETIC_PRESENTATION PASS visible=22 compatible_total=22`; `ROOM_SLOT_LAYER_RESULT: pass`; `CHARACTER_PRESENTATION_RESULT: 20 passed | 0 failed`; `PlayableSmoke` passed. RoomSlotVisualCapture intentionally skips framebuffer readback under Godot's headless/dummy renderer; use the existing GPU-backed capture for visual review.
 
 The local `rembg_matting.py --preview` helper also now keeps the sampled matte color in single-image mode, removing the old `NameError` after successful output generation.
 
@@ -12,9 +12,9 @@ The local `rembg_matting.py --preview` helper also now keeps the sampled matte c
 
 The runtime registry currently exposes `skin_066`–`skin_101` (36 active skins). Ten new skins `skin_092`–`skin_101` are true-alpha packages from the accepted RGBA bundle, with 64×64 icons and four 128×128 idle frames; they pass `TransparentBalloonSkinsSmoke` 10/10 and contain no opaque magenta matte. Character balance smoke passes all 11 definitions with 2 starting balloons and shared caps 6 balloons / 6 power / 240 speed. The older 16-skin notes below are historical and superseded by this checkpoint.
 
-## Open issue 1 — balloon economy authority
+## Resolved issue 1 — balloon economy authority (2026-08-27)
 
-`GameSession.buy_balloon_skin()` currently performs client-side balance mutation before unlock RPC. The server unlock handler must calculate price from its own catalog, confirm ownership/balance, write balance + ownership atomically and return the authoritative snapshot.
+`GameSession.buy_balloon_skin()` no longer mutates an online client balance before unlock. The server-side `AccountDatabase._purchase_balloon_skin_for_user()` reads the catalog price, checks ownership and funds, then atomically updates `users` and `user_balloon_skins`. The authoritative balance/ownership snapshot is returned to the requester. `AccountDatabaseSmoke` covers success, persistence and exact deduction.
 
 ## Water-balloon runtime cleanup — 2026-08-25
 
@@ -38,11 +38,11 @@ catalog (`skin_066`–`skin_081`) and always retain an owned valid selection aft
 reconnect. The old folders remain rollback-only and are not exposed by the
 registry/shop.
 
-## Open issue 3 — stale legacy TestRunner
+## Known non-blocking issue — stale legacy TestRunner
 
 `tests/TestRunner.gd` reports 22 failures against removed architecture (8 maps, 40 px tiles, old paths/API). Modern focused smokes pass. The old runner also does not reliably fail the process from its assertion count.
 
-Stop rule: update or retire each legacy assertion explicitly; never hide the suite or treat `--quit-after` exit 0 as a pass.
+The old runner is retained only for historical comparison. It is not the release gate; the current 19 dedicated smoke scenes are the authoritative gate and all pass. Never treat the stale runner's exit code as current QA evidence.
 
 ## Fixed in checkpoint
 

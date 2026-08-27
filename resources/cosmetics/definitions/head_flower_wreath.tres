@@ -6,9 +6,9 @@
 [resource]
 script = ExtResource("1")
 id = &"head_flower_wreath"
-display_name = "Vòng Hoa Mùa Xuân 2.5D"
+display_name = "Vòng Hoa Mùa Xuân"
 category = "head_accessory"
-description = "Vòng nguyệt quế hoa anh đào 2.5D đội nhẹ nhàng trên trán nhân vật."
+description = "Vòng nguyệt quế hoa anh đào đội nhẹ nhàng trên trán nhân vật."
 price = 550
 icon = ExtResource("2")
 lobby_asset = ExtResource("2")

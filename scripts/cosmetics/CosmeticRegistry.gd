@@ -8,12 +8,10 @@ const VALID_CATEGORIES: Array[StringName] = [
 	CosmeticDefinition.PLAYER_BACKGROUND,
 ]
 
-# Player frames stay readable in old accounts but remain retired from current
-# presentation. Head accessories are active again as the single optional
-# character-overlay slot.
-const RETIRED_PRESENTATION_CATEGORIES: Array[StringName] = [
-	CosmeticDefinition.PLAYER_FRAME,
-]
+# Player frames are part of the live cosmetic presentation.  Old accounts can
+# still fall back to the default frame, while the shop/inventory expose every
+# frame definition through the dedicated “Khung” category.
+const RETIRED_PRESENTATION_CATEGORIES: Array[StringName] = []
 
 const DEFAULT_EQUIPMENT := {
 	"head_accessory": "",

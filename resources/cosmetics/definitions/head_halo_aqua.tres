@@ -6,9 +6,9 @@
 [resource]
 script = ExtResource("1")
 id = &"head_halo_aqua"
-display_name = "Vòng Nước 2.5D"
+display_name = "Vòng Nước"
 category = "head_accessory"
-description = "Vòng nước 2.5D ôm quanh trán nhân vật với bọt nước chuyển động."
+description = "Vòng nước ôm quanh trán nhân vật với bọt nước chuyển động."
 price = 450
 is_default = false
 icon = ExtResource("2")

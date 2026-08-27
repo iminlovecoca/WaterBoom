@@ -6,9 +6,17 @@ const ROUNDED_CLIP_SHADER := preload("res://assets/shaders/rounded_clip.gdshader
 const CARD_W := 144
 const CARD_H := 100
 const GROUND_Y := 88.0
+const FRAME_SOURCE_RECTS := {
+	"angel_cloud_lobby.png": Rect2i(45, 15, 936, 988),
+	"blossom_day_lobby.png": Rect2i(35, 21, 954, 986),
+	"ember_dragon_lobby.png": Rect2i(52, 22, 924, 982),
+	"neon_star_lobby.png": Rect2i(51, 10, 922, 997),
+	"ocean_coral_lobby.png": Rect2i(25, 18, 979, 987),
+}
 
 var visual_panel: Panel
 var background_view: TextureRect
+var frame_view: TextureRect
 var portrait: AnimatedSprite2D
 var head_view: TextureRect
 var flag_group: Control
@@ -20,6 +28,7 @@ var head_animation := "none"
 var head_animation_speed := 1.0
 var head_animation_amplitude := 0.0
 var animation_time := 0.0
+var frame_texture_cache: Dictionary = {}
 
 func _ready() -> void:
 	custom_minimum_size = Vector2(CARD_W, CARD_H)
@@ -57,6 +66,19 @@ func _build_layers() -> void:
 	background_view.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	visual_panel.add_child(background_view)
 
+	frame_view = TextureRect.new()
+	frame_view.name = "PlayerFrame"
+	frame_view.position = Vector2.ZERO
+	frame_view.size = Vector2(CARD_W, CARD_H)
+	frame_view.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	frame_view.stretch_mode = TextureRect.STRETCH_SCALE
+	frame_view.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS
+	frame_view.material = _rounded_clip_material(Vector2(CARD_W, CARD_H), 10.0)
+	frame_view.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	frame_view.z_index = 1
+	frame_view.visible = false
+	visual_panel.add_child(frame_view)
+
 	portrait = AnimatedSprite2D.new()
 	# V13 uses one shared 112x112 canvas and feet anchor. UI cards use one
 	# deterministic scale for every character so none is cropped or missing.
@@ -72,6 +94,7 @@ func _build_layers() -> void:
 	flag_group.position = Vector2(92, 34)
 	flag_group.size = Vector2(39, 46)
 	flag_group.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	flag_group.z_index = 4
 	visual_panel.add_child(flag_group)
 	
 	flag_pole = TextureRect.new()
@@ -98,6 +121,7 @@ func _build_layers() -> void:
 	head_view.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 	head_view.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
 	head_view.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	head_view.z_index = 4
 	visual_panel.add_child(head_view)
 
 func configure(character: CharacterDefinition, equipment: Dictionary, _player_name: String = "") -> void:
@@ -125,6 +149,13 @@ func configure(character: CharacterDefinition, equipment: Dictionary, _player_na
 	background_view.texture = background.lobby_asset if background != null else null
 	background_view.visible = background_view.texture != null
 
+	var frame := CosmeticRegistry.get_definition(sanitized.get("player_frame", "frame_default_aqua"))
+	frame_view.texture = _normalized_frame_texture(frame.lobby_asset) if frame != null and frame.lobby_asset != null else null
+	frame_view.visible = frame_view.texture != null
+	frame_view.position = Vector2.ZERO
+	frame_view.size = Vector2(CARD_W, CARD_H)
+	frame_view.material = _rounded_clip_material(Vector2(CARD_W, CARD_H), 10.0)
+
 	var slot_style := _panel_style(Color("#053a78") if background_view.texture == null else Color.TRANSPARENT, Color("#00d2ff"), 2, 10)
 	visual_panel.add_theme_stylebox_override("panel", slot_style)
 
@@ -141,6 +172,21 @@ func configure(character: CharacterDefinition, equipment: Dictionary, _player_na
 		head_view.position = head_rect.position
 		head_view.size = head_rect.size
 		head_base_position = head_rect.position
+
+func _normalized_frame_texture(texture: Texture2D) -> Texture2D:
+	if texture == null:
+		return null
+	var file_name := texture.resource_path.get_file()
+	var source_rect: Rect2i = FRAME_SOURCE_RECTS.get(file_name, Rect2i())
+	if source_rect.size == Vector2i.ZERO:
+		return texture
+	if frame_texture_cache.has(file_name):
+		return frame_texture_cache[file_name]
+	var cropped := AtlasTexture.new()
+	cropped.atlas = texture
+	cropped.region = Rect2(source_rect)
+	frame_texture_cache[file_name] = cropped
+	return cropped
 
 func _rounded_clip_material(rect_size: Vector2, radius: float) -> ShaderMaterial:
 	var material := ShaderMaterial.new()

@@ -12,6 +12,12 @@ func _ready() -> void:
 		boot.bot_count = 5
 		boot._refresh_room_slots()
 	await get_tree().process_frame
+	# The headless renderer exposes a placeholder ViewportTexture whose image
+	# cannot be read back. The visual capture gate runs with the desktop renderer.
+	if DisplayServer.get_name() == "headless":
+		print("ROOM_SLOT_VISUAL_CAPTURE: skipped (headless renderer)")
+		get_tree().quit()
+		return
 	var viewport_texture := get_viewport().get_texture()
 	if viewport_texture == null:
 		# The dummy headless renderer has no readable screen texture. Keep the

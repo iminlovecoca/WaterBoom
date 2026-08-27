@@ -6,9 +6,9 @@
 [resource]
 script = ExtResource("1")
 id = &"head_angel_ring"
-display_name = "Vương Miện Thiên Thần 2.5D"
+display_name = "Vương Miện Thiên Thần"
 category = "head_accessory"
-description = "Vương miện thiên thần 2.5D bằng vàng với đôi cánh nhỏ hai bên trán."
+description = "Vương miện thiên thần bằng vàng với đôi cánh nhỏ hai bên trán."
 price = 800
 icon = ExtResource("2")
 lobby_asset = ExtResource("2")

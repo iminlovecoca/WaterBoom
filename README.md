@@ -1,6 +1,8 @@
 # Boom Water Arcade
 
-Godot 4.7.1 online water-balloon arcade game. Trạng thái này là **checkpoint UI/HUD Aqua Arcade v2**, chưa phải toàn bộ master prompt đã hoàn tất.
+Godot 4.7.1 online water-balloon arcade game. Trạng thái hiện tại là **production checkpoint Aqua Arcade v2**: các luồng chơi, tài khoản, shop, phụ kiện và catalog bóng nước đã được kiểm thử; phần còn lại là polish tùy chọn, không chặn build chơi được.
+
+QA mới nhất (27/08/2026): editor import exit 0; toàn bộ 19 smoke scene chạy với máy chủ WebSocket nội bộ đạt `SMOKE_FAILED=0 TOTAL=19`; AccountDatabase đạt 22/22; video GPU `tests/artifacts/accessory_ui_tour.avi` dài 18,17 giây ở 960×720/30 FPS.
 
 ## Local Codex + Antigravity automation
 
@@ -31,10 +33,11 @@ AGY CLI hiện đã cài tại `%LOCALAPPDATA%\agy\bin\agy.exe` (version 1.1.20)
 - Login mẫu đã chuyển sang responsive container, focus keyboard và đầy đủ button states.
 - Login, Lobby, Room, Shop, Inventory và Match HUD hiện dùng chung Aqua Arcade v2: nền caro xanh, panel xanh sáng, inset navy, đường ghép cyan và CTA cam.
 - Năm item gameplay đã dùng icon HD cùng chuẩn 96×96: kim châm, thêm bóng, khiên, giày tốc độ và bình tăng độ dài.
-- Hệ thống phụ kiện đầu đã được bật lại xuyên suốt Shop, Inventory, Lobby/Room, Match HUD và gameplay: 7 món đang hiển thị (4 vòng profile `ring`, kính râm đỏ profile `face`, mũ cao bồi và nón lá Việt Nam profile `hat`), có tháo/trang bị; vòng vẫn bob nhẹ còn kính/nón khóa theo anchor để không trôi khỏi mặt/đầu. Khung thẻ tùy biến vẫn tắt ở lớp hiển thị, còn registry và dữ liệu cũ giữ nguyên để tương thích ngược.
-- Ba asset phụ kiện mới được tạo bằng pipeline `generate2dsprite`/`asset-gen` sau khi đã xác nhận chi phí: nền màu phẳng chỉ dùng ở staging, sau đó chroma-key connected-component cleanup giữ nguyên pixel chi tiết và xuất RGBA trong suốt. Mỗi asset được crop theo alpha bbox với đệm 16 px, có `.import` Godot và được kiểm tra bốn góc alpha=0.
+- Hệ thống phụ kiện đầu đã được bật lại xuyên suốt Shop, Inventory, Lobby/Room, Match HUD và gameplay: 9 món đang hiển thị (4 vòng profile `ring`, kính râm đỏ profile `face`, mũ cao bồi, nón lá Việt Nam, nón sinh nhật và vương miện hoàng gia profile `hat`), có tháo/trang bị; vòng vẫn bob nhẹ còn kính/nón khóa theo anchor để không trôi khỏi mặt/đầu. Mục **Khung** đã mở lại trong Shop/Inventory; frame được crop bo góc ở lớp riêng phía sau portrait và dùng chung giữa lobby, room, match-list, gameplay và preview túi đồ.
+- Năm asset phụ kiện mới được tạo bằng pipeline `generate2dsprite`/`asset-gen` sau khi đã xác nhận chi phí: nền màu phẳng chỉ dùng ở staging, sau đó chroma-key connected-component cleanup giữ nguyên pixel chi tiết và xuất RGBA trong suốt. Mỗi asset được crop theo alpha bbox với đệm 16 px, có `.import` Godot và được kiểm tra bốn góc alpha=0; nón lá đã bỏ dây quai.
 - Đồng bộ phụ kiện phòng đã được làm an toàn hơn: snapshot equipment gửi từ client chỉ được chuyển qua khi peer còn kết nối; host xử lý trực tiếp, client gửi tới peer 1 còn sống. Điều này ngăn RPC tới peer 1/peer cũ khi đang ở phòng offline hoặc vừa rời mạng.
 - `NetworkManager.is_peer_connected(1)` hiện kiểm tra đúng trạng thái `client → server`, nên cập nhật trang bị từ client không bị bỏ qua khi server vẫn đang kết nối.
+- Mua bóng nước đã chuyển sang transaction SQL có thẩm quyền máy chủ: giá và số dư được đọc từ catalog/server, `UPDATE users` và `INSERT user_balloon_skins` chạy trong cùng giao dịch; client nhận lại số dư và quyền sở hữu chuẩn.
 - Character V13/V14 resource/gameplay smoke: active roster 4/4 pass; presentation 18/18; V14 resource 36/36; animation 26/26; playable loop 17/17; Godot editor import exit 0. Shadow Ninja/Aqua Pacifier left/right/up idle is static and only the down-facing idle plays its authored blink frames. Dedicated kẹt-bóng-water art is intentionally deferred.
   Máy kiểm thử còn in cảnh báo DLL template debug tùy chọn của addon godot-sqlite, không liên quan đến runtime nhân vật.
 - Room card frame layering đã sửa: frame nằm dưới portrait, nên thanh viền dưới không còn che chân hoặc các
@@ -46,13 +49,12 @@ AGY CLI hiện đã cài tại `%LOCALAPPDATA%\agy\bin\agy.exe` (version 1.1.20)
 
 ## Còn lại của final polish
 
-- Tiếp tục tinh chỉnh từng màn hình ở độ phân giải thấp sau khi Aqua Arcade v2 đã được triển khai xuyên suốt các màn hình chính.
-- Đóng đường mua/trang bị bóng nước bằng server authority + transaction.
+- Tinh chỉnh thêm từng màn hình ở độ phân giải thấp nếu cần; Aqua Arcade v2 đã dùng chung cho Login, Lobby, Room, Shop, Inventory và Match HUD.
 - Catalog runtime hiện có 36 ID ổn định (`skin_066`–`skin_101`), fallback duy nhất là `skin_066`; profile cũ tự migrate khỏi các ID không còn trong catalog.
-- V13 là bundle nền của Gấu Nâu/Thỏ Trắng; V14 là bundle runtime mới của Shadow Ninja/Aqua Pacifier. V11/V12 được giữ nguyên chỉ để rollback. Các clip `bubble`, `water_hit`, `die`, `win`, `lose` của V14 hiện dùng frame nhân vật an toàn để không cắt hình; lớp bong bóng/VFX thật vẫn do `PlayerVisual`/`BubbleVisual` điều khiển và sẽ làm riêng sau.
+- V13 là bundle nền của Gấu Nâu/Thỏ Trắng; V14 là bundle runtime mới của Shadow Ninja/Aqua Pacifier. V11/V12 được giữ nguyên chỉ để rollback. Các clip `bubble`, `water_hit`, `die`, `win`, `lose` của V14 dùng frame nhân vật an toàn để không cắt hình; lớp bong bóng/VFX thật vẫn do `PlayerVisual`/`BubbleVisual` điều khiển.
 - Thêm layout variants/trang trí map mà giữ nguyên collision/block budget.
-- Benchmark 8-player/boss/low-end và capture video end-to-end 15–20 giây.
-- Chạy một review được người dùng chọn: Bugbot hoặc Security Review.
+- Benchmark 8-player/boss/low-end bổ sung; video GPU 18,17 giây đã có để review luồng UI.
+- `tests/TestRunner.gd` là harness cũ theo kiến trúc 40 px; dùng 19 smoke scene hiện hành làm cổng QA chính.
 
 ## Asset table
 
@@ -69,8 +71,9 @@ AGY CLI hiện đã cài tại `%LOCALAPPDATA%\agy\bin\agy.exe` (version 1.1.20)
 | UI login | `assets/ui/login/` | active | màn hình mẫu checkpoint |
 | Theme/font | `resources/ui/`, `scripts/ui/UITheme.gd`, `ui/theme/palette.gd` | Aqua Arcade v2 active | cùng font, panel, inset, button state và màu nhấn trên các surface chính |
 | Gameplay item icons | `assets/items/item_*.png` | active, 5/5 contract pass | 96×96 RGBA; source người dùng giữ tại `assets/items/source_user_2026_08_24/` |
-| Head accessory presentation | `scripts/cosmetics/AccessoryPresentation.gd`, `scripts/cosmetics/CosmeticRegistry.gd`, `scripts/player/PlayerVisual.gd`, `scripts/ui/PlayerCardPreview.gd`, `scripts/core/BootManager.gd`, `scripts/ui/MatchHUD.gd` | 7 assets active, custom frame retired | 4 vòng (`head_halo_aqua`, `head_fire_ring`, `head_flower_wreath`, `head_angel_ring`) + `head_sunglasses_red` (face) + `head_cowboy_hat`/`head_conical_hat_vietnam` (hat); card, room, match-list và world có geometry riêng, cùng sanitize equip/unequip |
-| Head accessory art (2026-08-27) | `assets/cosmetics/head/{sunglasses_red,cowboy_hat,conical_hat_vietnam}.png`, `assets/cosmetics/head/generated_2026_08_27/` | transparent RGBA, imported | Asset pixel riêng từng món, nền staging được loại bỏ bằng connected-component chroma cleanup; raw/chroma provenance giữ trong thư mục generated |
+| Head accessory presentation | `scripts/cosmetics/AccessoryPresentation.gd`, `scripts/cosmetics/CosmeticRegistry.gd`, `scripts/player/PlayerVisual.gd`, `scripts/ui/PlayerCardPreview.gd`, `scripts/core/BootManager.gd`, `scripts/ui/MatchHUD.gd` | 9 head assets + 6 frame definitions active | 4 vòng (`head_halo_aqua`, `head_fire_ring`, `head_flower_wreath`, `head_angel_ring`) + `head_sunglasses_red` (face) + `head_cowboy_hat`, `head_conical_hat_vietnam`, `head_birthday_hat`, `head_crown_royal` (hat); frame nằm dưới portrait, card/room/match-list/world dùng chung geometry và sanitize equip/unequip |
+| Player frame cosmetics | `resources/cosmetics/definitions/frame_*.tres`, `assets/cosmetics/frames/`, `scripts/ui/PlayerCardPreview.gd`, `scripts/core/BootManager.gd` | active, 6 definitions | Khung mặc định Aqua và năm khung trang trí (thiên thần, cành đào, hỏa long, mạng nhện, san hô); Shop/Inventory có mục `KHUNG`, preview túi đồ dùng cùng frame với lobby |
+| Head accessory art (2026-08-27) | `assets/cosmetics/head/{sunglasses_red,cowboy_hat,conical_hat_vietnam,birthday_hat,royal_crown}.png`, `assets/cosmetics/head/generated_2026_08_27/` | transparent RGBA, imported | Asset pixel riêng từng món; birthday hat và royal crown strict-QC; raw/chroma provenance giữ trong thư mục generated |
 | Audio | `assets/audio/` | active | login/lobby/exit/game SFX |
 | Character V13/V14 evidence | `tests/artifacts/character_v13_*`, `assets/characters/v14_rebuild/*/walk_v2/` | verified | V13 mascot evidence + V14 strict-QC sheets; không tích hợp bubble sheet mới theo yêu cầu hiện tại |
 | Character presentation containment | `scripts/ui/CharacterPresentation.gd`, `tests/CharacterPresentationContainmentSmoke.tscn`, `tests/RoomSlotLayerSmoke.tscn` | verified | 20/20 active checks + room-layer pass; 4/4 full 112×112 frame; bunny x-only correction; frame/rail ở dưới portrait, không cắt chân/biên trái phải |

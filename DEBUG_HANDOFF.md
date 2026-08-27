@@ -1,5 +1,9 @@
 # Debug handoff
 
+## Continuation verification — 2026-08-27
+
+The post-pause focused regression pass is green: editor import exit 0; cosmetic presentation, character containment/V14 resources, transparent balloon assets/scale, map gameplay, boss mode and playable loop all exited 0 (`FOCUSED_FAILED=0 TOTAL=8`). No new failure signature was introduced, so no new code edit is warranted from this check.
+
 ## Head accessory art checkpoint — 2026-08-27
 
 Five head assets are now imported and registered: `head_sunglasses_red` (`face`), `head_cowboy_hat`, `head_conical_hat_vietnam`, `head_birthday_hat` and `head_crown_royal` (`hat`). They are transparent RGBA PNGs generated through the approved `generate2dsprite`/`asset-gen` route and cleaned locally with border-connected chroma removal so internal blue/cyan detail is not erased. Raw and intermediate images remain under `assets/cosmetics/head/generated_2026_08_27/` for reproducibility. The shared presentation layer keeps rings bobbing while hats and face items stay locked to their anchors.

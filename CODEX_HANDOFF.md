@@ -2,6 +2,8 @@
 
 ## Current delivery checkpoint — 2026-08-27
 
+- Continuation QA rerun: Godot editor import and the eight highest-risk focused scenes (cosmetic presentation, character containment/V14 resources, transparent balloon assets/scale, map gameplay, boss mode and playable loop) all exited 0; `FOCUSED_FAILED=0 TOTAL=8`.
+
 - Added ten new transparent balloon skins `skin_092`–`skin_101` to the runtime catalog and existing Shop/Inventory/equip path. They are packaged from the accepted RGBA source bundle at `assets/water_balloons/v14_new16_transparent_final/`; that supplied bundle was reused without another paid bulk generation.
 - Each new skin has `icon.png` at 64×64, four `idle_0..3.png` frames at 128×128 and a shared canonical `pop_burst.png`. The source pixels and interior glass details are preserved; no magenta matte is present in the packaged files.
 - Catalog is now 36 active IDs (`skin_066`–`skin_101`) and `WaterBalloonCatalogV3Normalizer` validates that range. Character balance is locked to 2 starting balloons for all 11 definitions, with shared caps of 6 balloons / 6 power / 240 speed.

@@ -123,10 +123,11 @@ func join_server(ip: String = DEFAULT_HOST, port: int = DEFAULT_PORT) -> bool:
 		active_server_port = -1
 
 	peer = WebSocketMultiplayerPeer.new()
-	var protocol := "wss" if USE_TLS else "ws"
+	var is_tls := USE_TLS or port == 443
+	var protocol := "wss" if is_tls else "ws"
 	var url := "%s://%s:%d" % [protocol, ip, port]
 	var tls_options: TLSOptions = null
-	if USE_TLS:
+	if is_tls:
 		tls_options = TLSOptions.client()
 	var error = peer.create_client(url, tls_options)
 	if error != OK:

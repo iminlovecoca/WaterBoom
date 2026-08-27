@@ -6,8 +6,8 @@
     "region": "vn"
   },
   "client": {
-    "default_host": "dvgot-14-191-232-11.run.pinggy-free.link",
-    "default_port": 42635,
-    "use_tls": false
+    "default_host": "kelp-replica-maximize.ngrok-free.dev",
+    "default_port": 443,
+    "use_tls": true
   }
 }

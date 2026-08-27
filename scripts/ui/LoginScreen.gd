@@ -10,6 +10,9 @@ extends Control
 @onready var create_button: Button = %CreateButton
 @onready var forgot_button: Button = %ForgotButton
 
+@onready var ip_input: LineEdit = %IPInput
+@onready var port_input: LineEdit = %PortInput
+
 const AUTH_RESPONSE_TIMEOUT_SECONDS := 8.0
 
 var auth_pending := false
@@ -32,6 +35,11 @@ func _ready() -> void:
 		return
 
 	SoundManager.play_bgm("res://assets/audio/music/login.mp3", true)
+	if ip_input:
+		ip_input.text = NetworkManager.DEFAULT_HOST
+	if port_input:
+		port_input.text = str(NetworkManager.DEFAULT_PORT)
+	_apply_connection_overrides()
 	_apply_styles()
 	_setup_focus_navigation()
 	login_panel.pivot_offset = login_panel.size * 0.5
@@ -39,6 +47,10 @@ func _ready() -> void:
 	create_button.pressed.connect(_create_account)
 	forgot_button.pressed.connect(func(): _set_status("Hãy nhập tài khoản để khôi phục mật khẩu.", "info"))
 	password_input.text_submitted.connect(func(_value): _login())
+	if ip_input:
+		ip_input.text_submitted.connect(func(_value): _login())
+	if port_input:
+		port_input.text_submitted.connect(func(_value): _login())
 	AccountDatabase.auth_result_received.connect(_on_auth_result)
 	NetworkManager.connection_status_changed.connect(_on_connection_status_changed)
 	
@@ -49,40 +61,6 @@ func _ready() -> void:
 		_set_status("Sẵn sàng kết nối", "ready")
 	account_input.grab_focus()
 
-var ip_input: LineEdit
-var port_input: LineEdit
-
-func _setup_server_ui() -> void:
-	var server_container = HBoxContainer.new()
-	server_container.name = "ServerContainer"
-	server_container.add_theme_constant_override("separation", 10)
-	
-	ip_input = LineEdit.new()
-	ip_input.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-	ip_input.placeholder_text = "Server IP"
-	ip_input.text = NetworkManager.DEFAULT_HOST
-	ip_input.add_theme_stylebox_override("normal", UITheme.panel_inset())
-	ip_input.add_theme_stylebox_override("focus", UITheme.panel_inset())
-	ip_input.add_theme_color_override("font_color", Color.WHITE)
-	ip_input.custom_minimum_size = Vector2(0, 44)
-	
-	port_input = LineEdit.new()
-	port_input.custom_minimum_size = Vector2(90, 44)
-	port_input.placeholder_text = "Port"
-	port_input.text = str(NetworkManager.DEFAULT_PORT)
-	_apply_connection_overrides()
-	port_input.add_theme_stylebox_override("normal", UITheme.panel_inset())
-	port_input.add_theme_stylebox_override("focus", UITheme.panel_inset())
-	port_input.add_theme_color_override("font_color", Color.WHITE)
-	
-	server_container.add_child(ip_input)
-	server_container.add_child(port_input)
-	server_container.visible = false
-	
-	var vbox = login_panel.get_node("VBox")
-	vbox.add_child(server_container)
-	# Di chuyen len tren StatusLabel (StatusLabel la child ap chot neu khong tinh Buttons)
-	vbox.move_child(server_container, vbox.get_child_count() - 3)
 
 # --- KET NOI SERVER ---
 
@@ -237,13 +215,17 @@ func _style(fill: Color, border: Color, radius: int = 12, width: int = 3) -> Sty
 
 func _apply_styles() -> void:
 	login_panel.add_theme_stylebox_override("panel", UITheme.panel_modal())
-	for field in [account_input, password_input]:
+	var fields: Array = [account_input, password_input]
+	if ip_input: fields.append(ip_input)
+	if port_input: fields.append(port_input)
+	for field in fields:
 		field.add_theme_stylebox_override("normal", UITheme.panel_inset())
 		field.add_theme_stylebox_override("focus", UITheme.panel_inset())
 		field.add_theme_color_override("font_color", Color.WHITE)
 		field.add_theme_color_override("font_placeholder_color", Color(0.8, 0.8, 0.8))
-	for label in [login_panel.get_node("VBox/AccountLabel"), login_panel.get_node("VBox/PasswordLabel")]:
-		label.add_theme_color_override("font_color", Color(0.7, 0.85, 1.0))
+	for label in [login_panel.get_node("VBox/AccountLabel"), login_panel.get_node("VBox/PasswordLabel"), login_panel.get_node_or_null("VBox/ServerLabel")]:
+		if label:
+			label.add_theme_color_override("font_color", Color(0.7, 0.85, 1.0))
 	UITheme.apply_button_theme(login_button, "primary")
 	UITheme.apply_button_theme(create_button, "secondary")
 	UITheme.apply_button_theme(forgot_button, "secondary")
@@ -251,8 +233,20 @@ func _apply_styles() -> void:
 func _setup_focus_navigation() -> void:
 	account_input.focus_neighbor_bottom = password_input.get_path()
 	password_input.focus_neighbor_top = account_input.get_path()
-	password_input.focus_neighbor_bottom = login_button.get_path()
-	login_button.focus_neighbor_top = password_input.get_path()
+	if ip_input:
+		password_input.focus_neighbor_bottom = ip_input.get_path()
+		ip_input.focus_neighbor_top = password_input.get_path()
+		if port_input:
+			ip_input.focus_neighbor_right = port_input.get_path()
+			port_input.focus_neighbor_left = ip_input.get_path()
+			port_input.focus_neighbor_bottom = login_button.get_path()
+			login_button.focus_neighbor_top = port_input.get_path()
+		else:
+			ip_input.focus_neighbor_bottom = login_button.get_path()
+			login_button.focus_neighbor_top = ip_input.get_path()
+	else:
+		password_input.focus_neighbor_bottom = login_button.get_path()
+		login_button.focus_neighbor_top = password_input.get_path()
 	login_button.focus_neighbor_right = create_button.get_path()
 	create_button.focus_neighbor_left = login_button.get_path()
 	create_button.focus_neighbor_right = forgot_button.get_path()

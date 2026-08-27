@@ -83,7 +83,7 @@ layout_mode = 2
 
 [node name="LoginPanel" type="Panel" parent="SafeArea/Flow/PanelCenter"]
 unique_name_in_owner = true
-custom_minimum_size = Vector2(450, 350)
+custom_minimum_size = Vector2(460, 420)
 layout_mode = 2
 
 [node name="VBox" type="VBoxContainer" parent="SafeArea/Flow/PanelCenter/LoginPanel"]
@@ -97,47 +97,72 @@ offset_right = -28.0
 offset_bottom = -16.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/separation = 7
+theme_override_constants/separation = 6
 
 [node name="Heading" type="Label" parent="SafeArea/Flow/PanelCenter/LoginPanel/VBox"]
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 0.85, 1)
 theme_override_colors/font_outline_color = Color(0.52, 0.2, 0.02, 1)
 theme_override_constants/outline_size = 4
-theme_override_font_sizes/font_size = 30
+theme_override_font_sizes/font_size = 28
 text = "ĐĂNG NHẬP"
 horizontal_alignment = 1
 
 [node name="AccountLabel" type="Label" parent="SafeArea/Flow/PanelCenter/LoginPanel/VBox"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.14, 0.18, 0.25, 1)
-theme_override_font_sizes/font_size = 17
+theme_override_font_sizes/font_size = 15
 text = "Tài khoản"
 
 [node name="AccountInput" type="LineEdit" parent="SafeArea/Flow/PanelCenter/LoginPanel/VBox"]
 unique_name_in_owner = true
-custom_minimum_size = Vector2(0, 44)
+custom_minimum_size = Vector2(0, 40)
 layout_mode = 2
-theme_override_font_sizes/font_size = 19
+theme_override_font_sizes/font_size = 17
 placeholder_text = "Nhập tài khoản"
 clear_button_enabled = true
 
 [node name="PasswordLabel" type="Label" parent="SafeArea/Flow/PanelCenter/LoginPanel/VBox"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.14, 0.18, 0.25, 1)
-theme_override_font_sizes/font_size = 17
+theme_override_font_sizes/font_size = 15
 text = "Mật khẩu"
 
 [node name="PasswordInput" type="LineEdit" parent="SafeArea/Flow/PanelCenter/LoginPanel/VBox"]
 unique_name_in_owner = true
-custom_minimum_size = Vector2(0, 44)
+custom_minimum_size = Vector2(0, 40)
 layout_mode = 2
-theme_override_font_sizes/font_size = 19
+theme_override_font_sizes/font_size = 17
 placeholder_text = "Nhập mật khẩu"
 secret = true
 
+[node name="ServerLabel" type="Label" parent="SafeArea/Flow/PanelCenter/LoginPanel/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.14, 0.18, 0.25, 1)
+theme_override_font_sizes/font_size = 15
+text = "Địa chỉ máy chủ (Host / Port)"
+
+[node name="ServerRow" type="HBoxContainer" parent="SafeArea/Flow/PanelCenter/LoginPanel/VBox"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="IPInput" type="LineEdit" parent="SafeArea/Flow/PanelCenter/LoginPanel/VBox/ServerRow"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 38)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 14
+placeholder_text = "Server Host / IP"
+
+[node name="PortInput" type="LineEdit" parent="SafeArea/Flow/PanelCenter/LoginPanel/VBox/ServerRow"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(90, 38)
+layout_mode = 2
+theme_override_font_sizes/font_size = 14
+placeholder_text = "Port"
+
 [node name="StatusRow" type="HBoxContainer" parent="SafeArea/Flow/PanelCenter/LoginPanel/VBox"]
-custom_minimum_size = Vector2(0, 26)
+custom_minimum_size = Vector2(0, 24)
 layout_mode = 2
 alignment = 1
 theme_override_constants/separation = 7

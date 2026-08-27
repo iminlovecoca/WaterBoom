@@ -18,13 +18,36 @@ var is_client_active: bool = false
 var connected_peers: Array[int] = []
 var active_server_port: int = -1
 
+const CLOUD_CONFIG_URL: String = "https://boom-online-landing.vercel.app/api/config"
+
 func _ready() -> void:
 	_load_config()
+	_fetch_cloud_config()
 	multiplayer.peer_connected.connect(_on_peer_connected)
 	multiplayer.peer_disconnected.connect(_on_peer_disconnected)
 	multiplayer.connected_to_server.connect(_on_connected_to_server)
 	multiplayer.connection_failed.connect(_on_connection_failed)
 	multiplayer.server_disconnected.connect(_on_server_disconnected)
+
+func _fetch_cloud_config() -> void:
+	var http := HTTPRequest.new()
+	add_child(http)
+	http.timeout = 2.5
+	http.request_completed.connect(func(_result: int, response_code: int, _headers: PackedStringArray, body: PackedByteArray):
+		if response_code == 200:
+			var json := JSON.new()
+			if json.parse(body.get_string_from_utf8()) == OK and json.data is Dictionary:
+				var data: Dictionary = json.data
+				if data.has("server_host") and not str(data["server_host"]).is_empty():
+					DEFAULT_HOST = str(data["server_host"])
+				if data.has("server_port") and int(data["server_port"]) > 0:
+					DEFAULT_PORT = int(data["server_port"])
+				if data.has("use_tls"):
+					USE_TLS = bool(data["use_tls"])
+				print("[NetworkManager] ☁️ Cloud Matchmaker Sync: server=%s:%d (TLS: %s)" % [DEFAULT_HOST, DEFAULT_PORT, USE_TLS])
+		http.queue_free()
+	)
+	http.request(CLOUD_CONFIG_URL)
 
 func _load_config() -> void:
 	if not FileAccess.file_exists(CONFIG_PATH):
